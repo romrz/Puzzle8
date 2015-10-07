@@ -1,0 +1,33 @@
+<project name="Puzzle8">
+
+  <property name="src.dir" location="src/" />
+  <property name="build.dir" location="." />
+  <property name="dist.dir" location="dist/" />
+  <property name="build.classes.dir" location="\${build.dir}/classes/" />
+  <property name="dist.name" value="Puzzle8.jar" />
+
+  <target name="compile" description="Compila las clases.">
+		<mkdir dir="${build.classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${build.classes.dir}" includeantruntime="false" />
+  </target>
+
+  <target name="package" depends="compile" description="Crea el jar de la aplicacion.">
+		<mkdir dir="${dist.dir}" />
+		<jar destfile="${dist.dir}/\${dist.name}">
+			<fileset dir="${build.classes.dir}"/>
+			<manifest>
+				<attribute name="Main-Class" value="puzzle8.MainClass" />
+			</manifest>
+		</jar>
+  </target>
+
+  <target name="execute" depends="package" description="Ejecuta la aplicacion.">
+		<java	jar="${dist.dir}/${dist.name}" fork="true" />
+  </target>
+
+  <target name="clean" description="Limpia los archivos de la aplicacion.">
+		<delete dir="${build.classes.dir}" />
+		<delete dir="${dist.dir}" />
+  </target>
+
+</project>

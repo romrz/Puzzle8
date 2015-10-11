@@ -15,22 +15,9 @@ public class Board{
 		this.matrix = matrix;
 	}
 
-	public boolean left(){
-		//TODO
-		return false;
-	}
-
-	public boolean right(){
-		//TODO
-		return false;
-	}
-
-	public boolean up(){
-		//TODO
-		return false;
-	}
-
-	public boolean down(){
+	//Hace un movimiento en el tablero actual y regresa un
+	//valor booleano indicando si tuvo exito la operacion
+	public boolean move(Ditection dir){
 		//TODO
 		return false;
 	}

@@ -17,7 +17,7 @@ public class Board{
 
 	//Hace un movimiento en el tablero actual y regresa un
 	//valor booleano indicando si tuvo exito la operacion
-	public boolean move(Ditection dir){
+	public boolean move(Direction dir){
 		//TODO
 		return false;
 	}

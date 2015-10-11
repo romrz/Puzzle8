@@ -1,0 +1,5 @@
+# Ignore the compiled java files
+*.class
+
+# Ignore the java package
+Puzzle8.jar

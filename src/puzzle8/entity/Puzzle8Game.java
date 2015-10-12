@@ -19,10 +19,9 @@ import java.awt.event.KeyEvent;
  * implementan en clases externas
  */
 
-// TODO: Implementar la comprobacion de si ya se alcanzo el objetivo
 // TODO: Crear animaciones entre transiciones
 
-public class Puzzle8Game extends Canvas implements KeyListener {
+public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
 
     // Tamaño de cada cuadrito
     private int tileSize = 128;
@@ -35,6 +34,8 @@ public class Puzzle8Game extends Canvas implements KeyListener {
     // Tablero al que se quiere llegar
     private Board objective;
 
+    private boolean objectiveReached = false;
+
     public Puzzle8Game(Board board, Board objective) {
         this.board = board;
         this.objective = objective;
@@ -44,6 +45,10 @@ public class Puzzle8Game extends Canvas implements KeyListener {
         setSize(new Dimension(size * tileSize, size * tileSize));
     }
 
+    public void start() {
+        new Thread(this, "Game").start();
+    }
+    
     public Board getBoard() {
         return board;
     }
@@ -53,7 +58,10 @@ public class Puzzle8Game extends Canvas implements KeyListener {
     }
     
     private void drawTile(Graphics2D g, int value, int x, int y, int size) {
-        g.setColor(Color.RED);
+        if(objectiveReached)
+            g.setColor(Color.GREEN);
+        else
+            g.setColor(Color.RED);
         g.fillRect(x, y, size, size);
         g.setColor(Color.BLACK);
         g.drawRect(x, y, size, size);
@@ -90,7 +98,12 @@ public class Puzzle8Game extends Canvas implements KeyListener {
                 return;
         }
 
+        moveBlank(dir);
+    }
+
+    public void moveBlank(Direction dir) {
         board.move(dir);
+        objectiveReached = board.equals(objective);
     }
     
     public void run() {

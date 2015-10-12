@@ -1,5 +1,7 @@
 package puzzle8.entity;
 
+import java.util.Arrays;
+
 public class Board{
 
     private int n;
@@ -81,5 +83,14 @@ public class Board{
         }
         
         return false;
+    }
+
+    public boolean equals(Board board) {
+        boolean result = true;
+        
+        for(int i = 0; i < n; i++)
+            result = result && Arrays.equals(matrix[i], board.matrix[i]);
+
+        return result;
     }
 }

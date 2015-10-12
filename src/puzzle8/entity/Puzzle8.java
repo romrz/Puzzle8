@@ -35,14 +35,37 @@ public class Puzzle8 {
         window.setResizable(false);
         window.setVisible(true);
 
-        puzzle.run();
+        puzzle.start();
     }
 
     public void solve() {
-        ArrayList<Direction> sequence = solver.solve(puzzle.getBoard(),
-                                                     puzzle.getObjectiveBoard());
-        // TODO: Implementar el mecanismo de como se le van a pasar los
-        // movimientos a Puzzle8Game.
+        //        ArrayList<Direction> sequence = solver.solve(
+        //  puzzle.getBoard(), puzzle.getObjectiveBoard());
+
+        // Prueba de una secuancia de movimientos
+        try { Thread.sleep(1000); }
+        catch(InterruptedException e) {}
+        
+        ArrayList<Direction> sequence = new ArrayList<Direction>();
+        sequence.add(Direction.RIGHT);
+        sequence.add(Direction.RIGHT);
+        sequence.add(Direction.DOWN);
+        sequence.add(Direction.DOWN);
+        sequence.add(Direction.LEFT);
+        sequence.add(Direction.LEFT);
+        sequence.add(Direction.RIGHT);
+        sequence.add(Direction.RIGHT);
+        sequence.add(Direction.UP);
+        sequence.add(Direction.UP);
+        sequence.add(Direction.LEFT);
+        sequence.add(Direction.LEFT);
+
+        for(Direction dir : sequence) {
+            puzzle.moveBlank(dir);
+            
+            try { Thread.sleep(1000); }
+            catch(InterruptedException e) {}
+        }        
     }
 
 }

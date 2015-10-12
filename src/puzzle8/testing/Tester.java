@@ -8,6 +8,7 @@ public class Tester{
             
             Puzzle8 puzzle = new Puzzle8();
             puzzle.start();
+            puzzle.solve();
             
 	}
 }

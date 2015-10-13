@@ -1,13 +1,31 @@
 package puzzle8.entity;
 
 import java.awt.Dimension;
+import java.awt.BorderLayout;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import javax.swing.JRadioButton;
+import javax.swing.JLabel;
+import javax.swing.JComboBox;
+import javax.swing.ButtonGroup;
+import javax.swing.BoxLayout;
 
 public class Puzzle8 {
 
     private JFrame window;
     private Puzzle8Game puzzle;
+
+    private JPanel optionsPanel;
+    private JButton solveBtn;
+    private ButtonGroup radioGroup;
+    private JRadioButton radio1;
+    private JRadioButton radio2;
+    private JRadioButton radio3;
+    private JRadioButton radio4;
 
     private Solver solver;
     
@@ -25,13 +43,60 @@ public class Puzzle8 {
     }
 
     public void start() {
-        window = new JFrame("8 Puzzle");
 
+        radio1 = new JRadioButton("Busqueda en anchura");
+        radio2 = new JRadioButton("Busqueda en profundidad");
+        radio3 = new JRadioButton("Busqueda en profundidad iterativa");
+        radio4 = new JRadioButton("Busqueda bidireccional");
+
+        radio1.setActionCommand("a");
+        radio2.setActionCommand("p");
+        radio3.setActionCommand("pi");
+        radio4.setActionCommand("b");
+        
+        radioGroup = new ButtonGroup();
+        radioGroup.add(radio1);
+        radioGroup.add(radio2);
+        radioGroup.add(radio3);
+        radioGroup.add(radio4);
+        
+        solveBtn = new JButton("Resolver");
+        solveBtn.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    String option = radioGroup.getSelection().getActionCommand();
+                    System.out.print("El metodo de busqueda seleccionado es: ");
+                    System.out.println(option);
+
+                    if(option.equals("a"))
+                        solver = new BFSSolver();
+                    else if(option.equals("p"))
+                        solver = new DFSSolver();
+                    else if(option.equals("pi"))
+                        solver = new IDDFSSolver();
+                    else if(option.equals("b"))
+                        solver = new BSSolver();
+
+                    solve();
+                }
+            });
+        
+        optionsPanel = new JPanel();
+        optionsPanel.setLayout(new BoxLayout(optionsPanel, BoxLayout.Y_AXIS));
+        optionsPanel.add(new JLabel("Opciones para resolver el 8-Puzzle"));
+        optionsPanel.add(new JLabel("Selecciona el algoritmo"));
+        optionsPanel.add(radio1);
+        optionsPanel.add(radio2);
+        optionsPanel.add(radio3);
+        optionsPanel.add(radio4);
+        optionsPanel.add(solveBtn);
+        
+        window = new JFrame("8 Puzzle");
+        window.setLayout(new BorderLayout());
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        window.add(puzzle);
+        window.add(puzzle, BorderLayout.WEST);
+        window.add(optionsPanel, BorderLayout.EAST);
         window.pack();
         window.setLocationRelativeTo(null);
-        window.setIgnoreRepaint(true);
         window.setResizable(false);
         window.setVisible(true);
 
@@ -39,11 +104,11 @@ public class Puzzle8 {
     }
 
     public void solve() {
-        //        ArrayList<Direction> sequence = solver.solve(
-        //  puzzle.getBoard(), puzzle.getObjectiveBoard());
+        ArrayList<Direction> sequence = solver.solve(
+            puzzle.getBoard(), puzzle.getObjectiveBoard());
 
         // Prueba de una secuancia de movimientos
-        try { Thread.sleep(1000); }
+        /*        try { Thread.sleep(1000); }
         catch(InterruptedException e) {}
         
         ArrayList<Direction> sequence = new ArrayList<Direction>();
@@ -60,6 +125,8 @@ public class Puzzle8 {
         sequence.add(Direction.LEFT);
         sequence.add(Direction.LEFT);
 
+        */
+        if(sequence.isEmpty()) return;
         for(Direction dir : sequence) {
             puzzle.moveBlank(dir);
             

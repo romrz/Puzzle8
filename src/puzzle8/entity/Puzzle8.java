@@ -63,7 +63,7 @@ public class Puzzle8 {
         for(Direction dir : sequence) {
             puzzle.moveBlank(dir);
             
-            try { Thread.sleep(1000); }
+            try { Thread.sleep(500); }
             catch(InterruptedException e) {}
         }        
     }

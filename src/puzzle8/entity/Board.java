@@ -38,7 +38,15 @@ public class Board{
         }
     }
 
-    public int getValue(int x, int y){
+    public int getBlankX() {
+        return blankX;
+    }
+
+    public int getBlankY() {
+        return blankY;
+    }
+    
+    public byte getValue(int x, int y){
         return matrix[x][y];
     }
 
@@ -87,10 +95,8 @@ public class Board{
 
     public boolean equals(Board board) {
         boolean result = true;
-        
         for(int i = 0; i < n; i++)
             result = result && Arrays.equals(matrix[i], board.matrix[i]);
-
         return result;
     }
 }

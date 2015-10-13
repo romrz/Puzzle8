@@ -23,9 +23,9 @@ import java.awt.event.KeyEvent;
 
 public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
 
-    // Tamaño de cada cuadrito
+    // Tamano de cada cuadrito
     private int tileSize = 128;
-    // Tamaño del tablero
+    // Tamano del tablero
     private int size = 3;
 
     // Tablero que se muestra en la aplicacion
@@ -33,9 +33,32 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
     private Board board;
     // Tablero al que se quiere llegar
     private Board objective;
-
+    // Indica se ya se llego al objetivo
     private boolean objectiveReached = false;
 
+    // Animacion de las transiciones
+    // Posicion del cuadrito que se esta animando en el tablero
+    private int animTileX = -1;
+    private int animTileY = -1;
+    // Posicion inicial en pixeles
+    private int x1;
+    private int y1;
+    // Posicion actual en pixeles
+    private float currentX = 0;
+    private float currentY = 0;
+    // Rapidez de la animacion
+    private float speed = 2f;
+    // Velocidad de la animacion
+    private float velX;
+    private float velY;
+
+    // Almacena la direccion en la que se tiene que mover el espacio vacio
+    // Solo se mueve al inicio de cada frame. Por lo tanto, si llega
+    // una peticion de movimiento mediante el metodo moveBlank almacena la
+    // direccion aqui y espera hasta el inicio del frame para ejecutar el
+    // movimiento.
+    private Direction direction;
+    
     public Puzzle8Game(Board board, Board objective) {
         this.board = board;
         this.objective = objective;
@@ -102,13 +125,56 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
     }
 
     public void moveBlank(Direction dir) {
-        board.move(dir);
+        direction = dir;
+    }
+
+    /**
+     * Se llama cada inicio del frame, si existe un movimiento que realizar
+     */
+    private void move() {
+        animTileX = board.getBlankX();
+        animTileY = board.getBlankY();
+
+        if(!board.move(direction)) {
+            animTileX = animTileY = -1;
+            direction = null;
+            return;
+        }
+
+        x1 = board.getBlankX() * tileSize;
+        y1 = board.getBlankY() * tileSize;
+
+        currentX = currentY = 0;
+        
+        switch(direction) {
+            case UP:
+                velX = 0;
+                velY = speed;
+                break;
+            case DOWN:
+                velX = 0;
+                velY = -speed;
+                break;
+            case LEFT:
+                velX = speed;
+                velY = 0;
+                break;
+            case RIGHT:
+                velX = -speed;
+                velY = 0;
+                break;
+        }
+
         objectiveReached = board.equals(objective);
+        direction = null;
     }
     
     public void run() {
         // Game Loop
         while(true) {
+            // Realiza el movimiento si existe alguno
+            if(direction != null)
+                move();
             render();
         }
     }
@@ -125,11 +191,27 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
 
         // Dibuja el tablero
         g.drawRect(0, 0, size * tileSize, size * tileSize);
+
         for(int y = 0; y < size; y++) {
             for(int x = 0; x < size; x++) {
-                int value = board.getValue(x, y);
-                if(value == 0) continue;
-                drawTile(g, value, x * tileSize, y * tileSize, tileSize);
+                byte value = board.getValue(x, y);
+
+                // Anima el movimiento del cuadrito, si existe alguno que se
+                // este moviendo
+                if(x == animTileX && y == animTileY) {
+                    drawTile(g,
+                             value,
+                             x1 + (int)currentX,
+                             y1 + (int)currentY,
+                             tileSize);
+                    currentX += velX;
+                    currentY += velY;
+                    if(Math.sqrt(currentX*currentX + currentY*currentY) > tileSize)
+                        animTileX = animTileY = -1;
+                }
+                else if(value != 0){
+                    drawTile(g, value, x * tileSize, y * tileSize, tileSize);
+                }
             }
         }
         

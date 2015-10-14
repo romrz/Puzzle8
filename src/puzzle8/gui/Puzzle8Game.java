@@ -9,6 +9,7 @@ import java.awt.Rectangle;
 import java.awt.event.MouseListener;
 import java.awt.event.KeyListener;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 import puzzle8.entity.*;
 
 /**
@@ -123,6 +124,11 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
         }
 
         moveBlank(dir);
+	ArrayList<Board> s = board.expand();
+	System.out.println("Posibles expanciones");
+	for(Board b : s){
+	    System.out.println("---- "+b.getHistory());
+	}
     }
 
     public void moveBlank(Direction dir) {

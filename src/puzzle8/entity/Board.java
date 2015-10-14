@@ -113,7 +113,46 @@ public class Board implements Cloneable{
         return true;
     }
 
-    public Board clone(){
+    public ArrayList<Board> expand(){
+	ArrayList<Board> s = new ArrayList<Board>();
+	Board temp = null;
+	//Si se puede mover a la izquierda
+	if(checkMove(Direction.LEFT) && (history.size()==0 || history.get(history.size()-1)!=Direction.RIGHT)){
+	    try{
+		temp = (Board)this.clone();
+	    }catch(Exception e){}
+	    temp.move(Direction.LEFT);
+	    s.add(temp);
+	}
+	//Si se puede mover a la derecha
+	if(checkMove(Direction.RIGHT) && (history.size()==0 || history.get(history.size()-1)!=Direction.LEFT)){
+	    try{
+		temp = (Board)this.clone();
+	    }catch(Exception e){}
+	    temp.move(Direction.RIGHT);
+	    s.add(temp);
+	}
+	//Si se puede mover a abajo
+	if(checkMove(Direction.DOWN) && (history.size()==0 || history.get(history.size()-1)!=Direction.UP)){
+	    try{
+		temp = (Board)this.clone();
+	    }catch(Exception e){}
+	    temp.move(Direction.DOWN);
+	    s.add(temp);
+	}
+	//Si se puede mover a arriba
+	if(checkMove(Direction.UP) && (history.size()==0 || history.get(history.size()-1)!=Direction.DOWN)){
+	    try{
+		temp = (Board)this.clone();
+	    }catch(Exception e){}
+	    temp.move(Direction.UP);
+	    s.add(temp);	
+	}
+	return s;
+    }
+    
+    @Override
+    public Object clone(){
 	Board b = new Board(n);
 	b.history = (ArrayList<Direction>)history.clone();
 	b.blankX = blankX;
@@ -123,7 +162,7 @@ public class Board implements Cloneable{
 		b.matrix[i][j] = matrix[i][j];
 	    }
 	}
-	return b;
+	return (Object)b;
     }
 
     public boolean equals(Board board) {

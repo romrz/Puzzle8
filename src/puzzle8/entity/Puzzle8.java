@@ -104,8 +104,8 @@ public class Puzzle8 {
     }
 
     public void solve() {
-        ArrayList<Direction> sequence = solver.solve(
-            puzzle.getBoard(), puzzle.getObjectiveBoard());
+        ArrayList<Direction> sequence = solver.solve( // Cambiar 1000 valor por defecto
+            puzzle.getBoard(), puzzle.getObjectiveBoard(),1000); // de limite aunque no se utilice 
 
         // Prueba de una secuancia de movimientos
         /*        try { Thread.sleep(1000); }

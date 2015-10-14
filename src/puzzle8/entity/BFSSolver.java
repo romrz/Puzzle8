@@ -12,7 +12,7 @@ class BFSSolver implements Solver {
 		//TODO
 	}
 
-	public ArrayList<Direction> solve(Board begin, Board end){
+	public ArrayList<Direction> solve(Board begin, Board end, int limit){
 		//TODO
 		return new ArrayList<Direction>();
 	}

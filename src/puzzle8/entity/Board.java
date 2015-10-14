@@ -3,7 +3,7 @@ package puzzle8.entity;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class Board{
+public class Board implements Cloneable{
 
     private int n; //The matrix is n*n
     private byte matrix[][];
@@ -111,6 +111,19 @@ public class Board{
         history.add(dir);
         System.out.println(history); //Debug
         return true;
+    }
+
+    public Board clone(){
+	Board b = new Board(n);
+	b.history = (ArrayList<Direction>)history.clone();
+	b.blankX = blankX;
+	b.blankY = blankY;
+	for(int i=0; i<n; i++){
+	    for(int j=0; j<n; j++){
+		b.matrix[i][j] = matrix[i][j];
+	    }
+	}
+	return b;
     }
 
     public boolean equals(Board board) {

@@ -1,6 +1,6 @@
 package puzzle8.testing;
 
-import puzzle8.entity.*;
+import puzzle8.gui.*;
 
 public class Tester{
 

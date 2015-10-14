@@ -1,4 +1,4 @@
-package puzzle8.entity;
+package puzzle8.gui;
 
 import java.awt.Dimension;
 import java.awt.BorderLayout;
@@ -13,6 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.JComboBox;
 import javax.swing.ButtonGroup;
 import javax.swing.BoxLayout;
+import puzzle8.entity.*;
 
 public class Puzzle8 {
 

@@ -1,4 +1,4 @@
-package puzzle8.entity;
+package puzzle8.gui;
 
 import java.awt.Canvas;
 import java.awt.Graphics2D;
@@ -9,6 +9,7 @@ import java.awt.Rectangle;
 import java.awt.event.MouseListener;
 import java.awt.event.KeyListener;
 import java.awt.event.KeyEvent;
+import puzzle8.entity.*;
 
 /**
  * Esta clase implementa solamente la funcionalidad del juego 8-Puzzle

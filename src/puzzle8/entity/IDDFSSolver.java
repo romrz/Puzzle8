@@ -6,7 +6,7 @@ package puzzle8.entity;
 
 import java.util.ArrayList;
 
-class IDDFSSolver implements Solver {
+public class IDDFSSolver implements Solver {
 	
 	public IDDFSSolver(){
 		//TODO

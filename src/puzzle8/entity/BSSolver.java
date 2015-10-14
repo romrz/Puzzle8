@@ -6,7 +6,7 @@ package puzzle8.entity;
 
 import java.util.ArrayList;
 
-class BSSolver implements Solver {
+public class BSSolver implements Solver {
 	
 	public BSSolver(){
 		//TODO

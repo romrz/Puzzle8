@@ -21,8 +21,6 @@ import puzzle8.entity.*;
  * implementan en clases externas
  */
 
-// TODO: Crear animaciones entre transiciones
-
 public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
 
     // Tamano de cada cuadrito
@@ -49,11 +47,13 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
     private float currentX = 0;
     private float currentY = 0;
     // Rapidez de la animacion
-    private float speed = 2f;
+    private float speed = 1000f;
     // Velocidad de la animacion
     private float velX;
     private float velY;
 
+    private double deltaTime = 0;
+    
     // Almacena la direccion en la que se tiene que mover el espacio vacio
     // Solo se mueve al inicio de cada frame. Por lo tanto, si llega
     // una peticion de movimiento mediante el metodo moveBlank almacena la
@@ -177,12 +177,26 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
     }
     
     public void run() {
+	long previous = System.currentTimeMillis();
+	long elapsed, current, sleepTime;
+	long frameTime = 1000 / 20; // 20 FPS
+	
         // Game Loop
         while(true) {
+	    current = System.currentTimeMillis();
+	    elapsed = current - previous;
+	    previous = current;
+	    deltaTime = elapsed / 1000.0;
+	    //	    System.out.println("Elapsed Time: " + elapsed);
+	    
             // Realiza el movimiento si existe alguno
-            if(direction != null)
-                move();
+            if(direction != null) move();
             render();
+
+	    sleepTime = frameTime - (System.currentTimeMillis() - current);
+	    if(sleepTime < 0) sleepTime = 0;
+	    try { Thread.sleep(sleepTime); }
+	    catch(InterruptedException e) {}
         }
     }
 
@@ -211,8 +225,8 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
                              x1 + (int)currentX,
                              y1 + (int)currentY,
                              tileSize);
-                    currentX += velX;
-                    currentY += velY;
+                    currentX += velX * deltaTime;
+                    currentY += velY * deltaTime;
                     if(Math.sqrt(currentX*currentX + currentY*currentY) > tileSize)
                         animTileX = animTileY = -1;
                 }

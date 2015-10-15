@@ -8,10 +8,10 @@ public class Tester{
 
 	public static void main(String[] args) {
             
-	    //    Puzzle8 puzzle = new Puzzle8();
-	    //            puzzle.start();
+	    Puzzle8 puzzle = new Puzzle8();
+	    puzzle.start();
 	    
-	    Board start =  new Board(3, new byte[][] {
+	    /*	    Board start =  new Board(3, new byte[][] {
 		    {0, 3, 6}, {1, 4, 7}, {2, 5, 8}});
 
 	    ArrayList<Direction> sequence = new ArrayList<Direction>();
@@ -21,12 +21,12 @@ public class Tester{
 	    sequence.add(Direction.DOWN);
 	    sequence.add(Direction.LEFT);
 	    sequence.add(Direction.LEFT);
-	    /*	    sequence.add(Direction.RIGHT);
+	    	    sequence.add(Direction.RIGHT);
 	    sequence.add(Direction.RIGHT);
 	    sequence.add(Direction.UP);
 	    sequence.add(Direction.UP);
 	    sequence.add(Direction.LEFT);
-	    sequence.add(Direction.LEFT);*/
+	    sequence.add(Direction.LEFT);
 
 	    for(Direction d : sequence) {
 		ArrayList<Board> s = start.expand();
@@ -39,7 +39,7 @@ public class Tester{
 		System.out.println("Movimiento: "+ d);
 		System.out.println();
 	    }
-
+	    */
             
 	}
 }

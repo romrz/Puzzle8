@@ -62,23 +62,25 @@ public class Puzzle8 {
         radioGroup.add(radio4);
         
         solveBtn = new JButton("Resolver");
+	solveBtn.setActionCommand("Resolver");
         solveBtn.addActionListener(new ActionListener() {
-                public void actionPerformed(ActionEvent e) {
-                    String option = radioGroup.getSelection().getActionCommand();
-                    System.out.print("El metodo de busqueda seleccionado es: ");
-                    System.out.println(option);
+		public void actionPerformed(ActionEvent e) {
+		    String option = radioGroup.getSelection().getActionCommand();
+		    System.out.print("El metodo de busqueda seleccionado es: ");
+		    System.out.println(option);
 
-                    if(option.equals("a"))
-                        solver = new BFSSolver();
-                    else if(option.equals("p"))
-                        solver = new DFSSolver();
-                    else if(option.equals("pi"))
-                        solver = new IDDFSSolver();
-                    else if(option.equals("b"))
-                        solver = new BSSolver();
+		    if(option.equals("a"))
+			solver = new BFSSolver();
+		    else if(option.equals("p"))
+			solver = new DFSSolver();
+		    else if(option.equals("pi"))
+			solver = new IDDFSSolver();
+		    else if(option.equals("b"))
+			solver = new BSSolver();
 
-                    solve();
-                }
+		    solve();
+		}
+
             });
         
         optionsPanel = new JPanel();
@@ -99,20 +101,18 @@ public class Puzzle8 {
         window.pack();
         window.setLocationRelativeTo(null);
         window.setResizable(false);
+	//	window.setIgnoreRepaint(true);
         window.setVisible(true);
 
         puzzle.start();
     }
 
     public void solve() {
-        ArrayList<Direction> sequence = solver.solve( // Cambiar 1000 valor por defecto
-            puzzle.getBoard(), puzzle.getObjectiveBoard(),1000); // de limite aunque no se utilice 
+	//	ArrayList<Direction> sequence = solver.solve( // Cambiar 1000 valor por defecto
+	//  puzzle.getBoard(), puzzle.getObjectiveBoard(),1000); // de limite aunque no se utilice 
 
         // Prueba de una secuancia de movimientos
-        /*        try { Thread.sleep(1000); }
-        catch(InterruptedException e) {}
-        
-        ArrayList<Direction> sequence = new ArrayList<Direction>();
+	/*	ArrayList<Direction> sequence = new ArrayList<Direction>();
         sequence.add(Direction.RIGHT);
         sequence.add(Direction.RIGHT);
         sequence.add(Direction.DOWN);
@@ -126,14 +126,16 @@ public class Puzzle8 {
         sequence.add(Direction.LEFT);
         sequence.add(Direction.LEFT);
 
-        */
+        
         if(sequence.isEmpty()) return;
         for(Direction dir : sequence) {
             puzzle.moveBlank(dir);
             
             try { Thread.sleep(500); }
             catch(InterruptedException e) {}
-        }        
+        }
+	*/
+
     }
 
 }

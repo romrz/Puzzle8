@@ -51,6 +51,7 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
     // Velocidad de la animacion
     private float velX;
     private float velY;
+    private boolean animationFinished = true;
 
     private double deltaTime = 0;
     
@@ -98,10 +99,10 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
     }
     
     private void drawTile(Graphics2D g, int value, int x, int y, int size) {
-        Color color = new Color(0, 51, 204, 255);
+        Color color = new Color(150, 73, 47, 255);
         int w = 5;
-        if(objectiveReached)
-            color = Color.GREEN.darker().darker();
+        if(objectiveReached && animationFinished)
+            color = new Color(55, 122, 40);
 
         Color light = color.brighter();
         Color dark = color.darker();
@@ -245,7 +246,8 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
         g.fillRect(marginH/2, marginV/2, size * tileSize, size * tileSize);
         g.setColor(lineColor);
         g.drawRect(marginH/2, marginV/2, size * tileSize, size * tileSize);
-
+	
+	animationFinished = true;
         for(int y = 0; y < size; y++) {
             for(int x = 0; x < size; x++) {
                 byte value = board.getValue(x, y);
@@ -253,6 +255,7 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
                 // Anima el movimiento del cuadrito, si existe alguno que se
                 // este moviendo
                 if(x == animTileX && y == animTileY) {
+		    animationFinished = false;
                     drawTile(g,
                              value,
                              x1 + (int)currentX + marginH / 2,
@@ -260,8 +263,11 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
                              tileSize);
                     currentX += velX * deltaTime;
                     currentY += velY * deltaTime;
-                    if(Math.sqrt(currentX*currentX + currentY*currentY) > tileSize)
+                    if(Math.sqrt(currentX*currentX + currentY*currentY) > tileSize) {
                         animTileX = animTileY = -1;
+			animationFinished = true;
+		    }
+		        
                 }
                 else if(value != 0){
                     drawTile(g, value,

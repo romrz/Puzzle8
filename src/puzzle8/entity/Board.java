@@ -87,23 +87,18 @@ public class Board implements Cloneable, Comparable{
         //Verificando si se puede realizar el movimiento
         if(!checkMove(dir)) return false;
         // Calcula la nueva posicion del espacio vacio
-    //  System.out.println("asdf");
         switch(dir) {
             case UP:
                 newY--;
-                //System.out.println("UP"); // Debug
                 break;
             case DOWN:
                 newY++;
-                //System.out.println("DOWN"); // Debug
                 break;
             case LEFT:
                 newX--;
-                //System.out.println("LEFT");  // Debug
                 break;
             case RIGHT:
                 newX++;
-                //System.out.println("RIGHT");  // Debug
                 break;
             default:
                 return false;
@@ -116,7 +111,6 @@ public class Board implements Cloneable, Comparable{
         blankY = newY;
         //Agregando a la lista de movimientos el que se acaba de hacer
         history.add(dir);
-    //        System.out.println(history); //Debug
         return true;
     }
 
@@ -129,7 +123,6 @@ public class Board implements Cloneable, Comparable{
                 temp = (Board)this.clone();
             }catch(Exception e){System.out.println("NoClonado");}
             temp.move(Direction.LEFT);
-            System.out.println("L"); //Debug
             s.add(temp);
         }
         //Si se puede mover a la derecha
@@ -137,12 +130,7 @@ public class Board implements Cloneable, Comparable{
             try{
                 temp = (Board)this.clone();
             }catch(Exception e){System.out.println("NoClonado");}
-            //   System.out.println(temp.blankX + ", "+ temp.blankY); //Debug
             temp.move(Direction.RIGHT);
-            System.out.println("R"); //Debu
-            //      System.out.println(temp.history.get(temp.history.size()-1)); //Debug
-            //      System.out.println(temp.history.size()); //Debug
-
             s.add(temp);
         }
         //Si se puede mover a abajo
@@ -151,7 +139,6 @@ public class Board implements Cloneable, Comparable{
                 temp = (Board)this.clone();
             }catch(Exception e){System.out.println("NoClonado");}
             temp.move(Direction.DOWN);
-            System.out.println("D"); //Debug
             s.add(temp);
         }
         //Si se puede mover a arriba
@@ -160,7 +147,6 @@ public class Board implements Cloneable, Comparable{
                 temp = (Board)this.clone();
             }catch(Exception e){System.out.println("NoClonado");}
             temp.move(Direction.UP);
-            System.out.println("U"); //Debug
             s.add(temp);
         }
         return s;
@@ -169,8 +155,6 @@ public class Board implements Cloneable, Comparable{
     @Override
     public Object clone(){
         Board b = new Board(n);
-        //  b.history = (ArrayList<Direction>)history.clone();
-        //  System.out.println("n: " + b.n);
         for(int i = 0; i < history.size(); i++)
             b.history.add(history.get(i));
         b.blankX = blankX;

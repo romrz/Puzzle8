@@ -31,7 +31,6 @@ public class BSSolver implements Solver {
         aVisitarE.add(end);
         while(true){
             //Calculando la interseccion entre visitadosB y visitadosE
-            System.out.println("Interseccion entre visitB y visitE");
             auxSet.clear();
             auxSet.addAll(visitadosB);
             auxSet.retainAll(visitadosE);
@@ -42,14 +41,11 @@ public class BSSolver implements Solver {
             b = aVisitarB.removeFirst();
             //Agreganddo el que se saco a visitados B
             visitadosB.add(b);
-            System.out.println("Se saco el tope de B: "+b);
             //Expandir el nodo
             auxArray = b.expand();
-            System.out.println("Se expandio tope de B: "+auxArray);
             //Agregando cada elemento a la cola de expancion si no esta
             for(int i=0; i<auxArray.size(); i++){
                 if(visitadosB.contains(auxArray.get(i))) continue;
-                System.out.println("Se agrego a cola aVisitarB: "+auxArray.get(i));
                 aVisitarB.add(auxArray.get(i));
             }
             //Para la busqueda E->B
@@ -57,24 +53,16 @@ public class BSSolver implements Solver {
             b = aVisitarE.removeFirst();
             //Agreganddo el que se saco a visitados EE
             visitadosE.add(b);
-            System.out.println("Se saco el tope de E: "+b);
             //Expandir el nodo
             auxArray = b.expand();
-            System.out.println("Se expandio tope de E: "+auxArray);
             //Agregando cada elemento a la cola de expancion si no esta
             for(int i=0; i<auxArray.size(); i++){
                 if(visitadosE.contains(auxArray.get(i))) continue;
                 aVisitarE.add(auxArray.get(i));
-                System.out.println("Se agrego a cola aVisitarE: "+auxArray.get(i));
             }
             //Agreganddo el que se saco a visitados EE
             visitadosE.add(b);
-            //for(Board bAux: auxArray){
-            //    if(visitadosE.contains(bAux)) continue;
-            //    aVisitarE.add(bAux);
-            //}
         }
-        System.out.println("----Formar lista----");
         //Formando la lista a regresar
         //Tomando los movimientos de B a X
         movBE = auxSet.first().getHistory();
@@ -83,8 +71,6 @@ public class BSSolver implements Solver {
         auxSet.addAll(visitadosE);
         auxSet.retainAll(visitadosB);
         movEB = auxSet.first().getHistory();
-        //Eliminando el ultimo movimiento de E a B
-        movEB.remove(movEB.size()-1);
         //Agregando todos los movimientos en una sola lista
         for(int i=movEB.size()-1; i>=0; i--){
             if(movEB.get(i)==Direction.LEFT){
@@ -97,6 +83,7 @@ public class BSSolver implements Solver {
                 movBE.add(Direction.UP);
             }
         }
+        System.out.println("Result: " + movBE);
         return movBE;
     }
 }

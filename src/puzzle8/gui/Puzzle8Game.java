@@ -139,11 +139,6 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
         }
 
         moveBlank(dir);
-	ArrayList<Board> s = board.expand();
-	System.out.println("Posibles expanciones");
-	for(Board b : s){
-	    System.out.println("---- "+b.getHistory());
-	}
     }
 
     public void moveBlank(Direction dir) {
@@ -163,7 +158,6 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
             return;
         }
         board.clearHistory();
-        //        System.out.println(board.getHistory());
 
         x1 = board.getBlankX() * tileSize;
         y1 = board.getBlankY() * tileSize;

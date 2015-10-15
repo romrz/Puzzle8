@@ -39,23 +39,29 @@ public class BSSolver implements Solver {
             //Para la busqueda B->E
             //Sacar el tope
             b = aVisitarB.removeFirst();
+            //Agreganddo el que se saco a visitados B
+            visitadosB.add(b);
             //Expandir el nodo
             auxArray = b.expand();
             //Agregando cada elemento a la cola de expancion si no esta
-            for(Board bAux: auxArray){
-                if(visitadosB.contains(bAux)) continue;
-                aVisitarB.add(bAux);
+            for(int i=0; i<auxArray.size(); i++){
+                if(visitadosB.contains(auxArray.get(i))) continue;
+                aVisitarB.add(auxArray.get(i));
             }
             //Para la busqueda E->B
             //Sacar el tope
             b = aVisitarE.removeFirst();
+            //Agreganddo el que se saco a visitados EE
+            visitadosE.add(b);
             //Expandir el nodo
             auxArray = b.expand();
             //Agregando cada elemento a la cola de expancion si no esta
-            for(Board bAux: auxArray){
-                if(visitadosE.contains(bAux)) continue;
-                aVisitarE.add(bAux);
+            for(int i=0; i<auxArray.size(); i++){
+                if(visitadosE.contains(auxArray.get(i))) continue;
+                aVisitarE.add(auxArray.get(i));
             }
+            //Agreganddo el que se saco a visitados EE
+            visitadosE.add(b);
         }
         //Formando la lista a regresar
         //Tomando los movimientos de B a X
@@ -65,8 +71,6 @@ public class BSSolver implements Solver {
         auxSet.addAll(visitadosE);
         auxSet.retainAll(visitadosB);
         movEB = auxSet.first().getHistory();
-        //Eliminando el ultimo movimiento de E a B
-        movEB.remove(movEB.size()-1);
         //Agregando todos los movimientos en una sola lista
         for(int i=movEB.size()-1; i>=0; i--){
             if(movEB.get(i)==Direction.LEFT){
@@ -79,6 +83,7 @@ public class BSSolver implements Solver {
                 movBE.add(Direction.UP);
             }
         }
+        System.out.println("Result: " + movBE);
         return movBE;
     }
 }

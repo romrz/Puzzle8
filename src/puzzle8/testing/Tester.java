@@ -39,7 +39,6 @@ public class Tester{
 		System.out.println("Movimiento: "+ d);
 		System.out.println();
 	    }
-	    */
-            
+	    */          
 	}
 }

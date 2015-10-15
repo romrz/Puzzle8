@@ -42,9 +42,9 @@ public class BSSolver implements Solver {
             //Expandir el nodo
             auxArray = b.expand();
             //Agregando cada elemento a la cola de expancion si no esta
-            for(Board bAux: auxArray){
-                if(visitadosB.contains(bAux)) continue;
-                aVisitarB.add(bAux);
+            for(int i=0; i<auxArray.size(); i++){
+                if(visitadosB.contains(auxArray.get(i))) continue;
+                aVisitarB.add(auxArray.get(i));
             }
             //Para la busqueda E->B
             //Sacar el tope
@@ -52,10 +52,14 @@ public class BSSolver implements Solver {
             //Expandir el nodo
             auxArray = b.expand();
             //Agregando cada elemento a la cola de expancion si no esta
-            for(Board bAux: auxArray){
-                if(visitadosE.contains(bAux)) continue;
-                aVisitarE.add(bAux);
+            for(int i=0; i<auxArray.size(); i++){
+                if(visitadosE.contains(auxArray.get(i))) continue;
+                aVisitarE.add(auxArray.get(i));
             }
+            //for(Board bAux: auxArray){
+            //    if(visitadosE.contains(bAux)) continue;
+            //    aVisitarE.add(bAux);
+            //}
         }
         //Formando la lista a regresar
         //Tomando los movimientos de B a X

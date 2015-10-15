@@ -129,7 +129,7 @@ public class Board implements Cloneable{
 		temp = (Board)this.clone();
 	    }catch(Exception e){System.out.println("NoClonado");}
 	    temp.move(Direction.LEFT);
-	    System.out.println("L"); //Debug
+            //	    System.out.println("L"); //Debug
 	    s.add(temp);
 	}
 	//Si se puede mover a la derecha
@@ -139,7 +139,7 @@ public class Board implements Cloneable{
 	    }catch(Exception e){System.out.println("NoClonado");}
 	    //   System.out.println(temp.blankX + ", "+ temp.blankY); //Debug
 	    temp.move(Direction.RIGHT);
-	    System.out.println("R"); //Debu
+            //	    System.out.println("R"); //Debu
 	    //	    System.out.println(temp.history.get(temp.history.size()-1)); //Debug
 	    //	    System.out.println(temp.history.size()); //Debug
 
@@ -151,7 +151,7 @@ public class Board implements Cloneable{
 		temp = (Board)this.clone();
 	    }catch(Exception e){System.out.println("NoClonado");}
 	    temp.move(Direction.DOWN);
-	    System.out.println("D"); //Debug
+            //	    System.out.println("D"); //Debug
 	    s.add(temp);
 	}
 	//Si se puede mover a arriba
@@ -160,7 +160,7 @@ public class Board implements Cloneable{
 		temp = (Board)this.clone();
 	    }catch(Exception e){System.out.println("NoClonado");}
 	    temp.move(Direction.UP);
-	    System.out.println("U"); //Debug
+            //	    System.out.println("U"); //Debug
 	    s.add(temp);
 	}
 	return s;

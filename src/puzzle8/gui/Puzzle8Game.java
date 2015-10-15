@@ -60,6 +60,12 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
     // direccion aqui y espera hasta el inicio del frame para ejecutar el
     // movimiento.
     private Direction direction;
+
+    //
+    private int marginH = 50;
+    private int marginV = 50;
+
+    private Color lineColor = new Color(0, 0, 0, 120);
     
     public Puzzle8Game(Board board, Board objective) {
         this.board = board;
@@ -67,7 +73,7 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
 
         addKeyListener(this);
         setFocusable(true);
-        setSize(new Dimension(size * tileSize, size * tileSize));
+        setSize(new Dimension(size * tileSize + marginH, size * tileSize+marginV));
     }
 
     public void start() {
@@ -83,13 +89,22 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
     }
     
     private void drawTile(Graphics2D g, int value, int x, int y, int size) {
+        Color color = new Color(0, 51, 204, 255);
+        int w = 5;
         if(objectiveReached)
-            g.setColor(Color.GREEN);
-        else
-            g.setColor(Color.RED);
+            color = Color.GREEN.darker().darker();
+
+        Color light = color.brighter();
+        Color dark = color.darker();
+
+        g.setColor(light);
         g.fillRect(x, y, size, size);
-        g.setColor(Color.BLACK);
-        g.drawRect(x, y, size, size);
+        g.setColor(dark);
+        g.fillRect(x + w, y + w, size - w, size - w);
+        g.setColor(color);
+        g.fillRect(x + w, y + w, size - 2*w, size -2*w);
+
+        g.setColor(Color.white);
         g.drawString("" + value, x + size/2, y + size/2);
     }
 
@@ -148,7 +163,7 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
             return;
         }
         board.clearHistory();
-        System.out.println(board.getHistory());
+        //        System.out.println(board.getHistory());
 
         x1 = board.getBlankX() * tileSize;
         y1 = board.getBlankY() * tileSize;
@@ -213,7 +228,20 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
         g.clearRect(0, 0, getWidth(), getHeight());
 
         // Dibuja el tablero
-        g.drawRect(0, 0, size * tileSize, size * tileSize);
+        Color boardColor = new Color(51, 51, 255, 255);
+        int outerMargin = 20;
+        g.setColor(boardColor);
+        g.fillRect(marginH/2-outerMargin, marginV/2-outerMargin,
+                        size*tileSize+2*outerMargin, size*tileSize+2*outerMargin
+                        );
+        g.setColor(lineColor);
+        g.drawRect(marginH/2-outerMargin, marginV/2-outerMargin,
+                        size*tileSize+2*outerMargin, size*tileSize+2*outerMargin
+                        );
+        g.setColor(boardColor.darker().darker());
+        g.fillRect(marginH/2, marginV/2, size * tileSize, size * tileSize);
+        g.setColor(lineColor);
+        g.drawRect(marginH/2, marginV/2, size * tileSize, size * tileSize);
 
         for(int y = 0; y < size; y++) {
             for(int x = 0; x < size; x++) {
@@ -224,8 +252,8 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
                 if(x == animTileX && y == animTileY) {
                     drawTile(g,
                              value,
-                             x1 + (int)currentX,
-                             y1 + (int)currentY,
+                             x1 + (int)currentX + marginH / 2,
+                             y1 + (int)currentY + marginV / 2,
                              tileSize);
                     currentX += velX * deltaTime;
                     currentY += velY * deltaTime;
@@ -233,7 +261,10 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
                         animTileX = animTileY = -1;
                 }
                 else if(value != 0){
-                    drawTile(g, value, x * tileSize, y * tileSize, tileSize);
+                    drawTile(g, value,
+                             x * tileSize + marginH / 2,
+                             y * tileSize + marginV / 2,
+                             tileSize);
                 }
             }
         }

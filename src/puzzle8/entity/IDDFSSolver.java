@@ -15,10 +15,8 @@ public class IDDFSSolver implements Solver {
     public ArrayList<Direction> solve(Board begin, Board end, int limit){
         Board found = null;
         ArrayList<Direction> sequence = new ArrayList<Direction>();
-        //        sequence.add(Direction.RIGHT);
-        //        sequence.add(Direction.LEFT);
         
-        for(int i = 0; i < 10; i++) {
+        for(int i = 0; i < limit; i++) {
             found = DLS(begin, end, i);
             if(found != null) {
                 sequence = found.getHistory();

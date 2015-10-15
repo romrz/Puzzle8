@@ -2,6 +2,7 @@ package puzzle8.gui;
 
 import java.awt.Dimension;
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
@@ -10,9 +11,11 @@ import javax.swing.JPanel;
 import javax.swing.JButton;
 import javax.swing.JRadioButton;
 import javax.swing.JLabel;
+import javax.swing.JTextField;
 import javax.swing.JComboBox;
 import javax.swing.ButtonGroup;
 import javax.swing.BoxLayout;
+import javax.swing.border.EmptyBorder;
 import puzzle8.entity.*;
 
 public class Puzzle8 {
@@ -27,7 +30,12 @@ public class Puzzle8 {
     private JRadioButton radio2;
     private JRadioButton radio3;
     private JRadioButton radio4;
+    private JTextField limit;
 
+    private JLabel info = new JLabel();
+    private JLabel steps = new JLabel();
+
+    private int depthLimit;
     private Solver solver;
     
     public Puzzle8() {
@@ -35,7 +43,7 @@ public class Puzzle8 {
                 {0, 3, 6}, {1, 4, 7}, {2, 5, 8}});
         Board objective = new Board(3, new byte[][] {
                 {0, 3, 6}, {1, 4, 7}, {2, 5, 8}});
-
+        
         puzzle = new Puzzle8Game(start, objective);
     }
 
@@ -60,6 +68,8 @@ public class Puzzle8 {
         radioGroup.add(radio2);
         radioGroup.add(radio3);
         radioGroup.add(radio4);
+
+        limit = new JTextField("1000");
         
         solveBtn = new JButton("Resolver");
 	solveBtn.setActionCommand("Resolver");
@@ -78,12 +88,15 @@ public class Puzzle8 {
 		    else if(option.equals("b"))
 			solver = new BSSolver();
 
-		    solve();
+                    depthLimit = Integer.parseInt(limit.getText());
+
+                    solve();
 		}
 
             });
         
         optionsPanel = new JPanel();
+        //        optionsPanel.setBackground(Color.BLUE);
         optionsPanel.setLayout(new BoxLayout(optionsPanel, BoxLayout.Y_AXIS));
         optionsPanel.add(new JLabel("Opciones para resolver el 8-Puzzle"));
         optionsPanel.add(new JLabel("Selecciona el algoritmo"));
@@ -91,9 +104,14 @@ public class Puzzle8 {
         optionsPanel.add(radio2);
         optionsPanel.add(radio3);
         optionsPanel.add(radio4);
+        optionsPanel.add(new JLabel("Introduce la profundidad maxima"));
+        optionsPanel.add(limit);
         optionsPanel.add(solveBtn);
+        optionsPanel.add(info);
+        optionsPanel.add(steps);
         
-        window = new JFrame("8 Puzzle");
+
+        window = new JFrame("Algoritmos para resolver el 8 Puzzle");
         window.setLayout(new BorderLayout());
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.add(puzzle, BorderLayout.WEST);
@@ -103,7 +121,7 @@ public class Puzzle8 {
         window.setResizable(false);
 	//	window.setIgnoreRepaint(true);
         window.setVisible(true);
-
+        
         puzzle.start();
     }
 
@@ -111,23 +129,10 @@ public class Puzzle8 {
 	ArrayList<Direction> sequence = solver.solve(
             (Board)puzzle.getBoard().clone(),
 	    (Board)puzzle.getObjectiveBoard().clone(),
-	    1000); // de limite aunque no se utilice 
+	    depthLimit); // de limite aunque no se utilice 
 
-        // Prueba de una secuancia de movimientos
-	/*	ArrayList<Direction> sequence = new ArrayList<Direction>();
-        sequence.add(Direction.RIGHT);
-        sequence.add(Direction.RIGHT);
-        sequence.add(Direction.DOWN);
-        sequence.add(Direction.DOWN);
-        sequence.add(Direction.LEFT);
-        sequence.add(Direction.LEFT);
-        sequence.add(Direction.RIGHT);
-        sequence.add(Direction.RIGHT);
-        sequence.add(Direction.UP);
-        sequence.add(Direction.UP);
-        sequence.add(Direction.LEFT);
-        sequence.add(Direction.LEFT);
-	*/
+        steps.setText("Pasos para llegar a la solucion: " + sequence.size());
+        optionsPanel.repaint();
         
         if(sequence.isEmpty()) return;
         for(Direction dir : sequence) {

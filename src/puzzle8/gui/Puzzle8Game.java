@@ -147,6 +147,8 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
             direction = null;
             return;
         }
+        board.clearHistory();
+        System.out.println(board.getHistory());
 
         x1 = board.getBlankX() * tileSize;
         y1 = board.getBlankY() * tileSize;

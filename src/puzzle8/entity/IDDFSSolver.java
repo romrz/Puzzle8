@@ -8,12 +8,42 @@ import java.util.ArrayList;
 
 public class IDDFSSolver implements Solver {
 	
-	public IDDFSSolver(){
-		//TODO
-	}
+    public IDDFSSolver(){
+        //TODO
+    }
 
-	public ArrayList<Direction> solve(Board begin, Board end, int limit){
-		//TODO
-		return new ArrayList<Direction>();
-	}
+    public ArrayList<Direction> solve(Board begin, Board end, int limit){
+        Board found = null;
+        ArrayList<Direction> sequence = new ArrayList<Direction>();
+        //        sequence.add(Direction.RIGHT);
+        //        sequence.add(Direction.LEFT);
+        
+        for(int i = 0; i < 10; i++) {
+            found = DLS(begin, end, i);
+            if(found != null) {
+                sequence = found.getHistory();
+                break;
+            }
+        }
+        
+        System.out.println("Result: " + sequence);
+        return sequence;
+    }
+
+    // Depth Limit Search
+    private Board DLS(Board start, Board goal, int depth) {
+        Board found = null;
+        if((depth == 0) && start.equals(goal)) {
+            return start;
+        }
+        else if(depth > 0) {
+            ArrayList<Board> children = start.expand();
+            for(Board child : children) {
+                found = DLS(child, goal, depth - 1);
+                if(found != null)
+                    return found;
+            }
+        }
+        return null;
+    }
 }

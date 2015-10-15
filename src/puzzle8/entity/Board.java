@@ -1,3 +1,4 @@
+
 package puzzle8.entity;
 
 import java.util.Arrays;
@@ -58,6 +59,10 @@ public class Board implements Cloneable{
 
     public ArrayList<Direction> getHistory(){
         return history;
+    }
+
+    public void clearHistory() {
+        history.clear();
     }
 
     /**

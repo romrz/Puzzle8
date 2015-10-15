@@ -31,20 +31,37 @@ public class Puzzle8 {
     private JRadioButton radio3;
     private JRadioButton radio4;
     private JTextField limit;
+    private JTextField sizeField;
 
     private JLabel info = new JLabel();
     private JLabel steps = new JLabel();
 
+    private int size = 3;
     private int depthLimit;
     private Solver solver;
     
     public Puzzle8() {
+	/*
         Board start =  new Board(3, new byte[][] {
                 {0, 3, 6}, {1, 4, 7}, {2, 5, 8}});
         Board objective = new Board(3, new byte[][] {
                 {0, 3, 6}, {1, 4, 7}, {2, 5, 8}});
-        
-        puzzle = new Puzzle8Game(start, objective);
+
+	 */
+	
+        puzzle = new Puzzle8Game(createBoard(size), createBoard(size), size);
+    }
+
+    public Board createBoard(int size) {
+	byte b[][] = new byte[size][size];
+
+	byte k = 0;
+	for(int i = 0; i < size; i++)
+	    for(int j = 0; j < size; j++)
+		b[j][i] = k++;
+
+	return new Board(size, b);
+	
     }
 
     public void setSolver(Solver solver) {
@@ -70,7 +87,9 @@ public class Puzzle8 {
         radioGroup.add(radio4);
 
         limit = new JTextField("1000");
-        
+	limit.setMaximumSize(new Dimension(
+	    Integer.MAX_VALUE, limit.getPreferredSize().height + 10));
+
         solveBtn = new JButton("Resolver");
 	solveBtn.setActionCommand("Resolver");
         solveBtn.addActionListener(new ActionListener() {
@@ -89,7 +108,7 @@ public class Puzzle8 {
 			solver = new BSSolver();
 
                     depthLimit = Integer.parseInt(limit.getText());
-
+		    
                     solve();
 		}
 
@@ -109,7 +128,6 @@ public class Puzzle8 {
         optionsPanel.add(solveBtn);
         optionsPanel.add(info);
         optionsPanel.add(steps);
-        
 
         window = new JFrame("Algoritmos para resolver el 8 Puzzle");
         window.setLayout(new BorderLayout());

@@ -26,7 +26,7 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
     // Tamano de cada cuadrito
     private int tileSize = 128;
     // Tamano del tablero
-    private int size = 3;
+    private int size;
 
     // Tablero que se muestra en la aplicacion
     // y al cual se le aplican los movimientos
@@ -67,9 +67,10 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
 
     private Color lineColor = new Color(0, 0, 0, 120);
     
-    public Puzzle8Game(Board board, Board objective) {
+    public Puzzle8Game(Board board, Board objective, int size) {
         this.board = board;
         this.objective = objective;
+	this.size = size;
 
         addKeyListener(this);
         setFocusable(true);
@@ -80,6 +81,14 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
         new Thread(this, "Game").start();
     }
     
+    public void setBoard(Board board) {
+	this.board = board;
+    }
+
+    public void setObjectiveBoard(Board ob) {
+	this.objective = ob;
+    }
+
     public Board getBoard() {
         return board;
     }

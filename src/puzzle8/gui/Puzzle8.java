@@ -108,8 +108,10 @@ public class Puzzle8 {
     }
 
     public void solve() {
-	//	ArrayList<Direction> sequence = solver.solve( // Cambiar 1000 valor por defecto
-	//  puzzle.getBoard(), puzzle.getObjectiveBoard(),1000); // de limite aunque no se utilice 
+	ArrayList<Direction> sequence = solver.solve(
+            (Board)puzzle.getBoard().clone(),
+	    (Board)puzzle.getObjectiveBoard().clone(),
+	    1000); // de limite aunque no se utilice 
 
         // Prueba de una secuancia de movimientos
 	/*	ArrayList<Direction> sequence = new ArrayList<Direction>();
@@ -125,7 +127,7 @@ public class Puzzle8 {
         sequence.add(Direction.UP);
         sequence.add(Direction.LEFT);
         sequence.add(Direction.LEFT);
-
+	*/
         
         if(sequence.isEmpty()) return;
         for(Direction dir : sequence) {
@@ -134,7 +136,7 @@ public class Puzzle8 {
             try { Thread.sleep(500); }
             catch(InterruptedException e) {}
         }
-	*/
+	
 
     }
 

@@ -187,8 +187,18 @@ public class Board implements Cloneable, Comparable{
 
     public int compareTo(Object ob){
         Board board = (Board)ob;
-        int result = 0;
-        if(this.equals(board))return result;
-        return toString().compareTo(board.toString());
+        int sumA = 0;
+        int sumB = 0;
+        int nn = n*n;
+        int valPos = 1;
+        //Calculando las sumas ponderadas de su matrix
+        for(int i=0; i<n; i++){
+            for(int j=0; j<n; j++){
+                sumA += matrix[j][i]*valPos;
+                sumB += board.matrix[j][i]*valPos;
+                valPos*=nn;
+            }    
+        }
+        return sumA-sumB;
     }
 }

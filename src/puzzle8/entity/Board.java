@@ -187,7 +187,7 @@ public class Board implements Cloneable, Comparable{
         String r = "";
         for (int i=0; i<n; i++) {
             for (int j=0; j<n; j++) {
-                r += matrix[i][j]+",";
+                r += matrix[j][i]+",";
             }
             r += "\n";
         }

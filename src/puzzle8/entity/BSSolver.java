@@ -1,6 +1,8 @@
 /*
     Bidirectional Search Solver
     Busqueda Bidireccional
+
+    Luis Alberto Flores Baca
 */
 package puzzle8.entity;
 

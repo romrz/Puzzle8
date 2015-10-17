@@ -1,6 +1,8 @@
 /*
 	Depth First Search Solver
 	Busqueda Primero en Profundidad
+
+        Ricardo Hernandez Ramirez
 */
 package puzzle8.entity;
 

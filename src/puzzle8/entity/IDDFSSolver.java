@@ -1,6 +1,8 @@
 /*
 	Iterative Deepening Depth-First Search Solver
 	Busqueda Primero en Profundidad Iterativa
+
+        Romario Ramirez Calderon
 */
 package puzzle8.entity;
 

@@ -81,7 +81,7 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
     public void start() {
         new Thread(this, "Game").start();
     }
-    
+
     public void setBoard(Board board) {
 	this.board = board;
     }
@@ -97,12 +97,18 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
     public Board getObjectiveBoard() {
         return objective;
     }
+
+    public void checkObjectiveReached() {
+        objectiveReached = board.equals(objective);
+    }
     
     private void drawTile(Graphics2D g, int value, int x, int y, int size) {
         Color color = new Color(150, 73, 47, 255);
         int w = 5;
         if(objectiveReached && animationFinished)
             color = new Color(55, 122, 40);
+        if(!objectiveReached)
+            new Color(150, 73, 47, 255);
 
         Color light = color.brighter();
         Color dark = color.darker();
@@ -193,7 +199,7 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
                 break;
         }
 
-        objectiveReached = board.equals(objective);
+        checkObjectiveReached();
         direction = null;
     }
     
@@ -201,7 +207,8 @@ public class Puzzle8Game extends Canvas implements Runnable, KeyListener {
 	long previous = System.currentTimeMillis();
 	long elapsed, current, sleepTime;
 	long frameTime = 1000 / 20; // 20 FPS
-	
+
+        checkObjectiveReached();
         // Game Loop
         while(true) {
 	    current = System.currentTimeMillis();

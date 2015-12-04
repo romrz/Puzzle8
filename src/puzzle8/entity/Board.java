@@ -4,7 +4,7 @@ package puzzle8.entity;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class Board implements Cloneable, Comparable{
+public class Board implements Cloneable, Comparable {
 
     private int n; //The matrix is n*n
     private byte matrix[][];
@@ -15,10 +15,21 @@ public class Board implements Cloneable, Comparable{
     //Historial de movimientos
     private ArrayList<Direction> history;
 
+
+    // Campos necesarios para la busqueda A*
+    private int f;
+    private int g;  // Costo real 
+    private int h;  // Heiristica
+
+    // Para crear el arbol
+    public static int childCount;
+    public int childNum;
+    
+    
     public Board(int n){
         if(n<3) n=3;
-    this.n = n;
-    this.matrix = new byte[n][n];
+        this.n = n;
+        this.matrix = new byte[n][n];
         history = new ArrayList<Direction>();
     }
 
@@ -27,6 +38,7 @@ public class Board implements Cloneable, Comparable{
         this.matrix = matrix;
         history = new ArrayList<Direction>();
         findBlankPosition();
+        calculateCost();
     }
 
     /**
@@ -43,6 +55,10 @@ public class Board implements Cloneable, Comparable{
                 }
             }
         }
+    }
+
+    public int getSize() {
+        return n;
     }
 
     public int getBlankX() {
@@ -65,16 +81,48 @@ public class Board implements Cloneable, Comparable{
         history.clear();
     }
 
+
+    public void setHeuristic(int h) {
+        this.h = h;
+    }
+    
+    public void setPathCost(int f) {
+        this.g = g;
+    }
+    
+    public int getPathCost() {
+        return g + h;
+    }
+
+    public int getHeuristic() {
+        return h;
+    }
+
+    public int getNodeCost() {
+        return g;
+    }
+
+    private void calculateCost() {
+        // Calcula la heuristica
+        h = 0;
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < n; j++) {
+                if(matrix[i][j] == 0) continue;
+
+                
+            }
+        }
+    }
+
     /**
     * Verifica si un movimiento se puede realizar
-    *
     */
     public boolean checkMove(Direction dir){
         switch(dir){
             case UP: return (blankY-1)>=0;
             case DOWN: return (blankY+1)<n;
             case LEFT: return (blankX-1)>=0;
-        case RIGHT: return (blankX+1)<n;
+            case RIGHT: return (blankX+1)<n;
             default: return false;
         }
     }
@@ -111,6 +159,9 @@ public class Board implements Cloneable, Comparable{
         blankY = newY;
         //Agregando a la lista de movimientos el que se acaba de hacer
         history.add(dir);
+        
+        calculateCost();
+        
         return true;
     }
 
@@ -123,6 +174,8 @@ public class Board implements Cloneable, Comparable{
                 temp = (Board)this.clone();
             }catch(Exception e){System.out.println("NoClonado");}
             temp.move(Direction.LEFT);
+            temp.g = g + 1;
+            temp.childNum = ++childCount;
             s.add(temp);
         }
         //Si se puede mover a la derecha
@@ -131,6 +184,8 @@ public class Board implements Cloneable, Comparable{
                 temp = (Board)this.clone();
             }catch(Exception e){System.out.println("NoClonado");}
             temp.move(Direction.RIGHT);
+            temp.g = g + 1;
+            temp.childNum = ++childCount;
             s.add(temp);
         }
         //Si se puede mover a abajo
@@ -139,6 +194,8 @@ public class Board implements Cloneable, Comparable{
                 temp = (Board)this.clone();
             }catch(Exception e){System.out.println("NoClonado");}
             temp.move(Direction.DOWN);
+            temp.g = g + 1;
+            temp.childNum = ++childCount;
             s.add(temp);
         }
         //Si se puede mover a arriba
@@ -147,6 +204,8 @@ public class Board implements Cloneable, Comparable{
                 temp = (Board)this.clone();
             }catch(Exception e){System.out.println("NoClonado");}
             temp.move(Direction.UP);
+            temp.g = g + 1;
+            temp.childNum = ++childCount;
             s.add(temp);
         }
         return s;
@@ -159,6 +218,10 @@ public class Board implements Cloneable, Comparable{
             b.history.add(history.get(i));
         b.blankX = blankX;
         b.blankY = blankY;
+        
+        b.g = this.g;
+        b.h = this.h;
+        
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
                 b.matrix[i][j] = matrix[i][j];

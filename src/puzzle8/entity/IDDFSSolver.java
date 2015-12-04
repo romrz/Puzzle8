@@ -9,7 +9,9 @@ package puzzle8.entity;
 import java.util.ArrayList;
 
 public class IDDFSSolver implements Solver {
-	
+
+    private int expandedNodes = 0;
+    
     public IDDFSSolver(){
 
     }
@@ -55,6 +57,8 @@ public class IDDFSSolver implements Solver {
             // hacer a partir de la actual
             ArrayList<Board> children = start.expand();
 
+            expandedNodes++;
+
             // Para cada hijo vuelve a hacer lo mismo
             for(Board child : children) {
                 found = DLS(child, goal, depth - 1);
@@ -64,4 +68,9 @@ public class IDDFSSolver implements Solver {
         }
         return null;
     }
+
+    public int getExpandedNodesCount() {
+        return expandedNodes;
+    }
+
 }

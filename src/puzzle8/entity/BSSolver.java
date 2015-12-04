@@ -13,6 +13,8 @@ import java.util.SortedSet;
 
 
 public class BSSolver implements Solver {
+
+    private int expandedNodes = 0;
     
     public BSSolver(){
         //TODO
@@ -45,6 +47,9 @@ public class BSSolver implements Solver {
             visitadosB.add(b);
             //Expandir el nodo
             auxArray = b.expand();
+
+            expandedNodes++;
+            
             //Agregando cada elemento a la cola de expancion si no esta
             for(int i=0; i<auxArray.size(); i++){
                 if(visitadosB.contains(auxArray.get(i))) continue;
@@ -87,5 +92,9 @@ public class BSSolver implements Solver {
         }
         System.out.println("Result: " + movBE);
         return movBE;
+    }
+
+    public int getExpandedNodesCount() {
+        return expandedNodes;
     }
 }

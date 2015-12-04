@@ -33,11 +33,13 @@ public class Puzzle8 implements Runnable {
     private JRadioButton radio2;
     private JRadioButton radio3;
     private JRadioButton radio4;
+    private JRadioButton radio5;
     private JTextField limit;
     private JTextField sizeField;
 
-    private JLabel info = new JLabel();
-    private JLabel steps = new JLabel();
+    private JLabel info = new JLabel(" ");
+    private JLabel steps = new JLabel(" ");
+    private JLabel nodeNum = new JLabel(" ");
 
     private int size = 3;
     private int depthLimit;
@@ -70,11 +72,13 @@ public class Puzzle8 implements Runnable {
         radio2 = new JRadioButton("Busqueda en profundidad");
         radio3 = new JRadioButton("Busqueda en profundidad iterativa");
         radio4 = new JRadioButton("Busqueda bidireccional");
+        radio5 = new JRadioButton("Busqueda A*");
 
         radio1.setActionCommand("a");
         radio2.setActionCommand("p");
         radio3.setActionCommand("pi");
         radio4.setActionCommand("b");
+        radio5.setActionCommand("a*");
 
         radio1.setSelected(true);
         
@@ -83,6 +87,7 @@ public class Puzzle8 implements Runnable {
         radioGroup.add(radio2);
         radioGroup.add(radio3);
         radioGroup.add(radio4);
+        radioGroup.add(radio5);
 
         limit = new JTextField("100");
 	limit.setMaximumSize(new Dimension(
@@ -103,6 +108,8 @@ public class Puzzle8 implements Runnable {
 			solver = new IDDFSSolver();
 		    else if(option.equals("b"))
 			solver = new BSSolver();
+                    else if(option.equals("a*"))
+                        solver = new AStarSolver();
 
                     depthLimit = Integer.parseInt(limit.getText());
 
@@ -143,6 +150,7 @@ public class Puzzle8 implements Runnable {
         optionsPanel.add(radio2);
         optionsPanel.add(radio3);
         optionsPanel.add(radio4);
+        optionsPanel.add(radio5);
         optionsPanel.add(new JLabel("  "));
         optionsPanel.add(new JLabel("Introduce la profundidad maxima"));
         optionsPanel.add(new JLabel("con la que trabajara el algoritmo"));
@@ -154,6 +162,7 @@ public class Puzzle8 implements Runnable {
         optionsPanel.add(new JLabel(" "));
         optionsPanel.add(info);
         optionsPanel.add(steps);
+        optionsPanel.add(nodeNum);
 
         window = new JFrame("Algoritmos para resolver el 8 Puzzle");
         window.setLayout(new BorderLayout());
@@ -202,7 +211,8 @@ public class Puzzle8 implements Runnable {
             (Board)puzzle.getBoard().clone(),
 	    (Board)puzzle.getObjectiveBoard().clone(),
 	    depthLimit);
-        steps.setText("Resuelto. Pasos para llegar a la solucion: " + sequence.size());
+        steps.setText("Resuelto. Pasos para llegar a la solucion: "+sequence.size());
+        nodeNum.setText("Numero de nodos expandidos: " + solver.getExpandedNodesCount());
         optionsPanel.repaint();
 
         stopMoving = false;

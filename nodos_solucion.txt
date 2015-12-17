@@ -1,0 +1,108 @@
+3 5 7 
+0 1 8 
+2 4 6 
+
+Direccion: DOWN
+3 5 7 
+2 1 8 
+0 4 6 
+
+Direccion: RIGHT
+3 5 7 
+2 1 8 
+4 0 6 
+
+Direccion: RIGHT
+3 5 7 
+2 1 8 
+4 6 0 
+
+Direccion: UP
+3 5 7 
+2 1 0 
+4 6 8 
+
+Direccion: UP
+3 5 0 
+2 1 7 
+4 6 8 
+
+Direccion: LEFT
+3 0 5 
+2 1 7 
+4 6 8 
+
+Direccion: DOWN
+3 1 5 
+2 0 7 
+4 6 8 
+
+Direccion: LEFT
+3 1 5 
+0 2 7 
+4 6 8 
+
+Direccion: UP
+0 1 5 
+3 2 7 
+4 6 8 
+
+Direccion: RIGHT
+1 0 5 
+3 2 7 
+4 6 8 
+
+Direccion: DOWN
+1 2 5 
+3 0 7 
+4 6 8 
+
+Direccion: RIGHT
+1 2 5 
+3 7 0 
+4 6 8 
+
+Direccion: UP
+1 2 0 
+3 7 5 
+4 6 8 
+
+Direccion: LEFT
+1 0 2 
+3 7 5 
+4 6 8 
+
+Direccion: LEFT
+0 1 2 
+3 7 5 
+4 6 8 
+
+Direccion: DOWN
+3 1 2 
+0 7 5 
+4 6 8 
+
+Direccion: DOWN
+3 1 2 
+4 7 5 
+0 6 8 
+
+Direccion: RIGHT
+3 1 2 
+4 7 5 
+6 0 8 
+
+Direccion: UP
+3 1 2 
+4 0 5 
+6 7 8 
+
+Direccion: LEFT
+3 1 2 
+0 4 5 
+6 7 8 
+
+Direccion: UP
+0 1 2 
+3 4 5 
+6 7 8 

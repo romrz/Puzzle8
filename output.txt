@@ -1,895 +1,8750 @@
 Expandiendo Nodo: 0
-1 6 2 
-3 4 5 
-0 7 8 
-3 = 0 + 3
+2 1 5 
+4 3 8 
+6 0 7 
+7 = 0 + 7
 
 -- Hijos --
 Nodo hijo: 1
-1 6 2 
-3 4 5 
-7 0 8 
-5 = 1 + 4
+2 1 5 
+4 3 8 
+0 6 7 
+9 = 1 + 8
 Nodo hijo: 2
-1 6 2 
-0 4 5 
-3 7 8 
-5 = 1 + 4
--- --
-
-Expandiendo Nodo: 1
-1 6 2 
-3 4 5 
-7 0 8 
-5 = 1 + 4
-
--- Hijos --
+2 1 5 
+4 3 8 
+6 7 0 
+7 = 1 + 6
 Nodo hijo: 3
-1 6 2 
-3 4 5 
-7 8 0 
-7 = 2 + 5
-Nodo hijo: 4
-1 6 2 
-3 0 5 
-7 4 8 
-7 = 2 + 5
+2 1 5 
+4 0 8 
+6 3 7 
+8 = 1 + 7
 -- --
 
 Expandiendo Nodo: 2
-1 6 2 
-0 4 5 
-3 7 8 
-5 = 1 + 4
+2 1 5 
+4 3 8 
+6 7 0 
+7 = 1 + 6
 
 -- Hijos --
-Nodo hijo: 5
-1 6 2 
-4 0 5 
-3 7 8 
+Nodo hijo: 4
+2 1 5 
+4 3 0 
+6 7 8 
 7 = 2 + 5
-Nodo hijo: 6
-0 6 2 
-1 4 5 
-3 7 8 
-5 = 2 + 3
--- --
-
-Expandiendo Nodo: 6
-0 6 2 
-1 4 5 
-3 7 8 
-5 = 2 + 3
-
--- Hijos --
-Nodo hijo: 7
-6 0 2 
-1 4 5 
-3 7 8 
-7 = 3 + 4
--- --
-
-Expandiendo Nodo: 3
-1 6 2 
-3 4 5 
-7 8 0 
-7 = 2 + 5
-
--- Hijos --
-Nodo hijo: 8
-1 6 2 
-3 4 0 
-7 8 5 
-9 = 3 + 6
--- --
-
-Expandiendo Nodo: 7
-6 0 2 
-1 4 5 
-3 7 8 
-7 = 3 + 4
-
--- Hijos --
-Nodo hijo: 9
-6 2 0 
-1 4 5 
-3 7 8 
-9 = 4 + 5
-Nodo hijo: 10
-6 4 2 
-1 0 5 
-3 7 8 
-9 = 4 + 5
 -- --
 
 Expandiendo Nodo: 4
-1 6 2 
-3 0 5 
-7 4 8 
+2 1 5 
+4 3 0 
+6 7 8 
 7 = 2 + 5
 
 -- Hijos --
-Nodo hijo: 11
-1 6 2 
-0 3 5 
-7 4 8 
-9 = 3 + 6
-Nodo hijo: 12
-1 6 2 
-3 5 0 
-7 4 8 
-9 = 3 + 6
-Nodo hijo: 13
-1 0 2 
-3 6 5 
-7 4 8 
+Nodo hijo: 5
+2 1 5 
+4 0 3 
+6 7 8 
 8 = 3 + 5
+Nodo hijo: 6
+2 1 0 
+4 3 5 
+6 7 8 
+7 = 3 + 4
+-- --
+
+Expandiendo Nodo: 6
+2 1 0 
+4 3 5 
+6 7 8 
+7 = 3 + 4
+
+-- Hijos --
+Nodo hijo: 7
+2 0 1 
+4 3 5 
+6 7 8 
+9 = 4 + 5
+-- --
+
+Expandiendo Nodo: 3
+2 1 5 
+4 0 8 
+6 3 7 
+8 = 1 + 7
+
+-- Hijos --
+Nodo hijo: 8
+2 1 5 
+0 4 8 
+6 3 7 
+8 = 2 + 6
+Nodo hijo: 9
+2 1 5 
+4 8 0 
+6 3 7 
+9 = 2 + 7
+Nodo hijo: 10
+2 0 5 
+4 1 8 
+6 3 7 
+10 = 2 + 8
 -- --
 
 Expandiendo Nodo: 5
-1 6 2 
-4 0 5 
-3 7 8 
-7 = 2 + 5
-
--- Hijos --
-Nodo hijo: 14
-1 6 2 
-4 5 0 
-3 7 8 
-9 = 3 + 6
-Nodo hijo: 15
-1 6 2 
-4 7 5 
-3 0 8 
-9 = 3 + 6
-Nodo hijo: 16
-1 0 2 
-4 6 5 
-3 7 8 
-8 = 3 + 5
--- --
-
-Expandiendo Nodo: 13
-1 0 2 
-3 6 5 
-7 4 8 
+2 1 5 
+4 0 3 
+6 7 8 
 8 = 3 + 5
 
 -- Hijos --
-Nodo hijo: 17
-0 1 2 
-3 6 5 
-7 4 8 
-7 = 4 + 3
-Nodo hijo: 18
-1 2 0 
-3 6 5 
-7 4 8 
+Nodo hijo: 11
+2 1 5 
+0 4 3 
+6 7 8 
+8 = 4 + 4
+Nodo hijo: 12
+2 1 5 
+4 7 3 
+6 0 8 
 10 = 4 + 6
--- --
-
-Expandiendo Nodo: 17
-0 1 2 
-3 6 5 
-7 4 8 
-7 = 4 + 3
-
--- Hijos --
-Nodo hijo: 19
-3 1 2 
-0 6 5 
-7 4 8 
-10 = 5 + 5
--- --
-
-Expandiendo Nodo: 16
-1 0 2 
-4 6 5 
-3 7 8 
-8 = 3 + 5
-
--- Hijos --
-Nodo hijo: 20
-0 1 2 
-4 6 5 
-3 7 8 
-7 = 4 + 3
-Nodo hijo: 21
-1 2 0 
-4 6 5 
-3 7 8 
+Nodo hijo: 13
+2 0 5 
+4 1 3 
+6 7 8 
 10 = 4 + 6
--- --
-
-Expandiendo Nodo: 20
-0 1 2 
-4 6 5 
-3 7 8 
-7 = 4 + 3
-
--- Hijos --
-Nodo hijo: 22
-4 1 2 
-0 6 5 
-3 7 8 
-9 = 5 + 4
--- --
-
-Expandiendo Nodo: 9
-6 2 0 
-1 4 5 
-3 7 8 
-9 = 4 + 5
-
--- Hijos --
-Nodo hijo: 23
-6 2 5 
-1 4 0 
-3 7 8 
-11 = 5 + 6
--- --
-
-Expandiendo Nodo: 22
-4 1 2 
-0 6 5 
-3 7 8 
-9 = 5 + 4
-
--- Hijos --
-Nodo hijo: 24
-4 1 2 
-6 0 5 
-3 7 8 
-10 = 6 + 4
-Nodo hijo: 25
-4 1 2 
-3 6 5 
-0 7 8 
-9 = 6 + 3
 -- --
 
 Expandiendo Nodo: 8
-1 6 2 
-3 4 0 
-7 8 5 
-9 = 3 + 6
+2 1 5 
+0 4 8 
+6 3 7 
+8 = 2 + 6
 
 -- Hijos --
-Nodo hijo: 26
-1 6 2 
-3 0 4 
-7 8 5 
-11 = 4 + 7
-Nodo hijo: 27
-1 6 0 
-3 4 2 
-7 8 5 
-11 = 4 + 7
--- --
-
-Expandiendo Nodo: 25
-4 1 2 
-3 6 5 
-0 7 8 
-9 = 6 + 3
-
--- Hijos --
-Nodo hijo: 28
-4 1 2 
-3 6 5 
-7 0 8 
-11 = 7 + 4
--- --
-
-Expandiendo Nodo: 15
-1 6 2 
-4 7 5 
-3 0 8 
-9 = 3 + 6
-
--- Hijos --
-Nodo hijo: 29
-1 6 2 
-4 7 5 
-0 3 8 
-10 = 4 + 6
-Nodo hijo: 30
-1 6 2 
-4 7 5 
-3 8 0 
-11 = 4 + 7
+Nodo hijo: 14
+2 1 5 
+6 4 8 
+0 3 7 
+10 = 3 + 7
+Nodo hijo: 15
+0 1 5 
+2 4 8 
+6 3 7 
+8 = 3 + 5
 -- --
 
 Expandiendo Nodo: 11
-1 6 2 
-0 3 5 
-7 4 8 
-9 = 3 + 6
+2 1 5 
+0 4 3 
+6 7 8 
+8 = 4 + 4
 
 -- Hijos --
-Nodo hijo: 31
-1 6 2 
-7 3 5 
-0 4 8 
-10 = 4 + 6
-Nodo hijo: 32
-0 6 2 
-1 3 5 
-7 4 8 
-9 = 4 + 5
--- --
-
-Expandiendo Nodo: 10
-6 4 2 
-1 0 5 
-3 7 8 
-9 = 4 + 5
-
--- Hijos --
-Nodo hijo: 33
-6 4 2 
-0 1 5 
-3 7 8 
+Nodo hijo: 16
+2 1 5 
+6 4 3 
+0 7 8 
 10 = 5 + 5
-Nodo hijo: 34
-6 4 2 
-1 5 0 
-3 7 8 
-11 = 5 + 6
-Nodo hijo: 35
-6 4 2 
-1 7 5 
-3 0 8 
-11 = 5 + 6
+Nodo hijo: 17
+0 1 5 
+2 4 3 
+6 7 8 
+8 = 5 + 3
 -- --
 
-Expandiendo Nodo: 32
-0 6 2 
-1 3 5 
-7 4 8 
-9 = 4 + 5
+Expandiendo Nodo: 15
+0 1 5 
+2 4 8 
+6 3 7 
+8 = 3 + 5
 
 -- Hijos --
-Nodo hijo: 36
-6 0 2 
-1 3 5 
-7 4 8 
-11 = 5 + 6
+Nodo hijo: 18
+1 0 5 
+2 4 8 
+6 3 7 
+11 = 4 + 7
 -- --
 
-Expandiendo Nodo: 12
-1 6 2 
-3 5 0 
-7 4 8 
+Expandiendo Nodo: 17
+0 1 5 
+2 4 3 
+6 7 8 
+8 = 5 + 3
+
+-- Hijos --
+Nodo hijo: 19
+1 0 5 
+2 4 3 
+6 7 8 
+11 = 6 + 5
+-- --
+
+Expandiendo Nodo: 9
+2 1 5 
+4 8 0 
+6 3 7 
+9 = 2 + 7
+
+-- Hijos --
+Nodo hijo: 20
+2 1 5 
+4 8 7 
+6 3 0 
+10 = 3 + 7
+Nodo hijo: 21
+2 1 0 
+4 8 5 
+6 3 7 
 9 = 3 + 6
-
--- Hijos --
-Nodo hijo: 37
-1 6 2 
-3 5 8 
-7 4 0 
-11 = 4 + 7
-Nodo hijo: 38
-1 6 0 
-3 5 2 
-7 4 8 
-11 = 4 + 7
 -- --
 
-Expandiendo Nodo: 14
-1 6 2 
-4 5 0 
-3 7 8 
-9 = 3 + 6
+Expandiendo Nodo: 1
+2 1 5 
+4 3 8 
+0 6 7 
+9 = 1 + 8
 
 -- Hijos --
-Nodo hijo: 39
-1 6 2 
-4 5 8 
-3 7 0 
-11 = 4 + 7
-Nodo hijo: 40
-1 6 0 
-4 5 2 
-3 7 8 
-11 = 4 + 7
+Nodo hijo: 22
+2 1 5 
+0 3 8 
+4 6 7 
+10 = 2 + 8
 -- --
 
 Expandiendo Nodo: 21
-1 2 0 
-4 6 5 
-3 7 8 
-10 = 4 + 6
+2 1 0 
+4 8 5 
+6 3 7 
+9 = 3 + 6
 
 -- Hijos --
-Nodo hijo: 41
-1 2 5 
-4 6 0 
-3 7 8 
-12 = 5 + 7
+Nodo hijo: 23
+2 0 1 
+4 8 5 
+6 3 7 
+11 = 4 + 7
 -- --
 
-Expandiendo Nodo: 18
-1 2 0 
-3 6 5 
-7 4 8 
-10 = 4 + 6
+Expandiendo Nodo: 7
+2 0 1 
+4 3 5 
+6 7 8 
+9 = 4 + 5
 
 -- Hijos --
-Nodo hijo: 42
-1 2 5 
-3 6 0 
-7 4 8 
-12 = 5 + 7
--- --
-
-Expandiendo Nodo: 19
-3 1 2 
-0 6 5 
-7 4 8 
+Nodo hijo: 24
+0 2 1 
+4 3 5 
+6 7 8 
+9 = 5 + 4
+Nodo hijo: 25
+2 3 1 
+4 0 5 
+6 7 8 
 10 = 5 + 5
-
--- Hijos --
-Nodo hijo: 43
-3 1 2 
-6 0 5 
-7 4 8 
-11 = 6 + 5
-Nodo hijo: 44
-3 1 2 
-7 6 5 
-0 4 8 
-11 = 6 + 5
 -- --
 
 Expandiendo Nodo: 24
-4 1 2 
-6 0 5 
-3 7 8 
-10 = 6 + 4
+0 2 1 
+4 3 5 
+6 7 8 
+9 = 5 + 4
 
 -- Hijos --
-Nodo hijo: 45
-4 1 2 
-6 5 0 
-3 7 8 
-12 = 7 + 5
-Nodo hijo: 46
-4 1 2 
-6 7 5 
-3 0 8 
-12 = 7 + 5
-Nodo hijo: 47
-4 0 2 
-6 1 5 
-3 7 8 
-12 = 7 + 5
+Nodo hijo: 26
+4 2 1 
+0 3 5 
+6 7 8 
+11 = 6 + 5
 -- --
 
-Expandiendo Nodo: 29
-1 6 2 
-4 7 5 
-0 3 8 
-10 = 4 + 6
-
--- Hijos --
-Nodo hijo: 48
-1 6 2 
-0 7 5 
-4 3 8 
-11 = 5 + 6
--- --
-
-Expandiendo Nodo: 31
-1 6 2 
-7 3 5 
-0 4 8 
-10 = 4 + 6
-
--- Hijos --
-Nodo hijo: 49
-1 6 2 
-7 3 5 
-4 0 8 
-11 = 5 + 6
--- --
-
-Expandiendo Nodo: 33
-6 4 2 
-0 1 5 
-3 7 8 
+Expandiendo Nodo: 25
+2 3 1 
+4 0 5 
+6 7 8 
 10 = 5 + 5
 
 -- Hijos --
-Nodo hijo: 50
-6 4 2 
-3 1 5 
+Nodo hijo: 27
+2 3 1 
+0 4 5 
+6 7 8 
+10 = 6 + 4
+Nodo hijo: 28
+2 3 1 
+4 5 0 
+6 7 8 
+12 = 6 + 6
+Nodo hijo: 29
+2 3 1 
+4 7 5 
+6 0 8 
+12 = 6 + 6
+-- --
+
+Expandiendo Nodo: 20
+2 1 5 
+4 8 7 
+6 3 0 
+10 = 3 + 7
+
+-- Hijos --
+Nodo hijo: 30
+2 1 5 
+4 8 7 
+6 0 3 
+11 = 4 + 7
+-- --
+
+Expandiendo Nodo: 16
+2 1 5 
+6 4 3 
 0 7 8 
-10 = 6 + 4
-Nodo hijo: 51
-0 4 2 
-6 1 5 
-3 7 8 
-10 = 6 + 4
--- --
-
-Expandiendo Nodo: 50
-6 4 2 
-3 1 5 
-0 7 8 
-10 = 6 + 4
+10 = 5 + 5
 
 -- Hijos --
-Nodo hijo: 52
-6 4 2 
-3 1 5 
+Nodo hijo: 31
+2 1 5 
+6 4 3 
 7 0 8 
-12 = 7 + 5
+12 = 6 + 6
 -- --
 
-Expandiendo Nodo: 51
-0 4 2 
-6 1 5 
-3 7 8 
-10 = 6 + 4
+Expandiendo Nodo: 14
+2 1 5 
+6 4 8 
+0 3 7 
+10 = 3 + 7
 
 -- Hijos --
-Nodo hijo: 53
-4 0 2 
-6 1 5 
-3 7 8 
-12 = 7 + 5
+Nodo hijo: 32
+2 1 5 
+6 4 8 
+3 0 7 
+11 = 4 + 7
 -- --
 
-Expandiendo Nodo: 23
-6 2 5 
-1 4 0 
-3 7 8 
+Expandiendo Nodo: 10
+2 0 5 
+4 1 8 
+6 3 7 
+10 = 2 + 8
+
+-- Hijos --
+Nodo hijo: 33
+0 2 5 
+4 1 8 
+6 3 7 
+10 = 3 + 7
+Nodo hijo: 34
+2 5 0 
+4 1 8 
+6 3 7 
+11 = 3 + 8
+-- --
+
+Expandiendo Nodo: 22
+2 1 5 
+0 3 8 
+4 6 7 
+10 = 2 + 8
+
+-- Hijos --
+Nodo hijo: 35
+2 1 5 
+3 0 8 
+4 6 7 
+10 = 3 + 7
+Nodo hijo: 36
+0 1 5 
+2 3 8 
+4 6 7 
+10 = 3 + 7
+-- --
+
+Expandiendo Nodo: 13
+2 0 5 
+4 1 3 
+6 7 8 
+10 = 4 + 6
+
+-- Hijos --
+Nodo hijo: 37
+0 2 5 
+4 1 3 
+6 7 8 
+10 = 5 + 5
+Nodo hijo: 38
+2 5 0 
+4 1 3 
+6 7 8 
 11 = 5 + 6
-
--- Hijos --
-Nodo hijo: 54
-6 2 5 
-1 0 4 
-3 7 8 
-13 = 6 + 7
-Nodo hijo: 55
-6 2 5 
-1 4 8 
-3 7 0 
-13 = 6 + 7
 -- --
 
-Expandiendo Nodo: 28
-4 1 2 
-3 6 5 
-7 0 8 
-11 = 7 + 4
+Expandiendo Nodo: 36
+0 1 5 
+2 3 8 
+4 6 7 
+10 = 3 + 7
 
 -- Hijos --
-Nodo hijo: 56
-4 1 2 
-3 6 5 
-7 8 0 
-13 = 8 + 5
-Nodo hijo: 57
-4 1 2 
-3 0 5 
-7 6 8 
-12 = 8 + 4
--- --
-
-Expandiendo Nodo: 34
-6 4 2 
-1 5 0 
-3 7 8 
-11 = 5 + 6
-
--- Hijos --
-Nodo hijo: 58
-6 4 2 
-1 5 8 
-3 7 0 
-13 = 6 + 7
-Nodo hijo: 59
-6 4 0 
-1 5 2 
-3 7 8 
-13 = 6 + 7
+Nodo hijo: 39
+1 0 5 
+2 3 8 
+4 6 7 
+13 = 4 + 9
 -- --
 
 Expandiendo Nodo: 37
-1 6 2 
-3 5 8 
-7 4 0 
+0 2 5 
+4 1 3 
+6 7 8 
+10 = 5 + 5
+
+-- Hijos --
+Nodo hijo: 40
+4 2 5 
+0 1 3 
+6 7 8 
+12 = 6 + 6
+-- --
+
+Expandiendo Nodo: 27
+2 3 1 
+0 4 5 
+6 7 8 
+10 = 6 + 4
+
+-- Hijos --
+Nodo hijo: 41
+2 3 1 
+6 4 5 
+0 7 8 
+12 = 7 + 5
+Nodo hijo: 42
+0 3 1 
+2 4 5 
+6 7 8 
+10 = 7 + 3
+-- --
+
+Expandiendo Nodo: 12
+2 1 5 
+4 7 3 
+6 0 8 
+10 = 4 + 6
+
+-- Hijos --
+Nodo hijo: 43
+2 1 5 
+4 7 3 
+0 6 8 
+12 = 5 + 7
+Nodo hijo: 44
+2 1 5 
+4 7 3 
+6 8 0 
+12 = 5 + 7
+-- --
+
+Expandiendo Nodo: 42
+0 3 1 
+2 4 5 
+6 7 8 
+10 = 7 + 3
+
+-- Hijos --
+Nodo hijo: 45
+3 0 1 
+2 4 5 
+6 7 8 
+12 = 8 + 4
+-- --
+
+Expandiendo Nodo: 33
+0 2 5 
+4 1 8 
+6 3 7 
+10 = 3 + 7
+
+-- Hijos --
+Nodo hijo: 46
+4 2 5 
+0 1 8 
+6 3 7 
+12 = 4 + 8
+-- --
+
+Expandiendo Nodo: 35
+2 1 5 
+3 0 8 
+4 6 7 
+10 = 3 + 7
+
+-- Hijos --
+Nodo hijo: 47
+2 1 5 
+3 8 0 
+4 6 7 
+11 = 4 + 7
+Nodo hijo: 48
+2 1 5 
+3 6 8 
+4 0 7 
+11 = 4 + 7
+Nodo hijo: 49
+2 0 5 
+3 1 8 
+4 6 7 
+12 = 4 + 8
+-- --
+
+Expandiendo Nodo: 23
+2 0 1 
+4 8 5 
+6 3 7 
 11 = 4 + 7
 
 -- Hijos --
-Nodo hijo: 60
-1 6 2 
-3 5 8 
-7 0 4 
+Nodo hijo: 50
+0 2 1 
+4 8 5 
+6 3 7 
+11 = 5 + 6
+Nodo hijo: 51
+2 8 1 
+4 0 5 
+6 3 7 
 12 = 5 + 7
 -- --
 
 Expandiendo Nodo: 38
-1 6 0 
-3 5 2 
-7 4 8 
+2 5 0 
+4 1 3 
+6 7 8 
+11 = 5 + 6
+
+-- Hijos --
+Nodo hijo: 52
+2 5 3 
+4 1 0 
+6 7 8 
+12 = 6 + 6
+-- --
+
+Expandiendo Nodo: 19
+1 0 5 
+2 4 3 
+6 7 8 
+11 = 6 + 5
+
+-- Hijos --
+Nodo hijo: 53
+1 5 0 
+2 4 3 
+6 7 8 
+12 = 7 + 5
+Nodo hijo: 54
+1 4 5 
+2 0 3 
+6 7 8 
+13 = 7 + 6
+-- --
+
+Expandiendo Nodo: 26
+4 2 1 
+0 3 5 
+6 7 8 
+11 = 6 + 5
+
+-- Hijos --
+Nodo hijo: 55
+4 2 1 
+3 0 5 
+6 7 8 
+11 = 7 + 4
+Nodo hijo: 56
+4 2 1 
+6 3 5 
+0 7 8 
+13 = 7 + 6
+-- --
+
+Expandiendo Nodo: 47
+2 1 5 
+3 8 0 
+4 6 7 
+11 = 4 + 7
+
+-- Hijos --
+Nodo hijo: 57
+2 1 5 
+3 8 7 
+4 6 0 
+12 = 5 + 7
+Nodo hijo: 58
+2 1 0 
+3 8 5 
+4 6 7 
+11 = 5 + 6
+-- --
+
+Expandiendo Nodo: 30
+2 1 5 
+4 8 7 
+6 0 3 
+11 = 4 + 7
+
+-- Hijos --
+Nodo hijo: 59
+2 1 5 
+4 8 7 
+0 6 3 
+13 = 5 + 8
+Nodo hijo: 60
+2 1 5 
+4 0 7 
+6 8 3 
+12 = 5 + 7
+-- --
+
+Expandiendo Nodo: 18
+1 0 5 
+2 4 8 
+6 3 7 
 11 = 4 + 7
 
 -- Hijos --
 Nodo hijo: 61
-1 0 6 
-3 5 2 
-7 4 8 
+1 5 0 
+2 4 8 
+6 3 7 
 12 = 5 + 7
--- --
-
-Expandiendo Nodo: 39
-1 6 2 
-4 5 8 
-3 7 0 
-11 = 4 + 7
-
--- Hijos --
 Nodo hijo: 62
-1 6 2 
-4 5 8 
-3 0 7 
+1 4 5 
+2 0 8 
+6 3 7 
 13 = 5 + 8
 -- --
 
-Expandiendo Nodo: 43
-3 1 2 
-6 0 5 
-7 4 8 
-11 = 6 + 5
-
--- Hijos --
-Nodo hijo: 63
-3 1 2 
-6 5 0 
-7 4 8 
-13 = 7 + 6
-Nodo hijo: 64
-3 1 2 
-6 4 5 
-7 0 8 
-11 = 7 + 4
-Nodo hijo: 65
-3 0 2 
-6 1 5 
-7 4 8 
-13 = 7 + 6
--- --
-
-Expandiendo Nodo: 49
-1 6 2 
-7 3 5 
-4 0 8 
-11 = 5 + 6
-
--- Hijos --
-Nodo hijo: 66
-1 6 2 
-7 3 5 
-4 8 0 
-13 = 6 + 7
-Nodo hijo: 67
-1 6 2 
-7 0 5 
-4 3 8 
-12 = 6 + 6
--- --
-
-Expandiendo Nodo: 44
-3 1 2 
-7 6 5 
-0 4 8 
-11 = 6 + 5
-
--- Hijos --
-Nodo hijo: 68
-3 1 2 
-7 6 5 
-4 0 8 
-12 = 7 + 5
--- --
-
-Expandiendo Nodo: 40
-1 6 0 
-4 5 2 
-3 7 8 
+Expandiendo Nodo: 48
+2 1 5 
+3 6 8 
+4 0 7 
 11 = 4 + 7
 
 -- Hijos --
-Nodo hijo: 69
-1 0 6 
-4 5 2 
-3 7 8 
+Nodo hijo: 63
+2 1 5 
+3 6 8 
+0 4 7 
 12 = 5 + 7
+Nodo hijo: 64
+2 1 5 
+3 6 8 
+4 7 0 
+11 = 5 + 6
 -- --
 
-Expandiendo Nodo: 27
-1 6 0 
-3 4 2 
-7 8 5 
+Expandiendo Nodo: 50
+0 2 1 
+4 8 5 
+6 3 7 
+11 = 5 + 6
+
+-- Hijos --
+Nodo hijo: 65
+4 2 1 
+0 8 5 
+6 3 7 
+13 = 6 + 7
+-- --
+
+Expandiendo Nodo: 55
+4 2 1 
+3 0 5 
+6 7 8 
+11 = 7 + 4
+
+-- Hijos --
+Nodo hijo: 66
+4 2 1 
+3 5 0 
+6 7 8 
+13 = 8 + 5
+Nodo hijo: 67
+4 2 1 
+3 7 5 
+6 0 8 
+13 = 8 + 5
+Nodo hijo: 68
+4 0 1 
+3 2 5 
+6 7 8 
+12 = 8 + 4
+-- --
+
+Expandiendo Nodo: 34
+2 5 0 
+4 1 8 
+6 3 7 
+11 = 3 + 8
+
+-- Hijos --
+Nodo hijo: 69
+2 5 8 
+4 1 0 
+6 3 7 
+12 = 4 + 8
+-- --
+
+Expandiendo Nodo: 32
+2 1 5 
+6 4 8 
+3 0 7 
 11 = 4 + 7
 
 -- Hijos --
 Nodo hijo: 70
-1 0 6 
-3 4 2 
-7 8 5 
-12 = 5 + 7
+2 1 5 
+6 4 8 
+3 7 0 
+11 = 5 + 6
+Nodo hijo: 71
+2 1 5 
+6 0 8 
+3 4 7 
+13 = 5 + 8
 -- --
 
-Expandiendo Nodo: 48
-1 6 2 
-0 7 5 
-4 3 8 
+Expandiendo Nodo: 58
+2 1 0 
+3 8 5 
+4 6 7 
 11 = 5 + 6
 
 -- Hijos --
-Nodo hijo: 71
-1 6 2 
-7 0 5 
-4 3 8 
-12 = 6 + 6
 Nodo hijo: 72
-0 6 2 
-1 7 5 
-4 3 8 
-11 = 6 + 5
+2 0 1 
+3 8 5 
+4 6 7 
+13 = 6 + 7
 -- --
 
-Expandiendo Nodo: 36
-6 0 2 
-1 3 5 
-7 4 8 
+Expandiendo Nodo: 64
+2 1 5 
+3 6 8 
+4 7 0 
 11 = 5 + 6
 
 -- Hijos --
 Nodo hijo: 73
-6 2 0 
-1 3 5 
-7 4 8 
-13 = 6 + 7
-Nodo hijo: 74
-6 3 2 
-1 0 5 
-7 4 8 
-12 = 6 + 6
+2 1 5 
+3 6 0 
+4 7 8 
+11 = 6 + 5
 -- --
 
-Expandiendo Nodo: 26
-1 6 2 
-3 0 4 
-7 8 5 
-11 = 4 + 7
+Expandiendo Nodo: 70
+2 1 5 
+6 4 8 
+3 7 0 
+11 = 5 + 6
+
+-- Hijos --
+Nodo hijo: 74
+2 1 5 
+6 4 0 
+3 7 8 
+11 = 6 + 5
+-- --
+
+Expandiendo Nodo: 73
+2 1 5 
+3 6 0 
+4 7 8 
+11 = 6 + 5
 
 -- Hijos --
 Nodo hijo: 75
-1 6 2 
-0 3 4 
-7 8 5 
-13 = 5 + 8
+2 1 5 
+3 0 6 
+4 7 8 
+12 = 7 + 5
 Nodo hijo: 76
-1 6 2 
-3 8 4 
-7 0 5 
-12 = 5 + 7
-Nodo hijo: 77
-1 0 2 
-3 6 4 
-7 8 5 
-12 = 5 + 7
+2 1 0 
+3 6 5 
+4 7 8 
+11 = 7 + 4
 -- --
 
-Expandiendo Nodo: 30
-1 6 2 
-4 7 5 
-3 8 0 
-11 = 4 + 7
+Expandiendo Nodo: 74
+2 1 5 
+6 4 0 
+3 7 8 
+11 = 6 + 5
 
 -- Hijos --
+Nodo hijo: 77
+2 1 5 
+6 0 4 
+3 7 8 
+13 = 7 + 6
 Nodo hijo: 78
-1 6 2 
-4 7 0 
-3 8 5 
-13 = 5 + 8
+2 1 0 
+6 4 5 
+3 7 8 
+11 = 7 + 4
 -- --
 
-Expandiendo Nodo: 64
-3 1 2 
-6 4 5 
-7 0 8 
+Expandiendo Nodo: 76
+2 1 0 
+3 6 5 
+4 7 8 
 11 = 7 + 4
 
 -- Hijos --
 Nodo hijo: 79
-3 1 2 
-6 4 5 
-0 7 8 
-11 = 8 + 3
-Nodo hijo: 80
-3 1 2 
-6 4 5 
-7 8 0 
+2 0 1 
+3 6 5 
+4 7 8 
 13 = 8 + 5
 -- --
 
-Expandiendo Nodo: 35
-6 4 2 
-1 7 5 
-3 0 8 
-11 = 5 + 6
+Expandiendo Nodo: 78
+2 1 0 
+6 4 5 
+3 7 8 
+11 = 7 + 4
+
+-- Hijos --
+Nodo hijo: 80
+2 0 1 
+6 4 5 
+3 7 8 
+13 = 8 + 5
+-- --
+
+Expandiendo Nodo: 52
+2 5 3 
+4 1 0 
+6 7 8 
+12 = 6 + 6
 
 -- Hijos --
 Nodo hijo: 81
-6 4 2 
-1 7 5 
-0 3 8 
-12 = 6 + 6
+2 5 3 
+4 0 1 
+6 7 8 
+13 = 7 + 6
 Nodo hijo: 82
-6 4 2 
-1 7 5 
-3 8 0 
-13 = 6 + 7
+2 5 3 
+4 1 8 
+6 7 0 
+14 = 7 + 7
 -- --
 
-Expandiendo Nodo: 79
-3 1 2 
-6 4 5 
-0 7 8 
-11 = 8 + 3
+Expandiendo Nodo: 46
+4 2 5 
+0 1 8 
+6 3 7 
+12 = 4 + 8
 
 -- Hijos --
 Nodo hijo: 83
-3 1 2 
-0 4 5 
-6 7 8 
-11 = 9 + 2
--- --
-
-Expandiendo Nodo: 72
-0 6 2 
-1 7 5 
-4 3 8 
-11 = 6 + 5
-
--- Hijos --
+4 2 5 
+1 0 8 
+6 3 7 
+13 = 5 + 8
 Nodo hijo: 84
-6 0 2 
-1 7 5 
-4 3 8 
-13 = 7 + 6
+4 2 5 
+6 1 8 
+0 3 7 
+14 = 5 + 9
 -- --
 
-Expandiendo Nodo: 83
-3 1 2 
-0 4 5 
-6 7 8 
-11 = 9 + 2
+Expandiendo Nodo: 31
+2 1 5 
+6 4 3 
+7 0 8 
+12 = 6 + 6
 
 -- Hijos --
 Nodo hijo: 85
-3 1 2 
-4 0 5 
-6 7 8 
-13 = 10 + 3
+2 1 5 
+6 4 3 
+7 8 0 
+14 = 7 + 7
 Nodo hijo: 86
-0 1 2 
-3 4 5 
+2 1 5 
+6 0 3 
+7 4 8 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 41
+2 3 1 
+6 4 5 
+0 7 8 
+12 = 7 + 5
+
+-- Hijos --
+Nodo hijo: 87
+2 3 1 
+6 4 5 
+7 0 8 
+14 = 8 + 6
+-- --
+
+Expandiendo Nodo: 51
+2 8 1 
+4 0 5 
+6 3 7 
+12 = 5 + 7
+
+-- Hijos --
+Nodo hijo: 88
+2 8 1 
+0 4 5 
+6 3 7 
+12 = 6 + 6
+Nodo hijo: 89
+2 8 1 
+4 5 0 
+6 3 7 
+14 = 6 + 8
+Nodo hijo: 90
+2 8 1 
+4 3 5 
+6 0 7 
+13 = 6 + 7
+-- --
+
+Expandiendo Nodo: 43
+2 1 5 
+4 7 3 
+0 6 8 
+12 = 5 + 7
+
+-- Hijos --
+Nodo hijo: 91
+2 1 5 
+0 7 3 
+4 6 8 
+13 = 6 + 7
+-- --
+
+Expandiendo Nodo: 49
+2 0 5 
+3 1 8 
+4 6 7 
+12 = 4 + 8
+
+-- Hijos --
+Nodo hijo: 92
+0 2 5 
+3 1 8 
+4 6 7 
+12 = 5 + 7
+Nodo hijo: 93
+2 5 0 
+3 1 8 
+4 6 7 
+13 = 5 + 8
+-- --
+
+Expandiendo Nodo: 88
+2 8 1 
+0 4 5 
+6 3 7 
+12 = 6 + 6
+
+-- Hijos --
+Nodo hijo: 94
+2 8 1 
+6 4 5 
+0 3 7 
+14 = 7 + 7
+Nodo hijo: 95
+0 8 1 
+2 4 5 
+6 3 7 
+12 = 7 + 5
+-- --
+
+Expandiendo Nodo: 45
+3 0 1 
+2 4 5 
 6 7 8 
-10 = 10 + 0
+12 = 8 + 4
+
+-- Hijos --
+Nodo hijo: 96
+3 1 0 
+2 4 5 
+6 7 8 
+12 = 9 + 3
+Nodo hijo: 97
+3 4 1 
+2 0 5 
+6 7 8 
+14 = 9 + 5
+-- --
+
+Expandiendo Nodo: 92
+0 2 5 
+3 1 8 
+4 6 7 
+12 = 5 + 7
+
+-- Hijos --
+Nodo hijo: 98
+3 2 5 
+0 1 8 
+4 6 7 
+15 = 6 + 9
+-- --
+
+Expandiendo Nodo: 60
+2 1 5 
+4 0 7 
+6 8 3 
+12 = 5 + 7
+
+-- Hijos --
+Nodo hijo: 99
+2 1 5 
+0 4 7 
+6 8 3 
+12 = 6 + 6
+Nodo hijo: 100
+2 1 5 
+4 7 0 
+6 8 3 
+13 = 6 + 7
+Nodo hijo: 101
+2 0 5 
+4 1 7 
+6 8 3 
+14 = 6 + 8
+-- --
+
+Expandiendo Nodo: 95
+0 8 1 
+2 4 5 
+6 3 7 
+12 = 7 + 5
+
+-- Hijos --
+Nodo hijo: 102
+8 0 1 
+2 4 5 
+6 3 7 
+14 = 8 + 6
+-- --
+
+Expandiendo Nodo: 96
+3 1 0 
+2 4 5 
+6 7 8 
+12 = 9 + 3
+
+-- Hijos --
+Nodo hijo: 103
+3 1 5 
+2 4 0 
+6 7 8 
+14 = 10 + 4
+-- --
+
+Expandiendo Nodo: 53
+1 5 0 
+2 4 3 
+6 7 8 
+12 = 7 + 5
+
+-- Hijos --
+Nodo hijo: 104
+1 5 3 
+2 4 0 
+6 7 8 
+13 = 8 + 5
+-- --
+
+Expandiendo Nodo: 99
+2 1 5 
+0 4 7 
+6 8 3 
+12 = 6 + 6
+
+-- Hijos --
+Nodo hijo: 105
+2 1 5 
+6 4 7 
+0 8 3 
+14 = 7 + 7
+Nodo hijo: 106
+0 1 5 
+2 4 7 
+6 8 3 
+12 = 7 + 5
+-- --
+
+Expandiendo Nodo: 29
+2 3 1 
+4 7 5 
+6 0 8 
+12 = 6 + 6
+
+-- Hijos --
+Nodo hijo: 107
+2 3 1 
+4 7 5 
+0 6 8 
+14 = 7 + 7
+Nodo hijo: 108
+2 3 1 
+4 7 5 
+6 8 0 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 106
+0 1 5 
+2 4 7 
+6 8 3 
+12 = 7 + 5
+
+-- Hijos --
+Nodo hijo: 109
+1 0 5 
+2 4 7 
+6 8 3 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 44
+2 1 5 
+4 7 3 
+6 8 0 
+12 = 5 + 7
+
+-- Hijos --
+Nodo hijo: 110
+2 1 5 
+4 7 0 
+6 8 3 
+13 = 6 + 7
+-- --
+
+Expandiendo Nodo: 57
+2 1 5 
+3 8 7 
+4 6 0 
+12 = 5 + 7
+
+-- Hijos --
+Nodo hijo: 111
+2 1 5 
+3 8 7 
+4 0 6 
+13 = 6 + 7
+-- --
+
+Expandiendo Nodo: 28
+2 3 1 
+4 5 0 
+6 7 8 
+12 = 6 + 6
+
+-- Hijos --
+Nodo hijo: 112
+2 3 1 
+4 5 8 
+6 7 0 
+14 = 7 + 7
+Nodo hijo: 113
+2 3 0 
+4 5 1 
+6 7 8 
+13 = 7 + 6
+-- --
+
+Expandiendo Nodo: 61
+1 5 0 
+2 4 8 
+6 3 7 
+12 = 5 + 7
+
+-- Hijos --
+Nodo hijo: 114
+1 5 8 
+2 4 0 
+6 3 7 
+13 = 6 + 7
+-- --
+
+Expandiendo Nodo: 63
+2 1 5 
+3 6 8 
+0 4 7 
+12 = 5 + 7
+
+-- Hijos --
+Nodo hijo: 115
+2 1 5 
+0 6 8 
+3 4 7 
+14 = 6 + 8
+-- --
+
+Expandiendo Nodo: 69
+2 5 8 
+4 1 0 
+6 3 7 
+12 = 4 + 8
+
+-- Hijos --
+Nodo hijo: 116
+2 5 8 
+4 0 1 
+6 3 7 
+13 = 5 + 8
+Nodo hijo: 117
+2 5 8 
+4 1 7 
+6 3 0 
+13 = 5 + 8
+-- --
+
+Expandiendo Nodo: 68
+4 0 1 
+3 2 5 
+6 7 8 
+12 = 8 + 4
+
+-- Hijos --
+Nodo hijo: 118
+0 4 1 
+3 2 5 
+6 7 8 
+12 = 9 + 3
+Nodo hijo: 119
+4 1 0 
+3 2 5 
+6 7 8 
+12 = 9 + 3
+-- --
+
+Expandiendo Nodo: 40
+4 2 5 
+0 1 3 
+6 7 8 
+12 = 6 + 6
+
+-- Hijos --
+Nodo hijo: 120
+4 2 5 
+1 0 3 
+6 7 8 
+13 = 7 + 6
+Nodo hijo: 121
+4 2 5 
+6 1 3 
+0 7 8 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 118
+0 4 1 
+3 2 5 
+6 7 8 
+12 = 9 + 3
+
+-- Hijos --
+Nodo hijo: 122
+3 4 1 
+0 2 5 
+6 7 8 
+15 = 10 + 5
+-- --
+
+Expandiendo Nodo: 75
+2 1 5 
+3 0 6 
+4 7 8 
+12 = 7 + 5
+
+-- Hijos --
+Nodo hijo: 123
+2 1 5 
+0 3 6 
+4 7 8 
+14 = 8 + 6
+Nodo hijo: 124
+2 1 5 
+3 7 6 
+4 0 8 
+14 = 8 + 6
+Nodo hijo: 125
+2 0 5 
+3 1 6 
+4 7 8 
+14 = 8 + 6
+-- --
+
+Expandiendo Nodo: 119
+4 1 0 
+3 2 5 
+6 7 8 
+12 = 9 + 3
+
+-- Hijos --
+Nodo hijo: 126
+4 1 5 
+3 2 0 
+6 7 8 
+14 = 10 + 4
+-- --
+
+Expandiendo Nodo: 65
+4 2 1 
+0 8 5 
+6 3 7 
+13 = 6 + 7
+
+-- Hijos --
+Nodo hijo: 127
+4 2 1 
+8 0 5 
+6 3 7 
+14 = 7 + 7
+Nodo hijo: 128
+4 2 1 
+6 8 5 
+0 3 7 
+15 = 7 + 8
+-- --
+
+Expandiendo Nodo: 77
+2 1 5 
+6 0 4 
+3 7 8 
+13 = 7 + 6
+
+-- Hijos --
+Nodo hijo: 129
+2 1 5 
+0 6 4 
+3 7 8 
+14 = 8 + 6
+Nodo hijo: 130
+2 1 5 
+6 7 4 
+3 0 8 
+15 = 8 + 7
+Nodo hijo: 131
+2 0 5 
+6 1 4 
+3 7 8 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 81
+2 5 3 
+4 0 1 
+6 7 8 
+13 = 7 + 6
+
+-- Hijos --
+Nodo hijo: 132
+2 5 3 
+0 4 1 
+6 7 8 
+13 = 8 + 5
+Nodo hijo: 133
+2 5 3 
+4 7 1 
+6 0 8 
+15 = 8 + 7
+Nodo hijo: 134
+2 0 3 
+4 5 1 
+6 7 8 
+14 = 8 + 6
+-- --
+
+Expandiendo Nodo: 79
+2 0 1 
+3 6 5 
+4 7 8 
+13 = 8 + 5
+
+-- Hijos --
+Nodo hijo: 135
+0 2 1 
+3 6 5 
+4 7 8 
+13 = 9 + 4
+Nodo hijo: 136
+2 6 1 
+3 0 5 
+4 7 8 
+14 = 9 + 5
+-- --
+
+Expandiendo Nodo: 83
+4 2 5 
+1 0 8 
+6 3 7 
+13 = 5 + 8
+
+-- Hijos --
+Nodo hijo: 137
+4 2 5 
+1 8 0 
+6 3 7 
+14 = 6 + 8
+Nodo hijo: 138
+4 2 5 
+1 3 8 
+6 0 7 
+14 = 6 + 8
+Nodo hijo: 139
+4 0 5 
+1 2 8 
+6 3 7 
+14 = 6 + 8
+-- --
+
+Expandiendo Nodo: 39
+1 0 5 
+2 3 8 
+4 6 7 
+13 = 4 + 9
+
+-- Hijos --
+Nodo hijo: 140
+1 5 0 
+2 3 8 
+4 6 7 
+14 = 5 + 9
+Nodo hijo: 141
+1 3 5 
+2 0 8 
+4 6 7 
+14 = 5 + 9
+-- --
+
+Expandiendo Nodo: 80
+2 0 1 
+6 4 5 
+3 7 8 
+13 = 8 + 5
+
+-- Hijos --
+Nodo hijo: 142
+0 2 1 
+6 4 5 
+3 7 8 
+13 = 9 + 4
+Nodo hijo: 143
+2 4 1 
+6 0 5 
+3 7 8 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 90
+2 8 1 
+4 3 5 
+6 0 7 
+13 = 6 + 7
+
+-- Hijos --
+Nodo hijo: 144
+2 8 1 
+4 3 5 
+0 6 7 
+15 = 7 + 8
+Nodo hijo: 145
+2 8 1 
+4 3 5 
+6 7 0 
+13 = 7 + 6
+-- --
+
+Expandiendo Nodo: 93
+2 5 0 
+3 1 8 
+4 6 7 
+13 = 5 + 8
+
+-- Hijos --
+Nodo hijo: 146
+2 5 8 
+3 1 0 
+4 6 7 
+14 = 6 + 8
+-- --
+
+Expandiendo Nodo: 62
+1 4 5 
+2 0 8 
+6 3 7 
+13 = 5 + 8
+
+-- Hijos --
+Nodo hijo: 147
+1 4 5 
+0 2 8 
+6 3 7 
+14 = 6 + 8
+Nodo hijo: 148
+1 4 5 
+2 8 0 
+6 3 7 
+14 = 6 + 8
+Nodo hijo: 149
+1 4 5 
+2 3 8 
+6 0 7 
+14 = 6 + 8
+-- --
+
+Expandiendo Nodo: 56
+4 2 1 
+6 3 5 
+0 7 8 
+13 = 7 + 6
+
+-- Hijos --
+Nodo hijo: 150
+4 2 1 
+6 3 5 
+7 0 8 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 100
+2 1 5 
+4 7 0 
+6 8 3 
+13 = 6 + 7
+
+-- Hijos --
+Nodo hijo: 151
+2 1 5 
+4 7 3 
+6 8 0 
+14 = 7 + 7
+Nodo hijo: 152
+2 1 0 
+4 7 5 
+6 8 3 
+13 = 7 + 6
+-- --
+
+Expandiendo Nodo: 104
+1 5 3 
+2 4 0 
+6 7 8 
+13 = 8 + 5
+
+-- Hijos --
+Nodo hijo: 153
+1 5 3 
+2 0 4 
+6 7 8 
+15 = 9 + 6
+Nodo hijo: 154
+1 5 3 
+2 4 8 
+6 7 0 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 91
+2 1 5 
+0 7 3 
+4 6 8 
+13 = 6 + 7
+
+-- Hijos --
+Nodo hijo: 155
+2 1 5 
+7 0 3 
+4 6 8 
+14 = 7 + 7
+Nodo hijo: 156
+0 1 5 
+2 7 3 
+4 6 8 
+13 = 7 + 6
+-- --
+
+Expandiendo Nodo: 152
+2 1 0 
+4 7 5 
+6 8 3 
+13 = 7 + 6
+
+-- Hijos --
+Nodo hijo: 157
+2 0 1 
+4 7 5 
+6 8 3 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 54
+1 4 5 
+2 0 3 
+6 7 8 
+13 = 7 + 6
+
+-- Hijos --
+Nodo hijo: 158
+1 4 5 
+0 2 3 
+6 7 8 
+14 = 8 + 6
+Nodo hijo: 159
+1 4 5 
+2 3 0 
+6 7 8 
+14 = 8 + 6
+Nodo hijo: 160
+1 4 5 
+2 7 3 
+6 0 8 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 156
+0 1 5 
+2 7 3 
+4 6 8 
+13 = 7 + 6
+
+-- Hijos --
+Nodo hijo: 161
+1 0 5 
+2 7 3 
+4 6 8 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 116
+2 5 8 
+4 0 1 
+6 3 7 
+13 = 5 + 8
+
+-- Hijos --
+Nodo hijo: 162
+2 5 8 
+0 4 1 
+6 3 7 
+13 = 6 + 7
+Nodo hijo: 163
+2 5 8 
+4 3 1 
+6 0 7 
+14 = 6 + 8
+Nodo hijo: 164
+2 0 8 
+4 5 1 
+6 3 7 
+14 = 6 + 8
+-- --
+
+Expandiendo Nodo: 113
+2 3 0 
+4 5 1 
+6 7 8 
+13 = 7 + 6
+
+-- Hijos --
+Nodo hijo: 165
+2 0 3 
+4 5 1 
+6 7 8 
+14 = 8 + 6
+-- --
+
+Expandiendo Nodo: 162
+2 5 8 
+0 4 1 
+6 3 7 
+13 = 6 + 7
+
+-- Hijos --
+Nodo hijo: 166
+2 5 8 
+6 4 1 
+0 3 7 
+15 = 7 + 8
+Nodo hijo: 167
+0 5 8 
+2 4 1 
+6 3 7 
+13 = 7 + 6
+-- --
+
+Expandiendo Nodo: 111
+2 1 5 
+3 8 7 
+4 0 6 
+13 = 6 + 7
+
+-- Hijos --
+Nodo hijo: 168
+2 1 5 
+3 8 7 
+0 4 6 
+14 = 7 + 7
+Nodo hijo: 169
+2 1 5 
+3 0 7 
+4 8 6 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 167
+0 5 8 
+2 4 1 
+6 3 7 
+13 = 7 + 6
+
+-- Hijos --
+Nodo hijo: 170
+5 0 8 
+2 4 1 
+6 3 7 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 72
+2 0 1 
+3 8 5 
+4 6 7 
+13 = 6 + 7
+
+-- Hijos --
+Nodo hijo: 171
+0 2 1 
+3 8 5 
+4 6 7 
+13 = 7 + 6
+Nodo hijo: 172
+2 8 1 
+3 0 5 
+4 6 7 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 120
+4 2 5 
+1 0 3 
+6 7 8 
+13 = 7 + 6
+
+-- Hijos --
+Nodo hijo: 173
+4 2 5 
+1 3 0 
+6 7 8 
+14 = 8 + 6
+Nodo hijo: 174
+4 2 5 
+1 7 3 
+6 0 8 
+15 = 8 + 7
+Nodo hijo: 175
+4 0 5 
+1 2 3 
+6 7 8 
+14 = 8 + 6
+-- --
+
+Expandiendo Nodo: 171
+0 2 1 
+3 8 5 
+4 6 7 
+13 = 7 + 6
+
+-- Hijos --
+Nodo hijo: 176
+3 2 1 
+0 8 5 
+4 6 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 59
+2 1 5 
+4 8 7 
+0 6 3 
+13 = 5 + 8
+
+-- Hijos --
+Nodo hijo: 177
+2 1 5 
+0 8 7 
+4 6 3 
+14 = 6 + 8
+-- --
+
+Expandiendo Nodo: 110
+2 1 5 
+4 7 0 
+6 8 3 
+13 = 6 + 7
+
+-- Hijos --
+Nodo hijo: 178
+2 1 5 
+4 0 7 
+6 8 3 
+14 = 7 + 7
+Nodo hijo: 179
+2 1 0 
+4 7 5 
+6 8 3 
+13 = 7 + 6
+-- --
+
+Expandiendo Nodo: 132
+2 5 3 
+0 4 1 
+6 7 8 
+13 = 8 + 5
+
+-- Hijos --
+Nodo hijo: 180
+2 5 3 
+6 4 1 
+0 7 8 
+15 = 9 + 6
+Nodo hijo: 181
+0 5 3 
+2 4 1 
+6 7 8 
+13 = 9 + 4
+-- --
+
+Expandiendo Nodo: 179
+2 1 0 
+4 7 5 
+6 8 3 
+13 = 7 + 6
+
+-- Hijos --
+Nodo hijo: 182
+2 0 1 
+4 7 5 
+6 8 3 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 181
+0 5 3 
+2 4 1 
+6 7 8 
+13 = 9 + 4
+
+-- Hijos --
+Nodo hijo: 183
+5 0 3 
+2 4 1 
+6 7 8 
+15 = 10 + 5
+-- --
+
+Expandiendo Nodo: 117
+2 5 8 
+4 1 7 
+6 3 0 
+13 = 5 + 8
+
+-- Hijos --
+Nodo hijo: 184
+2 5 8 
+4 1 7 
+6 0 3 
+14 = 6 + 8
+-- --
+
+Expandiendo Nodo: 71
+2 1 5 
+6 0 8 
+3 4 7 
+13 = 5 + 8
+
+-- Hijos --
+Nodo hijo: 185
+2 1 5 
+0 6 8 
+3 4 7 
+14 = 6 + 8
+Nodo hijo: 186
+2 1 5 
+6 8 0 
+3 4 7 
+14 = 6 + 8
+Nodo hijo: 187
+2 0 5 
+6 1 8 
+3 4 7 
+15 = 6 + 9
+-- --
+
+Expandiendo Nodo: 66
+4 2 1 
+3 5 0 
+6 7 8 
+13 = 8 + 5
+
+-- Hijos --
+Nodo hijo: 188
+4 2 1 
+3 5 8 
+6 7 0 
+15 = 9 + 6
+Nodo hijo: 189
+4 2 0 
+3 5 1 
+6 7 8 
+14 = 9 + 5
+-- --
+
+Expandiendo Nodo: 135
+0 2 1 
+3 6 5 
+4 7 8 
+13 = 9 + 4
+
+-- Hijos --
+Nodo hijo: 190
+3 2 1 
+0 6 5 
+4 7 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 67
+4 2 1 
+3 7 5 
+6 0 8 
+13 = 8 + 5
+
+-- Hijos --
+Nodo hijo: 191
+4 2 1 
+3 7 5 
+0 6 8 
+15 = 9 + 6
+Nodo hijo: 192
+4 2 1 
+3 7 5 
+6 8 0 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 114
+1 5 8 
+2 4 0 
+6 3 7 
+13 = 6 + 7
+
+-- Hijos --
+Nodo hijo: 193
+1 5 8 
+2 0 4 
+6 3 7 
+15 = 7 + 8
+Nodo hijo: 194
+1 5 8 
+2 4 7 
+6 3 0 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 142
+0 2 1 
+6 4 5 
+3 7 8 
+13 = 9 + 4
+
+-- Hijos --
+Nodo hijo: 195
+6 2 1 
+0 4 5 
+3 7 8 
+15 = 10 + 5
+-- --
+
+Expandiendo Nodo: 145
+2 8 1 
+4 3 5 
+6 7 0 
+13 = 7 + 6
+
+-- Hijos --
+Nodo hijo: 196
+2 8 1 
+4 3 0 
+6 7 5 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 94
+2 8 1 
+6 4 5 
+0 3 7 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 197
+2 8 1 
+6 4 5 
+3 0 7 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 175
+4 0 5 
+1 2 3 
+6 7 8 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 198
+0 4 5 
+1 2 3 
+6 7 8 
+14 = 9 + 5
+Nodo hijo: 199
+4 5 0 
+1 2 3 
+6 7 8 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 149
+1 4 5 
+2 3 8 
+6 0 7 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 200
+1 4 5 
+2 3 8 
+0 6 7 
+16 = 7 + 9
+Nodo hijo: 201
+1 4 5 
+2 3 8 
+6 7 0 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 87
+2 3 1 
+6 4 5 
+7 0 8 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 202
+2 3 1 
+6 4 5 
+7 8 0 
+16 = 9 + 7
+Nodo hijo: 203
+2 3 1 
+6 0 5 
+7 4 8 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 151
+2 1 5 
+4 7 3 
+6 8 0 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 204
+2 1 5 
+4 7 3 
+6 0 8 
+14 = 8 + 6
+-- --
+
+Expandiendo Nodo: 102
+8 0 1 
+2 4 5 
+6 3 7 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 205
+8 1 0 
+2 4 5 
+6 3 7 
+14 = 9 + 5
+Nodo hijo: 206
+8 4 1 
+2 0 5 
+6 3 7 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 155
+2 1 5 
+7 0 3 
+4 6 8 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 207
+2 1 5 
+7 3 0 
+4 6 8 
+15 = 8 + 7
+Nodo hijo: 208
+2 1 5 
+7 6 3 
+4 0 8 
+15 = 8 + 7
+Nodo hijo: 209
+2 0 5 
+7 1 3 
+4 6 8 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 158
+1 4 5 
+0 2 3 
+6 7 8 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 210
+1 4 5 
+6 2 3 
+0 7 8 
+16 = 9 + 7
+Nodo hijo: 211
+0 4 5 
+1 2 3 
+6 7 8 
+14 = 9 + 5
+-- --
+
+Expandiendo Nodo: 139
+4 0 5 
+1 2 8 
+6 3 7 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 212
+0 4 5 
+1 2 8 
+6 3 7 
+14 = 7 + 7
+Nodo hijo: 213
+4 5 0 
+1 2 8 
+6 3 7 
+15 = 7 + 8
+-- --
+
+Expandiendo Nodo: 211
+0 4 5 
+1 2 3 
+6 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 214
+4 0 5 
+1 2 3 
+6 7 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 126
+4 1 5 
+3 2 0 
+6 7 8 
+14 = 10 + 4
+
+-- Hijos --
+Nodo hijo: 215
+4 1 5 
+3 0 2 
+6 7 8 
+15 = 11 + 4
+Nodo hijo: 216
+4 1 5 
+3 2 8 
+6 7 0 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 159
+1 4 5 
+2 3 0 
+6 7 8 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 217
+1 4 5 
+2 3 8 
+6 7 0 
+16 = 9 + 7
+Nodo hijo: 218
+1 4 0 
+2 3 5 
+6 7 8 
+14 = 9 + 5
+-- --
+
+Expandiendo Nodo: 125
+2 0 5 
+3 1 6 
+4 7 8 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 219
+0 2 5 
+3 1 6 
+4 7 8 
+14 = 9 + 5
+Nodo hijo: 220
+2 5 0 
+3 1 6 
+4 7 8 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 85
+2 1 5 
+6 4 3 
+7 8 0 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 221
+2 1 5 
+6 4 0 
+7 8 3 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 163
+2 5 8 
+4 3 1 
+6 0 7 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 222
+2 5 8 
+4 3 1 
+0 6 7 
+16 = 7 + 9
+Nodo hijo: 223
+2 5 8 
+4 3 1 
+6 7 0 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 172
+2 8 1 
+3 0 5 
+4 6 7 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 224
+2 8 1 
+0 3 5 
+4 6 7 
+16 = 8 + 8
+Nodo hijo: 225
+2 8 1 
+3 5 0 
+4 6 7 
+16 = 8 + 8
+Nodo hijo: 226
+2 8 1 
+3 6 5 
+4 0 7 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 84
+4 2 5 
+6 1 8 
+0 3 7 
+14 = 5 + 9
+
+-- Hijos --
+Nodo hijo: 227
+4 2 5 
+6 1 8 
+3 0 7 
+15 = 6 + 9
+-- --
+
+Expandiendo Nodo: 136
+2 6 1 
+3 0 5 
+4 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 228
+2 6 1 
+0 3 5 
+4 7 8 
+16 = 10 + 6
+Nodo hijo: 229
+2 6 1 
+3 5 0 
+4 7 8 
+16 = 10 + 6
+Nodo hijo: 230
+2 6 1 
+3 7 5 
+4 0 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 168
+2 1 5 
+3 8 7 
+0 4 6 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 231
+2 1 5 
+0 8 7 
+3 4 6 
+16 = 8 + 8
 -- --
 
 Expandiendo Nodo: 86
+2 1 5 
+6 0 3 
+7 4 8 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 232
+2 1 5 
+0 6 3 
+7 4 8 
+15 = 8 + 7
+Nodo hijo: 233
+2 1 5 
+6 3 0 
+7 4 8 
+15 = 8 + 7
+Nodo hijo: 234
+2 0 5 
+6 1 3 
+7 4 8 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 89
+2 8 1 
+4 5 0 
+6 3 7 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 235
+2 8 1 
+4 5 7 
+6 3 0 
+15 = 7 + 8
+Nodo hijo: 236
+2 8 0 
+4 5 1 
+6 3 7 
+15 = 7 + 8
+-- --
+
+Expandiendo Nodo: 173
+4 2 5 
+1 3 0 
+6 7 8 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 237
+4 2 5 
+1 3 8 
+6 7 0 
+16 = 9 + 7
+Nodo hijo: 238
+4 2 0 
+1 3 5 
+6 7 8 
+14 = 9 + 5
+-- --
+
+Expandiendo Nodo: 82
+2 5 3 
+4 1 8 
+6 7 0 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 239
+2 5 3 
+4 1 8 
+6 0 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 238
+4 2 0 
+1 3 5 
+6 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 240
+4 0 2 
+1 3 5 
+6 7 8 
+14 = 10 + 4
+-- --
+
+Expandiendo Nodo: 134
+2 0 3 
+4 5 1 
+6 7 8 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 241
+0 2 3 
+4 5 1 
+6 7 8 
+14 = 9 + 5
+Nodo hijo: 242
+2 3 0 
+4 5 1 
+6 7 8 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 240
+4 0 2 
+1 3 5 
+6 7 8 
+14 = 10 + 4
+
+-- Hijos --
+Nodo hijo: 243
+0 4 2 
+1 3 5 
+6 7 8 
+14 = 11 + 3
+Nodo hijo: 244
+4 3 2 
+1 0 5 
+6 7 8 
+15 = 11 + 4
+-- --
+
+Expandiendo Nodo: 178
+2 1 5 
+4 0 7 
+6 8 3 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 245
+2 1 5 
+0 4 7 
+6 8 3 
+14 = 8 + 6
+Nodo hijo: 246
+2 1 5 
+4 8 7 
+6 0 3 
+15 = 8 + 7
+Nodo hijo: 247
+2 0 5 
+4 1 7 
+6 8 3 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 164
+2 0 8 
+4 5 1 
+6 3 7 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 248
+0 2 8 
+4 5 1 
+6 3 7 
+14 = 7 + 7
+Nodo hijo: 249
+2 8 0 
+4 5 1 
+6 3 7 
+15 = 7 + 8
+-- --
+
+Expandiendo Nodo: 185
+2 1 5 
+0 6 8 
+3 4 7 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 250
+2 1 5 
+3 6 8 
+0 4 7 
+14 = 7 + 7
+Nodo hijo: 251
+0 1 5 
+2 6 8 
+3 4 7 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 186
+2 1 5 
+6 8 0 
+3 4 7 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 252
+2 1 5 
+6 8 7 
+3 4 0 
+15 = 7 + 8
+Nodo hijo: 253
+2 1 0 
+6 8 5 
+3 4 7 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 115
+2 1 5 
+0 6 8 
+3 4 7 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 254
+2 1 5 
+6 0 8 
+3 4 7 
+15 = 7 + 8
+Nodo hijo: 255
+0 1 5 
+2 6 8 
+3 4 7 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 103
+3 1 5 
+2 4 0 
+6 7 8 
+14 = 10 + 4
+
+-- Hijos --
+Nodo hijo: 256
+3 1 5 
+2 0 4 
+6 7 8 
+16 = 11 + 5
+Nodo hijo: 257
+3 1 5 
+2 4 8 
+6 7 0 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 255
+0 1 5 
+2 6 8 
+3 4 7 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 258
+1 0 5 
+2 6 8 
+3 4 7 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 97
+3 4 1 
+2 0 5 
+6 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 259
+3 4 1 
+0 2 5 
+6 7 8 
+15 = 10 + 5
+Nodo hijo: 260
+3 4 1 
+2 5 0 
+6 7 8 
+16 = 10 + 6
+Nodo hijo: 261
+3 4 1 
+2 7 5 
+6 0 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 189
+4 2 0 
+3 5 1 
+6 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 262
+4 0 2 
+3 5 1 
+6 7 8 
+14 = 10 + 4
+-- --
+
+Expandiendo Nodo: 101
+2 0 5 
+4 1 7 
+6 8 3 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 263
+0 2 5 
+4 1 7 
+6 8 3 
+14 = 7 + 7
+Nodo hijo: 264
+2 5 0 
+4 1 7 
+6 8 3 
+15 = 7 + 8
+-- --
+
+Expandiendo Nodo: 198
+0 4 5 
+1 2 3 
+6 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 265
+1 4 5 
+0 2 3 
+6 7 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 105
+2 1 5 
+6 4 7 
+0 8 3 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 266
+2 1 5 
+6 4 7 
+8 0 3 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 201
+1 4 5 
+2 3 8 
+6 7 0 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 267
+1 4 5 
+2 3 0 
+6 7 8 
+14 = 8 + 6
+-- --
+
+Expandiendo Nodo: 204
+2 1 5 
+4 7 3 
+6 0 8 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 268
+2 1 5 
+4 7 3 
+0 6 8 
+16 = 9 + 7
+Nodo hijo: 269
+2 1 5 
+4 0 3 
+6 7 8 
+14 = 9 + 5
+-- --
+
+Expandiendo Nodo: 267
+1 4 5 
+2 3 0 
+6 7 8 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 270
+1 4 5 
+2 0 3 
+6 7 8 
+15 = 9 + 6
+Nodo hijo: 271
+1 4 0 
+2 3 5 
+6 7 8 
+14 = 9 + 5
+-- --
+
+Expandiendo Nodo: 205
+8 1 0 
+2 4 5 
+6 3 7 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 272
+8 1 5 
+2 4 0 
+6 3 7 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 271
+1 4 0 
+2 3 5 
+6 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 273
+1 0 4 
+2 3 5 
+6 7 8 
+15 = 10 + 5
+-- --
+
+Expandiendo Nodo: 146
+2 5 8 
+3 1 0 
+4 6 7 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 274
+2 5 8 
+3 0 1 
+4 6 7 
+15 = 7 + 8
+Nodo hijo: 275
+2 5 8 
+3 1 7 
+4 6 0 
+15 = 7 + 8
+-- --
+
+Expandiendo Nodo: 107
+2 3 1 
+4 7 5 
+0 6 8 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 276
+2 3 1 
+0 7 5 
+4 6 8 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 112
+2 3 1 
+4 5 8 
+6 7 0 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 277
+2 3 1 
+4 5 8 
+6 0 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 212
+0 4 5 
+1 2 8 
+6 3 7 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 278
+1 4 5 
+0 2 8 
+6 3 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 218
+1 4 0 
+2 3 5 
+6 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 279
+1 0 4 
+2 3 5 
+6 7 8 
+15 = 10 + 5
+-- --
+
+Expandiendo Nodo: 219
+0 2 5 
+3 1 6 
+4 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 280
+3 2 5 
+0 1 6 
+4 7 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 223
+2 5 8 
+4 3 1 
+6 7 0 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 281
+2 5 8 
+4 3 0 
+6 7 1 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 194
+1 5 8 
+2 4 7 
+6 3 0 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 282
+1 5 8 
+2 4 7 
+6 0 3 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 169
+2 1 5 
+3 0 7 
+4 8 6 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 283
+2 1 5 
+0 3 7 
+4 8 6 
+16 = 8 + 8
+Nodo hijo: 284
+2 1 5 
+3 7 0 
+4 8 6 
+15 = 8 + 7
+Nodo hijo: 285
+2 0 5 
+3 1 7 
+4 8 6 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 121
+4 2 5 
+6 1 3 
+0 7 8 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 286
+4 2 5 
+6 1 3 
+7 0 8 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 123
+2 1 5 
+0 3 6 
+4 7 8 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 287
+2 1 5 
+4 3 6 
+0 7 8 
+15 = 9 + 6
+Nodo hijo: 288
+0 1 5 
+2 3 6 
+4 7 8 
+14 = 9 + 5
+-- --
+
+Expandiendo Nodo: 165
+2 0 3 
+4 5 1 
+6 7 8 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 289
+0 2 3 
+4 5 1 
+6 7 8 
+14 = 9 + 5
+Nodo hijo: 290
+2 5 3 
+4 0 1 
+6 7 8 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 124
+2 1 5 
+3 7 6 
+4 0 8 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 291
+2 1 5 
+3 7 6 
+0 4 8 
+15 = 9 + 6
+Nodo hijo: 292
+2 1 5 
+3 7 6 
+4 8 0 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 127
+4 2 1 
+8 0 5 
+6 3 7 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 293
+4 2 1 
+8 5 0 
+6 3 7 
+16 = 8 + 8
+Nodo hijo: 294
+4 2 1 
+8 3 5 
+6 0 7 
+15 = 8 + 7
+Nodo hijo: 295
+4 0 1 
+8 2 5 
+6 3 7 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 241
+0 2 3 
+4 5 1 
+6 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 296
+4 2 3 
+0 5 1 
+6 7 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 108
+2 3 1 
+4 7 5 
+6 8 0 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 297
+2 3 1 
+4 7 0 
+6 8 5 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 129
+2 1 5 
+0 6 4 
+3 7 8 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 298
+2 1 5 
+3 6 4 
+0 7 8 
+14 = 9 + 5
+Nodo hijo: 299
+0 1 5 
+2 6 4 
+3 7 8 
+14 = 9 + 5
+-- --
+
+Expandiendo Nodo: 243
+0 4 2 
+1 3 5 
+6 7 8 
+14 = 11 + 3
+
+-- Hijos --
+Nodo hijo: 300
+1 4 2 
+0 3 5 
+6 7 8 
+16 = 12 + 4
+-- --
+
+Expandiendo Nodo: 299
+0 1 5 
+2 6 4 
+3 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 301
+1 0 5 
+2 6 4 
+3 7 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 245
+2 1 5 
+0 4 7 
+6 8 3 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 302
+2 1 5 
+6 4 7 
+0 8 3 
+16 = 9 + 7
+Nodo hijo: 303
+0 1 5 
+2 4 7 
+6 8 3 
+14 = 9 + 5
+-- --
+
+Expandiendo Nodo: 248
+0 2 8 
+4 5 1 
+6 3 7 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 304
+4 2 8 
+0 5 1 
+6 3 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 303
+0 1 5 
+2 4 7 
+6 8 3 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 305
+1 0 5 
+2 4 7 
+6 8 3 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 250
+2 1 5 
+3 6 8 
+0 4 7 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 306
+2 1 5 
+3 6 8 
+4 0 7 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 251
+0 1 5 
+2 6 8 
+3 4 7 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 307
+1 0 5 
+2 6 8 
+3 4 7 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 253
+2 1 0 
+6 8 5 
+3 4 7 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 308
+2 0 1 
+6 8 5 
+3 4 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 184
+2 5 8 
+4 1 7 
+6 0 3 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 309
+2 5 8 
+4 1 7 
+0 6 3 
+16 = 7 + 9
+Nodo hijo: 310
+2 5 8 
+4 0 7 
+6 1 3 
+15 = 7 + 8
+-- --
+
+Expandiendo Nodo: 177
+2 1 5 
+0 8 7 
+4 6 3 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 311
+2 1 5 
+8 0 7 
+4 6 3 
+15 = 7 + 8
+Nodo hijo: 312
+0 1 5 
+2 8 7 
+4 6 3 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 137
+4 2 5 
+1 8 0 
+6 3 7 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 313
+4 2 5 
+1 8 7 
+6 3 0 
+15 = 7 + 8
+Nodo hijo: 314
+4 2 0 
+1 8 5 
+6 3 7 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 312
+0 1 5 
+2 8 7 
+4 6 3 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 315
+1 0 5 
+2 8 7 
+4 6 3 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 314
+4 2 0 
+1 8 5 
+6 3 7 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 316
+4 0 2 
+1 8 5 
+6 3 7 
+14 = 8 + 6
+-- --
+
+Expandiendo Nodo: 262
+4 0 2 
+3 5 1 
+6 7 8 
+14 = 10 + 4
+
+-- Hijos --
+Nodo hijo: 317
+0 4 2 
+3 5 1 
+6 7 8 
+14 = 11 + 3
+Nodo hijo: 318
+4 5 2 
+3 0 1 
+6 7 8 
+15 = 11 + 4
+-- --
+
+Expandiendo Nodo: 316
+4 0 2 
+1 8 5 
+6 3 7 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 319
+0 4 2 
+1 8 5 
+6 3 7 
+14 = 9 + 5
+Nodo hijo: 320
+4 8 2 
+1 0 5 
+6 3 7 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 317
+0 4 2 
+3 5 1 
+6 7 8 
+14 = 11 + 3
+
+-- Hijos --
+Nodo hijo: 321
+3 4 2 
+0 5 1 
+6 7 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 319
+0 4 2 
+1 8 5 
+6 3 7 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 322
+1 4 2 
+0 8 5 
+6 3 7 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 263
+0 2 5 
+4 1 7 
+6 8 3 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 323
+4 2 5 
+0 1 7 
+6 8 3 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 138
+4 2 5 
+1 3 8 
+6 0 7 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 324
+4 2 5 
+1 3 8 
+0 6 7 
+16 = 7 + 9
+Nodo hijo: 325
+4 2 5 
+1 3 8 
+6 7 0 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 269
+2 1 5 
+4 0 3 
+6 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 326
+2 1 5 
+0 4 3 
+6 7 8 
+14 = 10 + 4
+Nodo hijo: 327
+2 1 5 
+4 3 0 
+6 7 8 
+15 = 10 + 5
+Nodo hijo: 328
+2 0 5 
+4 1 3 
+6 7 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 325
+4 2 5 
+1 3 8 
+6 7 0 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 329
+4 2 5 
+1 3 0 
+6 7 8 
+14 = 8 + 6
+-- --
+
+Expandiendo Nodo: 326
+2 1 5 
+0 4 3 
+6 7 8 
+14 = 10 + 4
+
+-- Hijos --
+Nodo hijo: 330
+2 1 5 
+6 4 3 
+0 7 8 
+16 = 11 + 5
+Nodo hijo: 331
+0 1 5 
+2 4 3 
+6 7 8 
+14 = 11 + 3
+-- --
+
+Expandiendo Nodo: 329
+4 2 5 
+1 3 0 
+6 7 8 
+14 = 8 + 6
+
+-- Hijos --
+Nodo hijo: 332
+4 2 5 
+1 0 3 
+6 7 8 
+15 = 9 + 6
+Nodo hijo: 333
+4 2 0 
+1 3 5 
+6 7 8 
+14 = 9 + 5
+-- --
+
+Expandiendo Nodo: 331
+0 1 5 
+2 4 3 
+6 7 8 
+14 = 11 + 3
+
+-- Hijos --
+Nodo hijo: 334
+1 0 5 
+2 4 3 
+6 7 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 333
+4 2 0 
+1 3 5 
+6 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 335
+4 0 2 
+1 3 5 
+6 7 8 
+14 = 10 + 4
+-- --
+
+Expandiendo Nodo: 140
+1 5 0 
+2 3 8 
+4 6 7 
+14 = 5 + 9
+
+-- Hijos --
+Nodo hijo: 336
+1 5 8 
+2 3 0 
+4 6 7 
+15 = 6 + 9
+-- --
+
+Expandiendo Nodo: 335
+4 0 2 
+1 3 5 
+6 7 8 
+14 = 10 + 4
+
+-- Hijos --
+Nodo hijo: 337
+0 4 2 
+1 3 5 
+6 7 8 
+14 = 11 + 3
+Nodo hijo: 338
+4 3 2 
+1 0 5 
+6 7 8 
+15 = 11 + 4
+-- --
+
+Expandiendo Nodo: 141
+1 3 5 
+2 0 8 
+4 6 7 
+14 = 5 + 9
+
+-- Hijos --
+Nodo hijo: 339
+1 3 5 
+0 2 8 
+4 6 7 
+15 = 6 + 9
+Nodo hijo: 340
+1 3 5 
+2 8 0 
+4 6 7 
+15 = 6 + 9
+Nodo hijo: 341
+1 3 5 
+2 6 8 
+4 0 7 
+15 = 6 + 9
+-- --
+
+Expandiendo Nodo: 337
+0 4 2 
+1 3 5 
+6 7 8 
+14 = 11 + 3
+
+-- Hijos --
+Nodo hijo: 342
+1 4 2 
+0 3 5 
+6 7 8 
+16 = 12 + 4
+-- --
+
+Expandiendo Nodo: 288
+0 1 5 
+2 3 6 
+4 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 343
+1 0 5 
+2 3 6 
+4 7 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 289
+0 2 3 
+4 5 1 
+6 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 344
+4 2 3 
+0 5 1 
+6 7 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 147
+1 4 5 
+0 2 8 
+6 3 7 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 345
+1 4 5 
+6 2 8 
+0 3 7 
+16 = 7 + 9
+Nodo hijo: 346
+0 4 5 
+1 2 8 
+6 3 7 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 298
+2 1 5 
+3 6 4 
+0 7 8 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 347
+2 1 5 
+3 6 4 
+7 0 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 346
+0 4 5 
+1 2 8 
+6 3 7 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 348
+4 0 5 
+1 2 8 
+6 3 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 148
+1 4 5 
+2 8 0 
+6 3 7 
+14 = 6 + 8
+
+-- Hijos --
+Nodo hijo: 349
+1 4 5 
+2 8 7 
+6 3 0 
+15 = 7 + 8
+Nodo hijo: 350
+1 4 0 
+2 8 5 
+6 3 7 
+14 = 7 + 7
+-- --
+
+Expandiendo Nodo: 350
+1 4 0 
+2 8 5 
+6 3 7 
+14 = 7 + 7
+
+-- Hijos --
+Nodo hijo: 351
+1 0 4 
+2 8 5 
+6 3 7 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 166
+2 5 8 
+6 4 1 
+0 3 7 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 352
+2 5 8 
+6 4 1 
+3 0 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 351
+1 0 4 
+2 8 5 
+6 3 7 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 353
+0 1 4 
+2 8 5 
+6 3 7 
+14 = 9 + 5
+Nodo hijo: 354
+1 8 4 
+2 0 5 
+6 3 7 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 353
+0 1 4 
+2 8 5 
+6 3 7 
+14 = 9 + 5
+
+-- Hijos --
+Nodo hijo: 355
+2 1 4 
+0 8 5 
+6 3 7 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 341
+1 3 5 
+2 6 8 
+4 0 7 
+15 = 6 + 9
+
+-- Hijos --
+Nodo hijo: 356
+1 3 5 
+2 6 8 
+0 4 7 
+16 = 7 + 9
+Nodo hijo: 357
+1 3 5 
+2 6 8 
+4 7 0 
+15 = 7 + 8
+-- --
+
+Expandiendo Nodo: 143
+2 4 1 
+6 0 5 
+3 7 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 358
+2 4 1 
+0 6 5 
+3 7 8 
+16 = 10 + 6
+Nodo hijo: 359
+2 4 1 
+6 5 0 
+3 7 8 
+17 = 10 + 7
+Nodo hijo: 360
+2 4 1 
+6 7 5 
+3 0 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 357
+1 3 5 
+2 6 8 
+4 7 0 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 361
+1 3 5 
+2 6 0 
+4 7 8 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 332
+4 2 5 
+1 0 3 
+6 7 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 362
+4 2 5 
+0 1 3 
+6 7 8 
+16 = 10 + 6
+Nodo hijo: 363
+4 2 5 
+1 7 3 
+6 0 8 
+17 = 10 + 7
+Nodo hijo: 364
+4 0 5 
+1 2 3 
+6 7 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 361
+1 3 5 
+2 6 0 
+4 7 8 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 365
+1 3 5 
+2 0 6 
+4 7 8 
+16 = 9 + 7
+Nodo hijo: 366
+1 3 0 
+2 6 5 
+4 7 8 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 195
+6 2 1 
+0 4 5 
+3 7 8 
+15 = 10 + 5
+
+-- Hijos --
+Nodo hijo: 367
+6 2 1 
+4 0 5 
+3 7 8 
+17 = 11 + 6
+Nodo hijo: 368
+6 2 1 
+3 4 5 
+0 7 8 
+15 = 11 + 4
+-- --
+
+Expandiendo Nodo: 366
+1 3 0 
+2 6 5 
+4 7 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 369
+1 0 3 
+2 6 5 
+4 7 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 368
+6 2 1 
+3 4 5 
+0 7 8 
+15 = 11 + 4
+
+-- Hijos --
+Nodo hijo: 370
+6 2 1 
+3 4 5 
+7 0 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 279
+1 0 4 
+2 3 5 
+6 7 8 
+15 = 10 + 5
+
+-- Hijos --
+Nodo hijo: 371
+0 1 4 
+2 3 5 
+6 7 8 
+14 = 11 + 3
+Nodo hijo: 372
+1 3 4 
+2 0 5 
+6 7 8 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 371
+0 1 4 
+2 3 5 
+6 7 8 
+14 = 11 + 3
+
+-- Hijos --
+Nodo hijo: 373
+2 1 4 
+0 3 5 
+6 7 8 
+16 = 12 + 4
+-- --
+
+Expandiendo Nodo: 311
+2 1 5 
+8 0 7 
+4 6 3 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 374
+2 1 5 
+8 7 0 
+4 6 3 
+16 = 8 + 8
+Nodo hijo: 375
+2 1 5 
+8 6 7 
+4 0 3 
+16 = 8 + 8
+Nodo hijo: 376
+2 0 5 
+8 1 7 
+4 6 3 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 199
+4 5 0 
+1 2 3 
+6 7 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 377
+4 5 3 
+1 2 0 
+6 7 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 327
+2 1 5 
+4 3 0 
+6 7 8 
+15 = 10 + 5
+
+-- Hijos --
+Nodo hijo: 378
+2 1 5 
+4 3 8 
+6 7 0 
+17 = 11 + 6
+Nodo hijo: 379
+2 1 0 
+4 3 5 
+6 7 8 
+15 = 11 + 4
+-- --
+
+Expandiendo Nodo: 310
+2 5 8 
+4 0 7 
+6 1 3 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 380
+2 5 8 
+0 4 7 
+6 1 3 
+15 = 8 + 7
+Nodo hijo: 381
+2 5 8 
+4 7 0 
+6 1 3 
+16 = 8 + 8
+Nodo hijo: 382
+2 0 8 
+4 5 7 
+6 1 3 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 196
+2 8 1 
+4 3 0 
+6 7 5 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 383
+2 8 1 
+4 0 3 
+6 7 5 
+16 = 9 + 7
+Nodo hijo: 384
+2 8 0 
+4 3 1 
+6 7 5 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 318
+4 5 2 
+3 0 1 
+6 7 8 
+15 = 11 + 4
+
+-- Hijos --
+Nodo hijo: 385
+4 5 2 
+0 3 1 
+6 7 8 
+17 = 12 + 5
+Nodo hijo: 386
+4 5 2 
+3 1 0 
+6 7 8 
+16 = 12 + 4
+Nodo hijo: 387
+4 5 2 
+3 7 1 
+6 0 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 320
+4 8 2 
+1 0 5 
+6 3 7 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 388
+4 8 2 
+0 1 5 
+6 3 7 
+16 = 10 + 6
+Nodo hijo: 389
+4 8 2 
+1 5 0 
+6 3 7 
+17 = 10 + 7
+Nodo hijo: 390
+4 8 2 
+1 3 5 
+6 0 7 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 338
+4 3 2 
+1 0 5 
+6 7 8 
+15 = 11 + 4
+
+-- Hijos --
+Nodo hijo: 391
+4 3 2 
+0 1 5 
+6 7 8 
+16 = 12 + 4
+Nodo hijo: 392
+4 3 2 
+1 5 0 
+6 7 8 
+17 = 12 + 5
+Nodo hijo: 393
+4 3 2 
+1 7 5 
+6 0 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 339
+1 3 5 
+0 2 8 
+4 6 7 
+15 = 6 + 9
+
+-- Hijos --
+Nodo hijo: 394
+1 3 5 
+4 2 8 
+0 6 7 
+16 = 7 + 9
+Nodo hijo: 395
+0 3 5 
+1 2 8 
+4 6 7 
+15 = 7 + 8
+-- --
+
+Expandiendo Nodo: 340
+1 3 5 
+2 8 0 
+4 6 7 
+15 = 6 + 9
+
+-- Hijos --
+Nodo hijo: 396
+1 3 5 
+2 8 7 
+4 6 0 
+16 = 7 + 9
+Nodo hijo: 397
+1 3 0 
+2 8 5 
+4 6 7 
+15 = 7 + 8
+-- --
+
+Expandiendo Nodo: 395
+0 3 5 
+1 2 8 
+4 6 7 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 398
+3 0 5 
+1 2 8 
+4 6 7 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 397
+1 3 0 
+2 8 5 
+4 6 7 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 399
+1 0 3 
+2 8 5 
+4 6 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 98
+3 2 5 
+0 1 8 
+4 6 7 
+15 = 6 + 9
+
+-- Hijos --
+Nodo hijo: 400
+3 2 5 
+1 0 8 
+4 6 7 
+16 = 7 + 9
+Nodo hijo: 401
+3 2 5 
+4 1 8 
+0 6 7 
+16 = 7 + 9
+-- --
+
+Expandiendo Nodo: 213
+4 5 0 
+1 2 8 
+6 3 7 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 402
+4 5 8 
+1 2 0 
+6 3 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 349
+1 4 5 
+2 8 7 
+6 3 0 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 403
+1 4 5 
+2 8 7 
+6 0 3 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 313
+4 2 5 
+1 8 7 
+6 3 0 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 404
+4 2 5 
+1 8 7 
+6 0 3 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 197
+2 8 1 
+6 4 5 
+3 0 7 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 405
+2 8 1 
+6 4 5 
+3 7 0 
+15 = 9 + 6
+Nodo hijo: 406
+2 8 1 
+6 0 5 
+3 4 7 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 153
+1 5 3 
+2 0 4 
+6 7 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 407
+1 5 3 
+0 2 4 
+6 7 8 
+16 = 10 + 6
+Nodo hijo: 408
+1 5 3 
+2 7 4 
+6 0 8 
+17 = 10 + 7
+Nodo hijo: 409
+1 0 3 
+2 5 4 
+6 7 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 244
+4 3 2 
+1 0 5 
+6 7 8 
+15 = 11 + 4
+
+-- Hijos --
+Nodo hijo: 410
+4 3 2 
+0 1 5 
+6 7 8 
+16 = 12 + 4
+Nodo hijo: 411
+4 3 2 
+1 5 0 
+6 7 8 
+17 = 12 + 5
+Nodo hijo: 412
+4 3 2 
+1 7 5 
+6 0 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 221
+2 1 5 
+6 4 0 
+7 8 3 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 413
+2 1 5 
+6 0 4 
+7 8 3 
+17 = 9 + 8
+Nodo hijo: 414
+2 1 0 
+6 4 5 
+7 8 3 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 128
+4 2 1 
+6 8 5 
+0 3 7 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 415
+4 2 1 
+6 8 5 
+3 0 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 220
+2 5 0 
+3 1 6 
+4 7 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 416
+2 5 6 
+3 1 0 
+4 7 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 227
+4 2 5 
+6 1 8 
+3 0 7 
+15 = 6 + 9
+
+-- Hijos --
+Nodo hijo: 417
+4 2 5 
+6 1 8 
+3 7 0 
+15 = 7 + 8
+Nodo hijo: 418
+4 2 5 
+6 0 8 
+3 1 7 
+16 = 7 + 9
+-- --
+
+Expandiendo Nodo: 150
+4 2 1 
+6 3 5 
+7 0 8 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 419
+4 2 1 
+6 3 5 
+7 8 0 
+17 = 9 + 8
+Nodo hijo: 420
+4 2 1 
+6 0 5 
+7 3 8 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 226
+2 8 1 
+3 6 5 
+4 0 7 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 421
+2 8 1 
+3 6 5 
+0 4 7 
+16 = 9 + 7
+Nodo hijo: 422
+2 8 1 
+3 6 5 
+4 7 0 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 174
+4 2 5 
+1 7 3 
+6 0 8 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 423
+4 2 5 
+1 7 3 
+0 6 8 
+17 = 9 + 8
+Nodo hijo: 424
+4 2 5 
+1 7 3 
+6 8 0 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 422
+2 8 1 
+3 6 5 
+4 7 0 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 425
+2 8 1 
+3 6 0 
+4 7 5 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 242
+2 3 0 
+4 5 1 
+6 7 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 426
+2 3 1 
+4 5 0 
+6 7 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 180
+2 5 3 
+6 4 1 
+0 7 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 427
+2 5 3 
+6 4 1 
+7 0 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 379
+2 1 0 
+4 3 5 
+6 7 8 
+15 = 11 + 4
+
+-- Hijos --
+Nodo hijo: 428
+2 0 1 
+4 3 5 
+6 7 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 380
+2 5 8 
+0 4 7 
+6 1 3 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 429
+2 5 8 
+6 4 7 
+0 1 3 
+17 = 9 + 8
+Nodo hijo: 430
+0 5 8 
+2 4 7 
+6 1 3 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 236
+2 8 0 
+4 5 1 
+6 3 7 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 431
+2 0 8 
+4 5 1 
+6 3 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 249
+2 8 0 
+4 5 1 
+6 3 7 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 432
+2 8 1 
+4 5 0 
+6 3 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 188
+4 2 1 
+3 5 8 
+6 7 0 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 433
+4 2 1 
+3 5 8 
+6 0 7 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 191
+4 2 1 
+3 7 5 
+0 6 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 434
+4 2 1 
+0 7 5 
+3 6 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 133
+2 5 3 
+4 7 1 
+6 0 8 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 435
+2 5 3 
+4 7 1 
+0 6 8 
+17 = 9 + 8
+Nodo hijo: 436
+2 5 3 
+4 7 1 
+6 8 0 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 193
+1 5 8 
+2 0 4 
+6 3 7 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 437
+1 5 8 
+0 2 4 
+6 3 7 
+16 = 8 + 8
+Nodo hijo: 438
+1 5 8 
+2 3 4 
+6 0 7 
+16 = 8 + 8
+Nodo hijo: 439
+1 0 8 
+2 5 4 
+6 3 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 170
+5 0 8 
+2 4 1 
+6 3 7 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 440
+5 8 0 
+2 4 1 
+6 3 7 
+16 = 9 + 7
+Nodo hijo: 441
+5 4 8 
+2 0 1 
+6 3 7 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 405
+2 8 1 
+6 4 5 
+3 7 0 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 442
+2 8 1 
+6 4 0 
+3 7 5 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 264
+2 5 0 
+4 1 7 
+6 8 3 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 443
+2 5 7 
+4 1 0 
+6 8 3 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 192
+4 2 1 
+3 7 5 
+6 8 0 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 444
+4 2 1 
+3 7 0 
+6 8 5 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 414
+2 1 0 
+6 4 5 
+7 8 3 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 445
+2 0 1 
+6 4 5 
+7 8 3 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 417
+4 2 5 
+6 1 8 
+3 7 0 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 446
+4 2 5 
+6 1 0 
+3 7 8 
+15 = 8 + 7
+-- --
+
+Expandiendo Nodo: 207
+2 1 5 
+7 3 0 
+4 6 8 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 447
+2 1 5 
+7 3 8 
+4 6 0 
+17 = 9 + 8
+Nodo hijo: 448
+2 1 0 
+7 3 5 
+4 6 8 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 157
+2 0 1 
+4 7 5 
+6 8 3 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 449
+0 2 1 
+4 7 5 
+6 8 3 
+15 = 9 + 6
+Nodo hijo: 450
+2 7 1 
+4 0 5 
+6 8 3 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 448
+2 1 0 
+7 3 5 
+4 6 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 451
+2 0 1 
+7 3 5 
+4 6 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 208
+2 1 5 
+7 6 3 
+4 0 8 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 452
+2 1 5 
+7 6 3 
+0 4 8 
+16 = 9 + 7
+Nodo hijo: 453
+2 1 5 
+7 6 3 
+4 8 0 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 430
+0 5 8 
+2 4 7 
+6 1 3 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 454
+5 0 8 
+2 4 7 
+6 1 3 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 183
+5 0 3 
+2 4 1 
+6 7 8 
+15 = 10 + 5
+
+-- Hijos --
+Nodo hijo: 455
+5 3 0 
+2 4 1 
+6 7 8 
+16 = 11 + 5
+Nodo hijo: 456
+5 4 3 
+2 0 1 
+6 7 8 
+17 = 11 + 6
+-- --
+
+Expandiendo Nodo: 266
+2 1 5 
+6 4 7 
+8 0 3 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 457
+2 1 5 
+6 4 7 
+8 3 0 
+16 = 9 + 7
+Nodo hijo: 458
+2 1 5 
+6 0 7 
+8 4 3 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 446
+4 2 5 
+6 1 0 
+3 7 8 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 459
+4 2 5 
+6 0 1 
+3 7 8 
+16 = 9 + 7
+Nodo hijo: 460
+4 2 0 
+6 1 5 
+3 7 8 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 215
+4 1 5 
+3 0 2 
+6 7 8 
+15 = 11 + 4
+
+-- Hijos --
+Nodo hijo: 461
+4 1 5 
+0 3 2 
+6 7 8 
+17 = 12 + 5
+Nodo hijo: 462
+4 1 5 
+3 7 2 
+6 0 8 
+17 = 12 + 5
+Nodo hijo: 463
+4 0 5 
+3 1 2 
+6 7 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 449
+0 2 1 
+4 7 5 
+6 8 3 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 464
+4 2 1 
+0 7 5 
+6 8 3 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 276
+2 3 1 
+0 7 5 
+4 6 8 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 465
+2 3 1 
+7 0 5 
+4 6 8 
+16 = 9 + 7
+Nodo hijo: 466
+0 3 1 
+2 7 5 
+4 6 8 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 273
+1 0 4 
+2 3 5 
+6 7 8 
+15 = 10 + 5
+
+-- Hijos --
+Nodo hijo: 467
+0 1 4 
+2 3 5 
+6 7 8 
+14 = 11 + 3
+Nodo hijo: 468
+1 3 4 
+2 0 5 
+6 7 8 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 467
+0 1 4 
+2 3 5 
+6 7 8 
+14 = 11 + 3
+
+-- Hijos --
+Nodo hijo: 469
+2 1 4 
+0 3 5 
+6 7 8 
+16 = 12 + 4
+-- --
+
+Expandiendo Nodo: 154
+1 5 3 
+2 4 8 
+6 7 0 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 470
+1 5 3 
+2 4 8 
+6 0 7 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 460
+4 2 0 
+6 1 5 
+3 7 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 471
+4 0 2 
+6 1 5 
+3 7 8 
+15 = 10 + 5
+-- --
+
+Expandiendo Nodo: 275
+2 5 8 
+3 1 7 
+4 6 0 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 472
+2 5 8 
+3 1 7 
+4 0 6 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 466
+0 3 1 
+2 7 5 
+4 6 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 473
+3 0 1 
+2 7 5 
+4 6 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 471
+4 0 2 
+6 1 5 
+3 7 8 
+15 = 10 + 5
+
+-- Hijos --
+Nodo hijo: 474
+0 4 2 
+6 1 5 
+3 7 8 
+15 = 11 + 4
+Nodo hijo: 475
+4 1 2 
+6 0 5 
+3 7 8 
+15 = 11 + 4
+-- --
+
+Expandiendo Nodo: 287
+2 1 5 
+4 3 6 
+0 7 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 476
+2 1 5 
+4 3 6 
+7 0 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 474
+0 4 2 
+6 1 5 
+3 7 8 
+15 = 11 + 4
+
+-- Hijos --
+Nodo hijo: 477
+6 4 2 
+0 1 5 
+3 7 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 122
+3 4 1 
+0 2 5 
+6 7 8 
+15 = 10 + 5
+
+-- Hijos --
+Nodo hijo: 478
+3 4 1 
+2 0 5 
+6 7 8 
+16 = 11 + 5
+Nodo hijo: 479
+3 4 1 
+6 2 5 
+0 7 8 
+17 = 11 + 6
+-- --
+
+Expandiendo Nodo: 232
+2 1 5 
+0 6 3 
+7 4 8 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 480
+2 1 5 
+7 6 3 
+0 4 8 
+16 = 9 + 7
+Nodo hijo: 481
+0 1 5 
+2 6 3 
+7 4 8 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 281
+2 5 8 
+4 3 0 
+6 7 1 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 482
+2 5 8 
+4 0 3 
+6 7 1 
+16 = 9 + 7
+Nodo hijo: 483
+2 5 0 
+4 3 8 
+6 7 1 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 475
+4 1 2 
+6 0 5 
+3 7 8 
+15 = 11 + 4
+
+-- Hijos --
+Nodo hijo: 484
+4 1 2 
+0 6 5 
+3 7 8 
+16 = 12 + 4
+Nodo hijo: 485
+4 1 2 
+6 5 0 
+3 7 8 
+17 = 12 + 5
+Nodo hijo: 486
+4 1 2 
+6 7 5 
+3 0 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 233
+2 1 5 
+6 3 0 
+7 4 8 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 487
+2 1 5 
+6 3 8 
+7 4 0 
+17 = 9 + 8
+Nodo hijo: 488
+2 1 0 
+6 3 5 
+7 4 8 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 235
+2 8 1 
+4 5 7 
+6 3 0 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 489
+2 8 1 
+4 5 7 
+6 0 3 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 481
+0 1 5 
+2 6 3 
+7 4 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 490
+1 0 5 
+2 6 3 
+7 4 8 
+18 = 10 + 8
+-- --
+
+Expandiendo Nodo: 282
+1 5 8 
+2 4 7 
+6 0 3 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 491
+1 5 8 
+2 4 7 
+0 6 3 
+17 = 9 + 8
+Nodo hijo: 492
+1 5 8 
+2 0 7 
+6 4 3 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 488
+2 1 0 
+6 3 5 
+7 4 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 493
+2 0 1 
+6 3 5 
+7 4 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 131
+2 0 5 
+6 1 4 
+3 7 8 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 494
+0 2 5 
+6 1 4 
+3 7 8 
+15 = 9 + 6
+Nodo hijo: 495
+2 5 0 
+6 1 4 
+3 7 8 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 290
+2 5 3 
+4 0 1 
+6 7 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 496
+2 5 3 
+0 4 1 
+6 7 8 
+15 = 10 + 5
+Nodo hijo: 497
+2 5 3 
+4 1 0 
+6 7 8 
+16 = 10 + 6
+Nodo hijo: 498
+2 5 3 
+4 7 1 
+6 0 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 295
+4 0 1 
+8 2 5 
+6 3 7 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 499
+0 4 1 
+8 2 5 
+6 3 7 
+15 = 9 + 6
+Nodo hijo: 500
+4 1 0 
+8 2 5 
+6 3 7 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 246
+2 1 5 
+4 8 7 
+6 0 3 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 501
+2 1 5 
+4 8 7 
+0 6 3 
+17 = 9 + 8
+Nodo hijo: 502
+2 1 5 
+4 8 7 
+6 3 0 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 494
+0 2 5 
+6 1 4 
+3 7 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 503
+6 2 5 
+0 1 4 
+3 7 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 496
+2 5 3 
+0 4 1 
+6 7 8 
+15 = 10 + 5
+
+-- Hijos --
+Nodo hijo: 504
+2 5 3 
+6 4 1 
+0 7 8 
+17 = 11 + 6
+Nodo hijo: 505
+0 5 3 
+2 4 1 
+6 7 8 
+15 = 11 + 4
+-- --
+
+Expandiendo Nodo: 499
+0 4 1 
+8 2 5 
+6 3 7 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 506
+8 4 1 
+0 2 5 
+6 3 7 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 500
+4 1 0 
+8 2 5 
+6 3 7 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 507
+4 1 5 
+8 2 0 
+6 3 7 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 130
+2 1 5 
+6 7 4 
+3 0 8 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 508
+2 1 5 
+6 7 4 
+0 3 8 
+16 = 9 + 7
+Nodo hijo: 509
+2 1 5 
+6 7 4 
+3 8 0 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 505
+0 5 3 
+2 4 1 
+6 7 8 
+15 = 11 + 4
+
+-- Hijos --
+Nodo hijo: 510
+5 0 3 
+2 4 1 
+6 7 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 109
+1 0 5 
+2 4 7 
+6 8 3 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 511
+1 5 0 
+2 4 7 
+6 8 3 
+16 = 9 + 7
+Nodo hijo: 512
+1 4 5 
+2 0 7 
+6 8 3 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 252
+2 1 5 
+6 8 7 
+3 4 0 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 513
+2 1 5 
+6 8 7 
+3 0 4 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 254
+2 1 5 
+6 0 8 
+3 4 7 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 514
+2 1 5 
+6 8 0 
+3 4 7 
+16 = 8 + 8
+Nodo hijo: 515
+2 1 5 
+6 4 8 
+3 0 7 
+15 = 8 + 7
+Nodo hijo: 516
+2 0 5 
+6 1 8 
+3 4 7 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 182
+2 0 1 
+4 7 5 
+6 8 3 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 517
+0 2 1 
+4 7 5 
+6 8 3 
+15 = 9 + 6
+Nodo hijo: 518
+2 7 1 
+4 0 5 
+6 8 3 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 259
+3 4 1 
+0 2 5 
+6 7 8 
+15 = 10 + 5
+
+-- Hijos --
+Nodo hijo: 519
+3 4 1 
+6 2 5 
+0 7 8 
+17 = 11 + 6
+Nodo hijo: 520
+0 4 1 
+3 2 5 
+6 7 8 
+14 = 11 + 3
+-- --
+
+Expandiendo Nodo: 520
+0 4 1 
+3 2 5 
+6 7 8 
+14 = 11 + 3
+
+-- Hijos --
+Nodo hijo: 521
+4 0 1 
+3 2 5 
+6 7 8 
+16 = 12 + 4
+-- --
+
+Expandiendo Nodo: 515
+2 1 5 
+6 4 8 
+3 0 7 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 522
+2 1 5 
+6 4 8 
+0 3 7 
+16 = 9 + 7
+Nodo hijo: 523
+2 1 5 
+6 4 8 
+3 7 0 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 517
+0 2 1 
+4 7 5 
+6 8 3 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 524
+4 2 1 
+0 7 5 
+6 8 3 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 306
+2 1 5 
+3 6 8 
+4 0 7 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 525
+2 1 5 
+3 6 8 
+4 7 0 
+15 = 9 + 6
+Nodo hijo: 526
+2 1 5 
+3 0 8 
+4 6 7 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 523
+2 1 5 
+6 4 8 
+3 7 0 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 527
+2 1 5 
+6 4 0 
+3 7 8 
+15 = 10 + 5
+-- --
+
+Expandiendo Nodo: 270
+1 4 5 
+2 0 3 
+6 7 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 528
+1 4 5 
+0 2 3 
+6 7 8 
+16 = 10 + 6
+Nodo hijo: 529
+1 4 5 
+2 7 3 
+6 0 8 
+17 = 10 + 7
+Nodo hijo: 530
+1 0 5 
+2 4 3 
+6 7 8 
+15 = 10 + 5
+-- --
+
+Expandiendo Nodo: 525
+2 1 5 
+3 6 8 
+4 7 0 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 531
+2 1 5 
+3 6 0 
+4 7 8 
+15 = 10 + 5
+-- --
+
+Expandiendo Nodo: 527
+2 1 5 
+6 4 0 
+3 7 8 
+15 = 10 + 5
+
+-- Hijos --
+Nodo hijo: 532
+2 1 5 
+6 0 4 
+3 7 8 
+17 = 11 + 6
+Nodo hijo: 533
+2 1 0 
+6 4 5 
+3 7 8 
+15 = 11 + 4
+-- --
+
+Expandiendo Nodo: 530
+1 0 5 
+2 4 3 
+6 7 8 
+15 = 10 + 5
+
+-- Hijos --
+Nodo hijo: 534
+0 1 5 
+2 4 3 
+6 7 8 
+14 = 11 + 3
+Nodo hijo: 535
+1 5 0 
+2 4 3 
+6 7 8 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 534
+0 1 5 
+2 4 3 
+6 7 8 
+14 = 11 + 3
+
+-- Hijos --
+Nodo hijo: 536
+2 1 5 
+0 4 3 
+6 7 8 
+16 = 12 + 4
+-- --
+
+Expandiendo Nodo: 531
+2 1 5 
+3 6 0 
+4 7 8 
+15 = 10 + 5
+
+-- Hijos --
+Nodo hijo: 537
+2 1 5 
+3 0 6 
+4 7 8 
+16 = 11 + 5
+Nodo hijo: 538
+2 1 0 
+3 6 5 
+4 7 8 
+15 = 11 + 4
+-- --
+
+Expandiendo Nodo: 533
+2 1 0 
+6 4 5 
+3 7 8 
+15 = 11 + 4
+
+-- Hijos --
+Nodo hijo: 539
+2 0 1 
+6 4 5 
+3 7 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 274
+2 5 8 
+3 0 1 
+4 6 7 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 540
+2 5 8 
+0 3 1 
+4 6 7 
+17 = 8 + 9
+Nodo hijo: 541
+2 5 8 
+3 6 1 
+4 0 7 
+16 = 8 + 8
+Nodo hijo: 542
+2 0 8 
+3 5 1 
+4 6 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 538
+2 1 0 
+3 6 5 
+4 7 8 
+15 = 11 + 4
+
+-- Hijos --
+Nodo hijo: 543
+2 0 1 
+3 6 5 
+4 7 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 284
+2 1 5 
+3 7 0 
+4 8 6 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 544
+2 1 5 
+3 7 6 
+4 8 0 
+16 = 9 + 7
+Nodo hijo: 545
+2 1 0 
+3 7 5 
+4 8 6 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 187
+2 0 5 
+6 1 8 
+3 4 7 
+15 = 6 + 9
+
+-- Hijos --
+Nodo hijo: 546
+0 2 5 
+6 1 8 
+3 4 7 
+15 = 7 + 8
+Nodo hijo: 547
+2 5 0 
+6 1 8 
+3 4 7 
+16 = 7 + 9
+-- --
+
+Expandiendo Nodo: 144
+2 8 1 
+4 3 5 
+0 6 7 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 548
+2 8 1 
+0 3 5 
+4 6 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 545
+2 1 0 
+3 7 5 
+4 8 6 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 549
+2 0 1 
+3 7 5 
+4 8 6 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 546
+0 2 5 
+6 1 8 
+3 4 7 
+15 = 7 + 8
+
+-- Hijos --
+Nodo hijo: 550
+6 2 5 
+0 1 8 
+3 4 7 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 291
+2 1 5 
+3 7 6 
+0 4 8 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 551
+2 1 5 
+0 7 6 
+3 4 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 336
+1 5 8 
+2 3 0 
+4 6 7 
+15 = 6 + 9
+
+-- Hijos --
+Nodo hijo: 552
+1 5 8 
+2 0 3 
+4 6 7 
+16 = 7 + 9
+Nodo hijo: 553
+1 5 8 
+2 3 7 
+4 6 0 
+16 = 7 + 9
+-- --
+
+Expandiendo Nodo: 294
+4 2 1 
+8 3 5 
+6 0 7 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 554
+4 2 1 
+8 3 5 
+0 6 7 
+17 = 9 + 8
+Nodo hijo: 555
+4 2 1 
+8 3 5 
+6 7 0 
+15 = 9 + 6
+-- --
+
+Expandiendo Nodo: 160
+1 4 5 
+2 7 3 
+6 0 8 
+15 = 8 + 7
+
+-- Hijos --
+Nodo hijo: 556
+1 4 5 
+2 7 3 
+0 6 8 
+17 = 9 + 8
+Nodo hijo: 557
+1 4 5 
+2 7 3 
+6 8 0 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 555
+4 2 1 
+8 3 5 
+6 7 0 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 558
+4 2 1 
+8 3 0 
+6 7 5 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 401
+3 2 5 
+4 1 8 
+0 6 7 
+16 = 7 + 9
+
+-- Hijos --
+Nodo hijo: 559
+3 2 5 
+4 1 8 
+6 0 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 352
+2 5 8 
+6 4 1 
+3 0 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 560
+2 5 8 
+6 4 1 
+3 7 0 
+16 = 9 + 7
+Nodo hijo: 561
+2 5 8 
+6 0 1 
+3 4 7 
+18 = 9 + 9
+-- --
+
+Expandiendo Nodo: 559
+3 2 5 
+4 1 8 
+6 0 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 562
+3 2 5 
+4 1 8 
+6 7 0 
+16 = 9 + 7
+Nodo hijo: 563
+3 2 5 
+4 0 8 
+6 1 7 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 328
+2 0 5 
+4 1 3 
+6 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 564
+0 2 5 
+4 1 3 
+6 7 8 
+16 = 11 + 5
+Nodo hijo: 565
+2 5 0 
+4 1 3 
+6 7 8 
+17 = 11 + 6
+-- --
+
+Expandiendo Nodo: 247
+2 0 5 
+4 1 7 
+6 8 3 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 566
+0 2 5 
+4 1 7 
+6 8 3 
+16 = 9 + 7
+Nodo hijo: 567
+2 5 0 
+4 1 7 
+6 8 3 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 216
+4 1 5 
+3 2 8 
+6 7 0 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 568
+4 1 5 
+3 2 8 
+6 0 7 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 348
+4 0 5 
+1 2 8 
+6 3 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 569
+4 5 0 
+1 2 8 
+6 3 7 
+17 = 9 + 8
+Nodo hijo: 570
+4 2 5 
+1 0 8 
+6 3 7 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 203
+2 3 1 
+6 0 5 
+7 4 8 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 571
+2 3 1 
+0 6 5 
+7 4 8 
+17 = 10 + 7
+Nodo hijo: 572
+2 3 1 
+6 5 0 
+7 4 8 
+18 = 10 + 8
+Nodo hijo: 573
+2 0 1 
+6 3 5 
+7 4 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 206
+8 4 1 
+2 0 5 
+6 3 7 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 574
+8 4 1 
+0 2 5 
+6 3 7 
+17 = 10 + 7
+Nodo hijo: 575
+8 4 1 
+2 5 0 
+6 3 7 
+18 = 10 + 8
+Nodo hijo: 576
+8 4 1 
+2 3 5 
+6 0 7 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 369
+1 0 3 
+2 6 5 
+4 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 577
+0 1 3 
+2 6 5 
+4 7 8 
+15 = 11 + 4
+Nodo hijo: 578
+1 6 3 
+2 0 5 
+4 7 8 
+17 = 11 + 6
+-- --
+
+Expandiendo Nodo: 577
+0 1 3 
+2 6 5 
+4 7 8 
+15 = 11 + 4
+
+-- Hijos --
+Nodo hijo: 579
+2 1 3 
+0 6 5 
+4 7 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 324
+4 2 5 
+1 3 8 
+0 6 7 
+16 = 7 + 9
+
+-- Hijos --
+Nodo hijo: 580
+4 2 5 
+0 3 8 
+1 6 7 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 354
+1 8 4 
+2 0 5 
+6 3 7 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 581
+1 8 4 
+0 2 5 
+6 3 7 
+17 = 10 + 7
+Nodo hijo: 582
+1 8 4 
+2 5 0 
+6 3 7 
+18 = 10 + 8
+Nodo hijo: 583
+1 8 4 
+2 3 5 
+6 0 7 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 364
+4 0 5 
+1 2 3 
+6 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 584
+0 4 5 
+1 2 3 
+6 7 8 
+16 = 11 + 5
+Nodo hijo: 585
+4 5 0 
+1 2 3 
+6 7 8 
+17 = 11 + 6
+-- --
+
+Expandiendo Nodo: 330
+2 1 5 
+6 4 3 
+0 7 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 586
+2 1 5 
+6 4 3 
+7 0 8 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 399
+1 0 3 
+2 8 5 
+4 6 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 587
+0 1 3 
+2 8 5 
+4 6 7 
+15 = 9 + 6
+Nodo hijo: 588
+1 8 3 
+2 0 5 
+4 6 7 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 587
+0 1 3 
+2 8 5 
+4 6 7 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 589
+2 1 3 
+0 8 5 
+4 6 7 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 373
+2 1 4 
+0 3 5 
+6 7 8 
+16 = 12 + 4
+
+-- Hijos --
+Nodo hijo: 590
+2 1 4 
+3 0 5 
+6 7 8 
+16 = 13 + 3
+Nodo hijo: 591
+2 1 4 
+6 3 5 
+0 7 8 
+18 = 13 + 5
+-- --
+
+Expandiendo Nodo: 214
+4 0 5 
+1 2 3 
+6 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 592
+4 5 0 
+1 2 3 
+6 7 8 
+17 = 11 + 6
+Nodo hijo: 593
+4 2 5 
+1 0 3 
+6 7 8 
+17 = 11 + 6
+-- --
+
+Expandiendo Nodo: 372
+1 3 4 
+2 0 5 
+6 7 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 594
+1 3 4 
+0 2 5 
+6 7 8 
+17 = 12 + 5
+Nodo hijo: 595
+1 3 4 
+2 5 0 
+6 7 8 
+18 = 12 + 6
+Nodo hijo: 596
+1 3 4 
+2 7 5 
+6 0 8 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 231
+2 1 5 
+0 8 7 
+3 4 6 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 597
+2 1 5 
+8 0 7 
+3 4 6 
+17 = 9 + 8
+Nodo hijo: 598
+0 1 5 
+2 8 7 
+3 4 6 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 377
+4 5 3 
+1 2 0 
+6 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 599
+4 5 3 
+1 0 2 
+6 7 8 
+17 = 11 + 6
+Nodo hijo: 600
+4 5 3 
+1 2 8 
+6 7 0 
+18 = 11 + 7
+-- --
+
+Expandiendo Nodo: 345
+1 4 5 
+6 2 8 
+0 3 7 
+16 = 7 + 9
+
+-- Hijos --
+Nodo hijo: 601
+1 4 5 
+6 2 8 
+3 0 7 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 384
+2 8 0 
+4 3 1 
+6 7 5 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 602
+2 0 8 
+4 3 1 
+6 7 5 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 390
+4 8 2 
+1 3 5 
+6 0 7 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 603
+4 8 2 
+1 3 5 
+0 6 7 
+18 = 11 + 7
+Nodo hijo: 604
+4 8 2 
+1 3 5 
+6 7 0 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 356
+1 3 5 
+2 6 8 
+0 4 7 
+16 = 7 + 9
+
+-- Hijos --
+Nodo hijo: 605
+1 3 5 
+0 6 8 
+2 4 7 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 426
+2 3 1 
+4 5 0 
+6 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 606
+2 3 1 
+4 0 5 
+6 7 8 
+16 = 11 + 5
+Nodo hijo: 607
+2 3 1 
+4 5 8 
+6 7 0 
+18 = 11 + 7
+-- --
+
+Expandiendo Nodo: 415
+4 2 1 
+6 8 5 
+3 0 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 608
+4 2 1 
+6 8 5 
+3 7 0 
+16 = 9 + 7
+Nodo hijo: 609
+4 2 1 
+6 0 5 
+3 8 7 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 404
+4 2 5 
+1 8 7 
+6 0 3 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 610
+4 2 5 
+1 8 7 
+0 6 3 
+18 = 9 + 9
+Nodo hijo: 611
+4 2 5 
+1 0 7 
+6 8 3 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 402
+4 5 8 
+1 2 0 
+6 3 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 612
+4 5 8 
+1 0 2 
+6 3 7 
+17 = 9 + 8
+Nodo hijo: 613
+4 5 8 
+1 2 7 
+6 3 0 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 358
+2 4 1 
+0 6 5 
+3 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 614
+2 4 1 
+3 6 5 
+0 7 8 
+16 = 11 + 5
+Nodo hijo: 615
+0 4 1 
+2 6 5 
+3 7 8 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 403
+1 4 5 
+2 8 7 
+6 0 3 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 616
+1 4 5 
+2 8 7 
+0 6 3 
+18 = 9 + 9
+Nodo hijo: 617
+1 4 5 
+2 0 7 
+6 8 3 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 615
+0 4 1 
+2 6 5 
+3 7 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 618
+4 0 1 
+2 6 5 
+3 7 8 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 362
+4 2 5 
+0 1 3 
+6 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 619
+4 2 5 
+6 1 3 
+0 7 8 
+18 = 11 + 7
+Nodo hijo: 620
+0 2 5 
+4 1 3 
+6 7 8 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 261
+3 4 1 
+2 7 5 
+6 0 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 621
+3 4 1 
+2 7 5 
+0 6 8 
+18 = 11 + 7
+Nodo hijo: 622
+3 4 1 
+2 7 5 
+6 8 0 
+18 = 11 + 7
+-- --
+
+Expandiendo Nodo: 620
+0 2 5 
+4 1 3 
+6 7 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 623
+2 0 5 
+4 1 3 
+6 7 8 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 365
+1 3 5 
+2 0 6 
+4 7 8 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 624
+1 3 5 
+0 2 6 
+4 7 8 
+17 = 10 + 7
+Nodo hijo: 625
+1 3 5 
+2 7 6 
+4 0 8 
+18 = 10 + 8
+Nodo hijo: 626
+1 0 5 
+2 3 6 
+4 7 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 374
+2 1 5 
+8 7 0 
+4 6 3 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 627
+2 1 5 
+8 7 3 
+4 6 0 
+17 = 9 + 8
+Nodo hijo: 628
+2 1 0 
+8 7 5 
+4 6 3 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 420
+4 2 1 
+6 0 5 
+7 3 8 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 629
+4 2 1 
+0 6 5 
+7 3 8 
+17 = 10 + 7
+Nodo hijo: 630
+4 2 1 
+6 5 0 
+7 3 8 
+18 = 10 + 8
+Nodo hijo: 631
+4 0 1 
+6 2 5 
+7 3 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 230
+2 6 1 
+3 7 5 
+4 0 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 632
+2 6 1 
+3 7 5 
+0 4 8 
+17 = 11 + 6
+Nodo hijo: 633
+2 6 1 
+3 7 5 
+4 8 0 
+18 = 11 + 7
+-- --
+
+Expandiendo Nodo: 375
+2 1 5 
+8 6 7 
+4 0 3 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 634
+2 1 5 
+8 6 7 
+0 4 3 
+17 = 9 + 8
+Nodo hijo: 635
+2 1 5 
+8 6 7 
+4 3 0 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 628
+2 1 0 
+8 7 5 
+4 6 3 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 636
+2 0 1 
+8 7 5 
+4 6 3 
+18 = 10 + 8
+-- --
+
+Expandiendo Nodo: 418
+4 2 5 
+6 0 8 
+3 1 7 
+16 = 7 + 9
+
+-- Hijos --
+Nodo hijo: 637
+4 2 5 
+0 6 8 
+3 1 7 
+17 = 8 + 9
+Nodo hijo: 638
+4 2 5 
+6 8 0 
+3 1 7 
+17 = 8 + 9
+Nodo hijo: 639
+4 0 5 
+6 2 8 
+3 1 7 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 416
+2 5 6 
+3 1 0 
+4 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 640
+2 5 6 
+3 0 1 
+4 7 8 
+17 = 11 + 6
+Nodo hijo: 641
+2 5 6 
+3 1 8 
+4 7 0 
+18 = 11 + 7
+-- --
+
+Expandiendo Nodo: 381
+2 5 8 
+4 7 0 
+6 1 3 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 642
+2 5 8 
+4 7 3 
+6 1 0 
+17 = 9 + 8
+Nodo hijo: 643
+2 5 0 
+4 7 8 
+6 1 3 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 234
+2 0 5 
+6 1 3 
+7 4 8 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 644
+0 2 5 
+6 1 3 
+7 4 8 
+16 = 9 + 7
+Nodo hijo: 645
+2 5 0 
+6 1 3 
+7 4 8 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 383
+2 8 1 
+4 0 3 
+6 7 5 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 646
+2 8 1 
+0 4 3 
+6 7 5 
+16 = 10 + 6
+Nodo hijo: 647
+2 8 1 
+4 7 3 
+6 0 5 
+18 = 10 + 8
+Nodo hijo: 648
+2 0 1 
+4 8 3 
+6 7 5 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 239
+2 5 3 
+4 1 8 
+6 0 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 649
+2 5 3 
+4 1 8 
+0 6 7 
+18 = 9 + 9
+Nodo hijo: 650
+2 5 3 
+4 0 8 
+6 1 7 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 386
+4 5 2 
+3 1 0 
+6 7 8 
+16 = 12 + 4
+
+-- Hijos --
+Nodo hijo: 651
+4 5 2 
+3 1 8 
+6 7 0 
+18 = 13 + 5
+Nodo hijo: 652
+4 5 0 
+3 1 2 
+6 7 8 
+18 = 13 + 5
+-- --
+
+Expandiendo Nodo: 644
+0 2 5 
+6 1 3 
+7 4 8 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 653
+6 2 5 
+0 1 3 
+7 4 8 
+18 = 10 + 8
+-- --
+
+Expandiendo Nodo: 646
+2 8 1 
+0 4 3 
+6 7 5 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 654
+2 8 1 
+6 4 3 
+0 7 5 
+18 = 11 + 7
+Nodo hijo: 655
+0 8 1 
+2 4 3 
+6 7 5 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 388
+4 8 2 
+0 1 5 
+6 3 7 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 656
+4 8 2 
+6 1 5 
+0 3 7 
+18 = 11 + 7
+Nodo hijo: 657
+0 8 2 
+4 1 5 
+6 3 7 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 472
+2 5 8 
+3 1 7 
+4 0 6 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 658
+2 5 8 
+3 1 7 
+0 4 6 
+17 = 9 + 8
+Nodo hijo: 659
+2 5 8 
+3 0 7 
+4 1 6 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 655
+0 8 1 
+2 4 3 
+6 7 5 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 660
+8 0 1 
+2 4 3 
+6 7 5 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 657
+0 8 2 
+4 1 5 
+6 3 7 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 661
+8 0 2 
+4 1 5 
+6 3 7 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 278
+1 4 5 
+0 2 8 
+6 3 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 662
+1 4 5 
+2 0 8 
+6 3 7 
+17 = 9 + 8
+Nodo hijo: 663
+1 4 5 
+6 2 8 
+0 3 7 
+18 = 9 + 9
+-- --
+
+Expandiendo Nodo: 257
+3 1 5 
+2 4 8 
+6 7 0 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 664
+3 1 5 
+2 4 8 
+6 0 7 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 391
+4 3 2 
+0 1 5 
+6 7 8 
+16 = 12 + 4
+
+-- Hijos --
+Nodo hijo: 665
+4 3 2 
+6 1 5 
+0 7 8 
+18 = 13 + 5
+Nodo hijo: 666
+0 3 2 
+4 1 5 
+6 7 8 
+16 = 13 + 3
+-- --
+
+Expandiendo Nodo: 265
+1 4 5 
+0 2 3 
+6 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 667
+1 4 5 
+2 0 3 
+6 7 8 
+17 = 11 + 6
+Nodo hijo: 668
+1 4 5 
+6 2 3 
+0 7 8 
+18 = 11 + 7
+-- --
+
+Expandiendo Nodo: 394
+1 3 5 
+4 2 8 
+0 6 7 
+16 = 7 + 9
+
+-- Hijos --
+Nodo hijo: 669
+1 3 5 
+4 2 8 
+6 0 7 
+16 = 8 + 8
+-- --
+
+Expandiendo Nodo: 666
+0 3 2 
+4 1 5 
+6 7 8 
+16 = 13 + 3
+
+-- Hijos --
+Nodo hijo: 670
+3 0 2 
+4 1 5 
+6 7 8 
+18 = 14 + 4
+-- --
+
+Expandiendo Nodo: 432
+2 8 1 
+4 5 0 
+6 3 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 671
+2 8 1 
+4 0 5 
+6 3 7 
+16 = 9 + 7
+Nodo hijo: 672
+2 8 1 
+4 5 7 
+6 3 0 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 669
+1 3 5 
+4 2 8 
+6 0 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 673
+1 3 5 
+4 2 8 
+6 7 0 
+16 = 9 + 7
+Nodo hijo: 674
+1 3 5 
+4 0 8 
+6 2 7 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 396
+1 3 5 
+2 8 7 
+4 6 0 
+16 = 7 + 9
+
+-- Hijos --
+Nodo hijo: 675
+1 3 5 
+2 8 7 
+4 0 6 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 671
+2 8 1 
+4 0 5 
+6 3 7 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 676
+2 8 1 
+0 4 5 
+6 3 7 
+16 = 10 + 6
+Nodo hijo: 677
+2 8 1 
+4 3 5 
+6 0 7 
+17 = 10 + 7
+Nodo hijo: 678
+2 0 1 
+4 8 5 
+6 3 7 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 673
+1 3 5 
+4 2 8 
+6 7 0 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 679
+1 3 5 
+4 2 0 
+6 7 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 400
+3 2 5 
+1 0 8 
+4 6 7 
+16 = 7 + 9
+
+-- Hijos --
+Nodo hijo: 680
+3 2 5 
+1 8 0 
+4 6 7 
+17 = 8 + 9
+Nodo hijo: 681
+3 2 5 
+1 6 8 
+4 0 7 
+17 = 8 + 9
+Nodo hijo: 682
+3 0 5 
+1 2 8 
+4 6 7 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 676
+2 8 1 
+0 4 5 
+6 3 7 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 683
+2 8 1 
+6 4 5 
+0 3 7 
+18 = 11 + 7
+Nodo hijo: 684
+0 8 1 
+2 4 5 
+6 3 7 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 679
+1 3 5 
+4 2 0 
+6 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 685
+1 3 5 
+4 0 2 
+6 7 8 
+17 = 11 + 6
+Nodo hijo: 686
+1 3 0 
+4 2 5 
+6 7 8 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 431
+2 0 8 
+4 5 1 
+6 3 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 687
+0 2 8 
+4 5 1 
+6 3 7 
+16 = 9 + 7
+Nodo hijo: 688
+2 5 8 
+4 0 1 
+6 3 7 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 684
+0 8 1 
+2 4 5 
+6 3 7 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 689
+8 0 1 
+2 4 5 
+6 3 7 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 686
+1 3 0 
+4 2 5 
+6 7 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 690
+1 0 3 
+4 2 5 
+6 7 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 687
+0 2 8 
+4 5 1 
+6 3 7 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 691
+4 2 8 
+0 5 1 
+6 3 7 
+18 = 10 + 8
+-- --
+
+Expandiendo Nodo: 272
+8 1 5 
+2 4 0 
+6 3 7 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 692
+8 1 5 
+2 0 4 
+6 3 7 
+18 = 11 + 7
+Nodo hijo: 693
+8 1 5 
+2 4 7 
+6 3 0 
+17 = 11 + 6
+-- --
+
+Expandiendo Nodo: 407
+1 5 3 
+0 2 4 
+6 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 694
+1 5 3 
+6 2 4 
+0 7 8 
+18 = 11 + 7
+Nodo hijo: 695
+0 5 3 
+1 2 4 
+6 7 8 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 200
+1 4 5 
+2 3 8 
+0 6 7 
+16 = 7 + 9
+
+-- Hijos --
+Nodo hijo: 696
+1 4 5 
+0 3 8 
+2 6 7 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 409
+1 0 3 
+2 5 4 
+6 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 697
+0 1 3 
+2 5 4 
+6 7 8 
+15 = 11 + 4
+Nodo hijo: 698
+1 3 0 
+2 5 4 
+6 7 8 
+17 = 11 + 6
+-- --
+
+Expandiendo Nodo: 697
+0 1 3 
+2 5 4 
+6 7 8 
+15 = 11 + 4
+
+-- Hijos --
+Nodo hijo: 699
+2 1 3 
+0 5 4 
+6 7 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 695
+0 5 3 
+1 2 4 
+6 7 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 700
+5 0 3 
+1 2 4 
+6 7 8 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 410
+4 3 2 
+0 1 5 
+6 7 8 
+16 = 12 + 4
+
+-- Hijos --
+Nodo hijo: 701
+4 3 2 
+6 1 5 
+0 7 8 
+18 = 13 + 5
+Nodo hijo: 702
+0 3 2 
+4 1 5 
+6 7 8 
+16 = 13 + 3
+-- --
+
+Expandiendo Nodo: 202
+2 3 1 
+6 4 5 
+7 8 0 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 703
+2 3 1 
+6 4 0 
+7 8 5 
+18 = 10 + 8
+-- --
+
+Expandiendo Nodo: 439
+1 0 8 
+2 5 4 
+6 3 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 704
+0 1 8 
+2 5 4 
+6 3 7 
+15 = 9 + 6
+Nodo hijo: 705
+1 8 0 
+2 5 4 
+6 3 7 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 704
+0 1 8 
+2 5 4 
+6 3 7 
+15 = 9 + 6
+
+-- Hijos --
+Nodo hijo: 706
+2 1 8 
+0 5 4 
+6 3 7 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 702
+0 3 2 
+4 1 5 
+6 7 8 
+16 = 13 + 3
+
+-- Hijos --
+Nodo hijo: 707
+3 0 2 
+4 1 5 
+6 7 8 
+18 = 14 + 4
+-- --
+
+Expandiendo Nodo: 421
+2 8 1 
+3 6 5 
+0 4 7 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 708
+2 8 1 
+0 6 5 
+3 4 7 
+18 = 10 + 8
+-- --
+
+Expandiendo Nodo: 459
+4 2 5 
+6 0 1 
+3 7 8 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 709
+4 2 5 
+0 6 1 
+3 7 8 
+17 = 10 + 7
+Nodo hijo: 710
+4 2 5 
+6 7 1 
+3 0 8 
+18 = 10 + 8
+Nodo hijo: 711
+4 0 5 
+6 2 1 
+3 7 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 277
+2 3 1 
+4 5 8 
+6 0 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 712
+2 3 1 
+4 5 8 
+0 6 7 
+18 = 9 + 9
+Nodo hijo: 713
+2 3 1 
+4 0 8 
+6 5 7 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 210
+1 4 5 
+6 2 3 
+0 7 8 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 714
+1 4 5 
+6 2 3 
+7 0 8 
+18 = 10 + 8
+-- --
+
+Expandiendo Nodo: 437
+1 5 8 
+0 2 4 
+6 3 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 715
+1 5 8 
+6 2 4 
+0 3 7 
+18 = 9 + 9
+Nodo hijo: 716
+0 5 8 
+1 2 4 
+6 3 7 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 438
+1 5 8 
+2 3 4 
+6 0 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 717
+1 5 8 
+2 3 4 
+0 6 7 
+18 = 9 + 9
+Nodo hijo: 718
+1 5 8 
+2 3 4 
+6 7 0 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 440
+5 8 0 
+2 4 1 
+6 3 7 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 719
+5 8 1 
+2 4 0 
+6 3 7 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 716
+0 5 8 
+1 2 4 
+6 3 7 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 720
+5 0 8 
+1 2 4 
+6 3 7 
+18 = 10 + 8
+-- --
+
+Expandiendo Nodo: 718
+1 5 8 
+2 3 4 
+6 7 0 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 721
+1 5 8 
+2 3 0 
+6 7 4 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 450
+2 7 1 
+4 0 5 
+6 8 3 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 722
+2 7 1 
+0 4 5 
+6 8 3 
+16 = 10 + 6
+Nodo hijo: 723
+2 7 1 
+4 5 0 
+6 8 3 
+18 = 10 + 8
+Nodo hijo: 724
+2 7 1 
+4 8 5 
+6 0 3 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 452
+2 1 5 
+7 6 3 
+0 4 8 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 725
+2 1 5 
+0 6 3 
+7 4 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 443
+2 5 7 
+4 1 0 
+6 8 3 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 726
+2 5 7 
+4 0 1 
+6 8 3 
+17 = 9 + 8
+Nodo hijo: 727
+2 5 7 
+4 1 3 
+6 8 0 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 722
+2 7 1 
+0 4 5 
+6 8 3 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 728
+2 7 1 
+6 4 5 
+0 8 3 
+18 = 11 + 7
+Nodo hijo: 729
+0 7 1 
+2 4 5 
+6 8 3 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 455
+5 3 0 
+2 4 1 
+6 7 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 730
+5 3 1 
+2 4 0 
+6 7 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 457
+2 1 5 
+6 4 7 
+8 3 0 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 731
+2 1 5 
+6 4 0 
+8 3 7 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 729
+0 7 1 
+2 4 5 
+6 8 3 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 732
+7 0 1 
+2 4 5 
+6 8 3 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 217
+1 4 5 
+2 3 8 
+6 7 0 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 733
+1 4 5 
+2 3 8 
+6 0 7 
+18 = 10 + 8
+-- --
+
+Expandiendo Nodo: 469
+2 1 4 
+0 3 5 
+6 7 8 
+16 = 12 + 4
+
+-- Hijos --
+Nodo hijo: 734
+2 1 4 
+3 0 5 
+6 7 8 
+16 = 13 + 3
+Nodo hijo: 735
+2 1 4 
+6 3 5 
+0 7 8 
+18 = 13 + 5
+-- --
+
+Expandiendo Nodo: 465
+2 3 1 
+7 0 5 
+4 6 8 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 736
+2 3 1 
+7 5 0 
+4 6 8 
+18 = 10 + 8
+Nodo hijo: 737
+2 3 1 
+7 6 5 
+4 0 8 
+17 = 10 + 7
+Nodo hijo: 738
+2 0 1 
+7 3 5 
+4 6 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 468
+1 3 4 
+2 0 5 
+6 7 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 739
+1 3 4 
+0 2 5 
+6 7 8 
+17 = 12 + 5
+Nodo hijo: 740
+1 3 4 
+2 5 0 
+6 7 8 
+18 = 12 + 6
+Nodo hijo: 741
+1 3 4 
+2 7 5 
+6 0 8 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 734
+2 1 4 
+3 0 5 
+6 7 8 
+16 = 13 + 3
+
+-- Hijos --
+Nodo hijo: 742
+2 1 4 
+3 5 0 
+6 7 8 
+18 = 14 + 4
+Nodo hijo: 743
+2 1 4 
+3 7 5 
+6 0 8 
+18 = 14 + 4
+Nodo hijo: 744
+2 0 4 
+3 1 5 
+6 7 8 
+18 = 14 + 4
+-- --
+
+Expandiendo Nodo: 222
+2 5 8 
+4 3 1 
+0 6 7 
+16 = 7 + 9
+
+-- Hijos --
+Nodo hijo: 745
+2 5 8 
+0 3 1 
+4 6 7 
+17 = 8 + 9
+-- --
+
+Expandiendo Nodo: 224
+2 8 1 
+0 3 5 
+4 6 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 746
+2 8 1 
+4 3 5 
+0 6 7 
+17 = 9 + 8
+Nodo hijo: 747
+0 8 1 
+2 3 5 
+4 6 7 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 382
+2 0 8 
+4 5 7 
+6 1 3 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 748
+0 2 8 
+4 5 7 
+6 1 3 
+16 = 9 + 7
+Nodo hijo: 749
+2 8 0 
+4 5 7 
+6 1 3 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 747
+0 8 1 
+2 3 5 
+4 6 7 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 750
+8 0 1 
+2 3 5 
+4 6 7 
+18 = 10 + 8
+-- --
+
+Expandiendo Nodo: 748
+0 2 8 
+4 5 7 
+6 1 3 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 751
+4 2 8 
+0 5 7 
+6 1 3 
+18 = 10 + 8
+-- --
+
+Expandiendo Nodo: 480
+2 1 5 
+7 6 3 
+0 4 8 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 752
+2 1 5 
+7 6 3 
+4 0 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 478
+3 4 1 
+2 0 5 
+6 7 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 753
+3 4 1 
+2 5 0 
+6 7 8 
+18 = 12 + 6
+Nodo hijo: 754
+3 4 1 
+2 7 5 
+6 0 8 
+18 = 12 + 6
+Nodo hijo: 755
+3 0 1 
+2 4 5 
+6 7 8 
+16 = 12 + 4
+-- --
+
+Expandiendo Nodo: 286
+4 2 5 
+6 1 3 
+7 0 8 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 756
+4 2 5 
+6 1 3 
+7 8 0 
+18 = 9 + 9
+Nodo hijo: 757
+4 2 5 
+6 0 3 
+7 1 8 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 755
+3 0 1 
+2 4 5 
+6 7 8 
+16 = 12 + 4
+
+-- Hijos --
+Nodo hijo: 758
+0 3 1 
+2 4 5 
+6 7 8 
+16 = 13 + 3
+Nodo hijo: 759
+3 1 0 
+2 4 5 
+6 7 8 
+16 = 13 + 3
+-- --
+
+Expandiendo Nodo: 495
+2 5 0 
+6 1 4 
+3 7 8 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 760
+2 5 4 
+6 1 0 
+3 7 8 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 758
+0 3 1 
+2 4 5 
+6 7 8 
+16 = 13 + 3
+
+-- Hijos --
+Nodo hijo: 761
+2 3 1 
+0 4 5 
+6 7 8 
+18 = 14 + 4
+-- --
+
+Expandiendo Nodo: 759
+3 1 0 
+2 4 5 
+6 7 8 
+16 = 13 + 3
+
+-- Hijos --
+Nodo hijo: 762
+3 1 5 
+2 4 0 
+6 7 8 
+18 = 14 + 4
+-- --
+
+Expandiendo Nodo: 497
+2 5 3 
+4 1 0 
+6 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 763
+2 5 3 
+4 1 8 
+6 7 0 
+18 = 11 + 7
+Nodo hijo: 764
+2 5 0 
+4 1 3 
+6 7 8 
+17 = 11 + 6
+-- --
+
+Expandiendo Nodo: 176
+3 2 1 
+0 8 5 
+4 6 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 765
+3 2 1 
+8 0 5 
+4 6 7 
+17 = 9 + 8
+Nodo hijo: 766
+3 2 1 
+4 8 5 
+0 6 7 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 483
+2 5 0 
+4 3 8 
+6 7 1 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 767
+2 0 5 
+4 3 8 
+6 7 1 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 237
+4 2 5 
+1 3 8 
+6 7 0 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 768
+4 2 5 
+1 3 8 
+6 0 7 
+18 = 10 + 8
+-- --
+
+Expandiendo Nodo: 508
+2 1 5 
+6 7 4 
+0 3 8 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 769
+2 1 5 
+0 7 4 
+6 3 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 285
+2 0 5 
+3 1 7 
+4 8 6 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 770
+0 2 5 
+3 1 7 
+4 8 6 
+16 = 9 + 7
+Nodo hijo: 771
+2 5 0 
+3 1 7 
+4 8 6 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 769
+2 1 5 
+0 7 4 
+6 3 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 772
+2 1 5 
+7 0 4 
+6 3 8 
+17 = 11 + 6
+Nodo hijo: 773
+0 1 5 
+2 7 4 
+6 3 8 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 770
+0 2 5 
+3 1 7 
+4 8 6 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 774
+3 2 5 
+0 1 7 
+4 8 6 
+19 = 10 + 9
+-- --
+
+Expandiendo Nodo: 773
+0 1 5 
+2 7 4 
+6 3 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 775
+1 0 5 
+2 7 4 
+6 3 8 
+19 = 12 + 7
+-- --
+
+Expandiendo Nodo: 511
+1 5 0 
+2 4 7 
+6 8 3 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 776
+1 5 7 
+2 4 0 
+6 8 3 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 514
+2 1 5 
+6 8 0 
+3 4 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 777
+2 1 5 
+6 8 7 
+3 4 0 
+17 = 9 + 8
+Nodo hijo: 778
+2 1 0 
+6 8 5 
+3 4 7 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 542
+2 0 8 
+3 5 1 
+4 6 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 779
+0 2 8 
+3 5 1 
+4 6 7 
+16 = 9 + 7
+Nodo hijo: 780
+2 8 0 
+3 5 1 
+4 6 7 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 778
+2 1 0 
+6 8 5 
+3 4 7 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 781
+2 0 1 
+6 8 5 
+3 4 7 
+18 = 10 + 8
+-- --
+
+Expandiendo Nodo: 779
+0 2 8 
+3 5 1 
+4 6 7 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 782
+3 2 8 
+0 5 1 
+4 6 7 
+19 = 10 + 9
+-- --
+
+Expandiendo Nodo: 225
+2 8 1 
+3 5 0 
+4 6 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 783
+2 8 1 
+3 5 7 
+4 6 0 
+17 = 9 + 8
+Nodo hijo: 784
+2 8 0 
+3 5 1 
+4 6 7 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 502
+2 1 5 
+4 8 7 
+6 3 0 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 785
+2 1 5 
+4 8 0 
+6 3 7 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 292
+2 1 5 
+3 7 6 
+4 8 0 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 786
+2 1 5 
+3 7 0 
+4 8 6 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 296
+4 2 3 
+0 5 1 
+6 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 787
+4 2 3 
+5 0 1 
+6 7 8 
+17 = 11 + 6
+Nodo hijo: 788
+4 2 3 
+6 5 1 
+0 7 8 
+18 = 11 + 7
+-- --
+
+Expandiendo Nodo: 304
+4 2 8 
+0 5 1 
+6 3 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 789
+4 2 8 
+5 0 1 
+6 3 7 
+17 = 9 + 8
+Nodo hijo: 790
+4 2 8 
+6 5 1 
+0 3 7 
+18 = 9 + 9
+-- --
+
+Expandiendo Nodo: 522
+2 1 5 
+6 4 8 
+0 3 7 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 791
+2 1 5 
+0 4 8 
+6 3 7 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 526
+2 1 5 
+3 0 8 
+4 6 7 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 792
+2 1 5 
+0 3 8 
+4 6 7 
+18 = 10 + 8
+Nodo hijo: 793
+2 1 5 
+3 8 0 
+4 6 7 
+17 = 10 + 7
+Nodo hijo: 794
+2 0 5 
+3 1 8 
+4 6 7 
+18 = 10 + 8
+-- --
+
+Expandiendo Nodo: 791
+2 1 5 
+0 4 8 
+6 3 7 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 795
+2 1 5 
+4 0 8 
+6 3 7 
+18 = 11 + 7
+Nodo hijo: 796
+0 1 5 
+2 4 8 
+6 3 7 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 482
+2 5 8 
+4 0 3 
+6 7 1 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 797
+2 5 8 
+0 4 3 
+6 7 1 
+16 = 10 + 6
+Nodo hijo: 798
+2 5 8 
+4 7 3 
+6 0 1 
+18 = 10 + 8
+Nodo hijo: 799
+2 0 8 
+4 5 3 
+6 7 1 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 796
+0 1 5 
+2 4 8 
+6 3 7 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 800
+1 0 5 
+2 4 8 
+6 3 7 
+19 = 12 + 7
+-- --
+
+Expandiendo Nodo: 797
+2 5 8 
+0 4 3 
+6 7 1 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 801
+2 5 8 
+6 4 3 
+0 7 1 
+18 = 11 + 7
+Nodo hijo: 802
+0 5 8 
+2 4 3 
+6 7 1 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 489
+2 8 1 
+4 5 7 
+6 0 3 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 803
+2 8 1 
+4 5 7 
+0 6 3 
+18 = 9 + 9
+Nodo hijo: 804
+2 8 1 
+4 0 7 
+6 5 3 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 802
+0 5 8 
+2 4 3 
+6 7 1 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 805
+5 0 8 
+2 4 3 
+6 7 1 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 528
+1 4 5 
+0 2 3 
+6 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 806
+1 4 5 
+6 2 3 
+0 7 8 
+18 = 11 + 7
+Nodo hijo: 807
+0 4 5 
+1 2 3 
+6 7 8 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 484
+4 1 2 
+0 6 5 
+3 7 8 
+16 = 12 + 4
+
+-- Hijos --
+Nodo hijo: 808
+4 1 2 
+3 6 5 
+0 7 8 
+16 = 13 + 3
+Nodo hijo: 809
+0 1 2 
+4 6 5 
+3 7 8 
+16 = 13 + 3
+-- --
+
+Expandiendo Nodo: 807
+0 4 5 
+1 2 3 
+6 7 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 810
+4 0 5 
+1 2 3 
+6 7 8 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 808
+4 1 2 
+3 6 5 
+0 7 8 
+16 = 13 + 3
+
+-- Hijos --
+Nodo hijo: 811
+4 1 2 
+3 6 5 
+7 0 8 
+18 = 14 + 4
+-- --
+
+Expandiendo Nodo: 809
+0 1 2 
+4 6 5 
+3 7 8 
+16 = 13 + 3
+
+-- Hijos --
+Nodo hijo: 812
+1 0 2 
+4 6 5 
+3 7 8 
+19 = 14 + 5
+-- --
+
+Expandiendo Nodo: 229
+2 6 1 
+3 5 0 
+4 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 813
+2 6 1 
+3 5 8 
+4 7 0 
+18 = 11 + 7
+Nodo hijo: 814
+2 6 0 
+3 5 1 
+4 7 8 
+17 = 11 + 6
+-- --
+
+Expandiendo Nodo: 518
+2 7 1 
+4 0 5 
+6 8 3 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 815
+2 7 1 
+0 4 5 
+6 8 3 
+16 = 10 + 6
+Nodo hijo: 816
+2 7 1 
+4 5 0 
+6 8 3 
+18 = 10 + 8
+Nodo hijo: 817
+2 7 1 
+4 8 5 
+6 0 3 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 297
+2 3 1 
+4 7 0 
+6 8 5 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 818
+2 3 1 
+4 0 7 
+6 8 5 
+17 = 9 + 8
+Nodo hijo: 819
+2 3 0 
+4 7 1 
+6 8 5 
+17 = 9 + 8
+-- --
+
+Expandiendo Nodo: 815
+2 7 1 
+0 4 5 
+6 8 3 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 820
+2 7 1 
+6 4 5 
+0 8 3 
+18 = 11 + 7
+Nodo hijo: 821
+0 7 1 
+2 4 5 
+6 8 3 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 537
+2 1 5 
+3 0 6 
+4 7 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 822
+2 1 5 
+0 3 6 
+4 7 8 
+18 = 12 + 6
+Nodo hijo: 823
+2 1 5 
+3 7 6 
+4 0 8 
+18 = 12 + 6
+Nodo hijo: 824
+2 0 5 
+3 1 6 
+4 7 8 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 821
+0 7 1 
+2 4 5 
+6 8 3 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 825
+7 0 1 
+2 4 5 
+6 8 3 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 228
+2 6 1 
+0 3 5 
+4 7 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 826
+2 6 1 
+4 3 5 
+0 7 8 
+17 = 11 + 6
+Nodo hijo: 827
+0 6 1 
+2 3 5 
+4 7 8 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 541
+2 5 8 
+3 6 1 
+4 0 7 
+16 = 8 + 8
+
+-- Hijos --
+Nodo hijo: 828
+2 5 8 
+3 6 1 
+0 4 7 
+17 = 9 + 8
+Nodo hijo: 829
+2 5 8 
+3 6 1 
+4 7 0 
+16 = 9 + 7
+-- --
+
+Expandiendo Nodo: 827
+0 6 1 
+2 3 5 
+4 7 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 830
+6 0 1 
+2 3 5 
+4 7 8 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 829
+2 5 8 
+3 6 1 
+4 7 0 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 831
+2 5 8 
+3 6 0 
+4 7 1 
+17 = 10 + 7
+-- --
+
+Expandiendo Nodo: 535
+1 5 0 
+2 4 3 
+6 7 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 832
+1 5 3 
+2 4 0 
+6 7 8 
+17 = 12 + 5
+-- --
+
+Expandiendo Nodo: 347
+2 1 5 
+3 6 4 
+7 0 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 833
+2 1 5 
+3 6 4 
+7 8 0 
+18 = 11 + 7
+Nodo hijo: 834
+2 1 5 
+3 0 4 
+7 6 8 
+17 = 11 + 6
+-- --
+
+Expandiendo Nodo: 544
+2 1 5 
+3 7 6 
+4 8 0 
+16 = 9 + 7
+
+-- Hijos --
+Nodo hijo: 835
+2 1 5 
+3 7 6 
+4 0 8 
+16 = 10 + 6
+-- --
+
+Expandiendo Nodo: 300
+1 4 2 
+0 3 5 
+6 7 8 
+16 = 12 + 4
+
+-- Hijos --
+Nodo hijo: 836
+1 4 2 
+3 0 5 
+6 7 8 
+16 = 13 + 3
+Nodo hijo: 837
+1 4 2 
+6 3 5 
+0 7 8 
+18 = 13 + 5
+-- --
+
+Expandiendo Nodo: 835
+2 1 5 
+3 7 6 
+4 0 8 
+16 = 10 + 6
+
+-- Hijos --
+Nodo hijo: 838
+2 1 5 
+3 7 6 
+0 4 8 
+17 = 11 + 6
+Nodo hijo: 839
+2 1 5 
+3 0 6 
+4 7 8 
+16 = 11 + 5
+-- --
+
+Expandiendo Nodo: 836
+1 4 2 
+3 0 5 
+6 7 8 
+16 = 13 + 3
+
+-- Hijos --
+Nodo hijo: 840
+1 4 2 
+3 5 0 
+6 7 8 
+18 = 14 + 4
+Nodo hijo: 841
+1 4 2 
+3 7 5 
+6 0 8 
+18 = 14 + 4
+Nodo hijo: 842
+1 0 2 
+3 4 5 
+6 7 8 
+16 = 14 + 2
+-- --
+
+Expandiendo Nodo: 839
+2 1 5 
+3 0 6 
+4 7 8 
+16 = 11 + 5
+
+-- Hijos --
+Nodo hijo: 843
+2 1 5 
+0 3 6 
+4 7 8 
+18 = 12 + 6
+Nodo hijo: 844
+2 1 5 
+3 6 0 
+4 7 8 
+17 = 12 + 5
+Nodo hijo: 845
+2 0 5 
+3 1 6 
+4 7 8 
+18 = 12 + 6
+-- --
+
+Expandiendo Nodo: 842
+1 0 2 
+3 4 5 
+6 7 8 
+16 = 14 + 2
+
+-- Hijos --
+Nodo hijo: 846
 0 1 2 
 3 4 5 
 6 7 8 
-10 = 10 + 0
+15 = 15 + 0
+Nodo hijo: 847
+1 2 0 
+3 4 5 
+6 7 8 
+18 = 15 + 3
+-- --
+
+Expandiendo Nodo: 846
+0 1 2 
+3 4 5 
+6 7 8 
+15 = 15 + 0
 

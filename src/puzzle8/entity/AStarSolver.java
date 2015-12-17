@@ -12,12 +12,13 @@ import java.util.PriorityQueue;
 public class AStarSolver implements Solver {
 
     private int expandedNodes = 0;  // Numero de nodos expandidos
-    private String filename = "output.txt";
+    private String filename = "nodos_expandidos.txt";
+    private String fileSolution = "nodos_solucion.txt";
     private PrintWriter writer;
     
     public AStarSolver(){
         try {
-        writer = new PrintWriter(new BufferedWriter(new FileWriter(filename)));
+            writer = new PrintWriter(new BufferedWriter(new FileWriter(filename)));
         } catch(Exception e) {
             System.out.println("Error al crear el archivo.");
         }
@@ -81,8 +82,29 @@ public class AStarSolver implements Solver {
         System.out.println("Result: " + sequence);
 
         writer.close();
+
+        saveSolution((Board)begin.clone(), sequence);
         
         return sequence;
+    }
+
+    public void saveSolution(Board start, ArrayList<Direction> sequence) {
+        try {
+            writer = new PrintWriter(new BufferedWriter(new FileWriter(fileSolution)));
+        } catch(Exception e) {
+            System.out.println("Error al crear el archivo.");
+        }
+
+        printNode(start);
+        
+        for(Direction dir : sequence) {
+            start.move(dir);
+            writer.println();
+            writer.println("Direccion: " + dir);
+            printNode(start);
+        }
+
+        writer.close();
     }
 
     public int getExpandedNodesCount() {
